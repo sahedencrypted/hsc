@@ -1,11 +1,11 @@
 
-function myLoad ()
+/* function myLoad ()
   { let preload = document.getElementById('loding');
     let changeid = document.getElementById('ny');
       preload.style.display = 'none';
       changeid.setAttribute('id','chy');
 
-   }
+   } */
    function mui(){
     let gyo =document.querySelector("#list");
     let nj=document.querySelector(".bac");
@@ -14,7 +14,7 @@ function myLoad ()
     gyo.classList.toggle("listr");
     dug.classList.toggle("onburger");
   
-  }//document.querySelector('.backbt').addEventListener('click',mui);
+  }
 function nut(){
   let fut=document.querySelector(".vuj");
   let but=document.querySelector(".listtop");
