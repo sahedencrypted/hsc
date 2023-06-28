@@ -16,6 +16,10 @@
       overflow-y: hidden;
         
     }
+    @font-face {
+      font-family:Heavitas;
+      src: url(files/Heavitas.ttf);
+  }
     body{
         width: 100%;
         min-height: 100vh;
@@ -47,7 +51,7 @@
 
     }
     .logo{
-      font-family: Heavitas !important;
+      font-family: Heavitas;
     padding: 0px 21px;
     font-size: 27px;
     color: black;
