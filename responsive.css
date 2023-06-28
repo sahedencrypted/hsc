@@ -47,7 +47,7 @@
 
     }
     .logo{
-      font-family: Heavitas;
+      font-family: Heavitas !important;
     padding: 0px 21px;
     font-size: 27px;
     color: black;
@@ -259,11 +259,15 @@ body {
 }
 .color-picker-panel {
   background: #1f232a;
-  width: 383px;
+  width: 338px;
+  height: 436px;
   border-radius: 8px;
   border: 2px solid #364347;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
-  transform: translate(4%, 2%);
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .panel-row {
   position: relative;
@@ -386,15 +390,19 @@ button:active {
 .button.add-swatch {
   display: block;
   padding: 6px;
-  width: 200px;
+  width: 158px;
   margin: 10px auto 0;
+  position: absolute;
+  left: 24%;
+  transform: translate(0%, 220%);
+  
 }
 .button.mode-toggle {
   position: absolute;
   top: 0;
   right: 0;
-  width: 68px;
-  height: 40px;
+  width: 67px;
+  height: 31px;
 }
 .value-fields {
   display: none;
@@ -411,7 +419,7 @@ button:active {
   border: 1px solid #364347;
   box-sizing: border-box;
   border-radius: 2px;
-  line-height: 38px;
+  line-height: 29px;
   padding: 0 4px;
   text-align: center;
   color: #8b949a;
@@ -421,10 +429,12 @@ button:active {
 .rgb-fields .field-group {
   display: flex;
   align-items: center;
+  font-size: 13px;
 }
 .rgb-fields .field-input {
   width: 42px;
   margin-right: 10px;
+  font-size: 14px;
 }
 .hex-field .field-input {
   width: 170px;
