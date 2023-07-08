@@ -55,6 +55,8 @@
     padding: 0px 21px;
     font-size: 27px;
     color: black;
+    position: relative;
+    top: 2px;
  }
     .burger{
       display: grid;
