@@ -19,46 +19,56 @@ const pdficon = `
 </svg>
 `;
 const cata1 =`
-            <div class="rows file-icon">${fileicon}<p>PHY 1st</p></div>  
-            <div class="rows file-icon">${fileicon}<p>PHY 2nd</p></div> 
-            <div class="rows file-icon">${fileicon}<p>HM 1st</p></div> 
-            <div class="rows file-icon">${fileicon}<p>HM 2nd</p></div>
-            <div class="rows file-icon">${fileicon}<p>Chem 1st</p></div>  
-            <div class="rows file-icon">${fileicon}<p>Chem 2nd</p></div> 
-            <div class="rows file-icon">${fileicon}<p>Bio 1st</p></div> 
-            <div class="rows file-icon">${fileicon}<p>Bio 2nd</p></div>
-            <div class="rows file-icon">${fileicon}<p>ICT</p></div>  
-            <div class="rows file-icon">${fileicon}<p>ENG</p></div> 
-            <div class="rows file-icon">${fileicon}<p>BAN</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>PHY 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>PHY 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>HM 1st</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>HM 2nd</p></div>
+            <div class="rows file-icon subjs">${fileicon}<p>Chem 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>Chem 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Bio 1st</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Bio 2nd</p></div>
+            <div class="rows file-icon subjs">${fileicon}<p>ICT</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>ENG</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>BAN</p></div> 
 `;
 const cata2 =`
-            <div class="rows file-icon">${fileicon}<p>PHY 1st</p></div>  
-            <div class="rows file-icon">${fileicon}<p>PHY 2nd</p></div> 
-            <div class="rows file-icon">${fileicon}<p>HM 1st</p></div> 
-            <div class="rows file-icon">${fileicon}<p>HM 2nd</p></div>
-            <div class="rows file-icon">${fileicon}<p>Chem 1st</p></div>  
-            <div class="rows file-icon">${fileicon}<p>Chem 2nd</p></div> 
-            <div class="rows file-icon">${fileicon}<p>Bio 1st</p></div> 
-            <div class="rows file-icon">${fileicon}<p>Bio 2nd</p></div>
-            <div class="rows file-icon">${fileicon}<p>ICT</p></div>   
+            <div class="rows file-icon subjs">${fileicon}<p>PHY 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>PHY 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>HM 1st</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>HM 2nd</p></div>
+            <div class="rows file-icon subjs">${fileicon}<p>Chem 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>Chem 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Bio 1st</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Bio 2nd</p></div>
+            <div class="rows file-icon subjs">${fileicon}<p>ICT</p></div>   
 `;
 const cata3 =`
-            <div class="rows file-icon">${fileicon}<p>PHY 1st</p></div>  
-            <div class="rows file-icon">${fileicon}<p>PHY 2nd</p></div> 
-            <div class="rows file-icon">${fileicon}<p>HM 1st</p></div> 
-            <div class="rows file-icon">${fileicon}<p>HM 2nd</p></div>
-            <div class="rows file-icon">${fileicon}<p>Chem 1st</p></div>  
-            <div class="rows file-icon">${fileicon}<p>Chem 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>PHY 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>PHY 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>HM 1st</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>HM 2nd</p></div>
+            <div class="rows file-icon subjs">${fileicon}<p>Chem 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>Chem 2nd</p></div> 
+`;
+const cata4 =`
+            <div class="rows file-icon subjs">${fileicon}<p>PHY 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>PHY 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>HM 1st</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>HM 2nd</p></div>
+            <div class="rows file-icon subjs">${fileicon}<p>Chem 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>Chem 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Bio 1st</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Bio 2nd</p></div>   
 `;
 
-
-const categories = {
+const catacategories = {
     cata1: cata1,
     cata2: cata2,
-    cata3: cata3
+    cata3: cata3,
+    cata4: cata4
   };
   
   
-  // Get the corresponding value from the categories object
-  let currentCata = categories[hcatagory] || null;
+  // Get the corresponding value from the catacategories object
+  let currentCata = catacategories[hcatagory] || null;
   

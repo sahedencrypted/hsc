@@ -118,7 +118,7 @@ div.innerHTML = svgpdf + div.innerHTML;
 
 
 
-// subject item select
+// catagory item select
 const cataElements = document.querySelectorAll('.cata');
 
 cataElements.forEach((cataElement, index) => {
@@ -132,29 +132,17 @@ cataElements.forEach((cataElement, index) => {
     });
 
 
-    const hcatagory = localStorage.getItem('hcatagory');
-   if (hcatagory === cataString){
-    cataElements.forEach((element) => {
-      element.classList.remove('selected');
-      localStorage.setItem('hcatagory', null);
-    })}
-   else{
-    cataElement.classList.add('selected');
-    
-    localStorage.setItem('hcatagory', cataString);
 
-   }
-
-    /* // Add "selected" class to the clicked cata element
+    // Add "selected" class to the clicked cata element
     cataElement.classList.add('selected');
     
     localStorage.setItem('hcatagory', cataString);
     
-    console.log(cataString); // Log to console (optional) */
+    console.log(cataString); // Log to console (optional)
 
-  
-  // Get the corresponding value from the categories object
-  let currentCata = categories[cataString] || null;
+    
+  // Get the corresponding value from the catacategories object
+  let currentCata = catacategories[cataString] || null;
   
   // Print the current category (or null if no match)
   console.log("Current Category:", currentCata);
@@ -183,8 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const hcatagory = localStorage.getItem('hcatagory');
 
-  // Get the corresponding value from the categories object
-  let domcurrentCata = categories[hcatagory] || null;
+  // Get the corresponding value from the catacategories object
+  let domcurrentCata = catacategories[hcatagory] || null;
   subjects.innerHTML = domcurrentCata;
   if (domcurrentCata === null) {
     domcurrentCata = `
@@ -195,5 +183,38 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// subject item select
+const subjsElements = document.querySelectorAll('.subjs');
+
+subjsElements.forEach((subjsElements, index) => {
+  subjsElements.addEventListener('click', () => {
+    const subjsNumber = index + 1;
+    const subjsString = `subjs${subjsNumber}`;
+    
+    // Remove "selected" class from all cata elements
+    subjsElements.forEach((element) => {
+      element.classList.remove('selected');
+    });
 
 
+
+    // Add "selected" class to the clicked cata element
+    subjsElements.classList.add('selected');
+    
+    localStorage.setItem('hsubjects', subjsString);
+    
+    console.log(subjsString); // Log to console (optional)
+
+  
+  // Get the corresponding value from the catacategories object
+  let currentCata = catacategories[cataString] || null;
+  
+  // Print the current category (or null if no match)
+  console.log("Current Category:", currentCata);
+  const subjects = document.querySelector('#subjects');
+  subjects.innerHTML = currentCata;
+    
+  
+  
+  });
+});
