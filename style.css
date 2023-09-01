@@ -1,0 +1,260 @@
+
+/*lagrge screen*/
+@media only screen and (min-width: 600px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: 'Dosis', sans-serif;
+        
+    }
+      
+    #dut{
+        display: none;
+    }
+  /*theme*/
+  .light-theme {
+
+    /**
+     * light theme colors 
+     */
+  --nav: #667FEA;
+  --main: #FFFFFF;
+  --inside: #728197;
+  --mid:#F4F5F9;
+   
+  
+  }
+  
+  .dark-theme {
+  
+    /**
+     * dark theme colors 
+     */
+  
+     --nav: #667FEA;
+     --main: #2D3748;
+     --inside: #EDF2F7;
+     --mid:#1A212D;
+  
+  }
+    /*BODY Webkit Scrollbar Styles */
+  body::-webkit-scrollbar {
+    width: 8px;
+    height: 9px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--nav);
+    border-radius: 10px;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #444746;
+  }
+
+  /* Hide scrollbar track */
+  body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+.light-theme::-webkit-scrollbar-track { background: #c5c5c5; }
+
+.dark-theme::-webkit-scrollbar-track { background: #252E40; }
+
+
+ /*    #loding{
+        position: fixed;
+        bottom: -96px;
+        width: 100%;
+        height: 141vh;
+        background: #fff url(https://drive.google.com/uc?export=download&id=1zenv7hNx8PIRp7QfNt9kGl9DfilTTTjO) no-repeat center;
+        z-index: 100;
+        background-size: 47px 60px;
+    } */
+    #ny{
+       overflow-y: hidden;
+    }
+   
+    .navbar{
+        position: fixed;
+        top: -1px;
+        width: 100%;
+        height: 57px;
+        background-color: var(--main);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 223px;
+        z-index: 99;
+        border-top: 2.99px solid var(--nav);
+        border-bottom: 0.3px solid var(--nav);
+        border-left: none;
+        border-right: none;
+        user-select: none;
+       
+    }
+
+    .lnavbar{
+        background-color: #ffff00 !important;
+    }
+    
+    .list{
+        display: none;
+    }
+    .logo{
+        font-family: Heavitas;
+        padding: 8px 36px;
+        font-size: 29.6px;
+        color: var(--nav);
+        white-space: nowrap;
+    }
+    
+    .logo:hover{
+        color: rgb(255, 0, 0);
+        transition: 0.95s;
+    }
+    .mun-icon{
+      display: block;
+      width: 21px;
+    }
+    .sun-icon{
+      display: none;
+      width: 22px;
+    }
+    .open{
+      display: block!important;
+    }
+    .close{
+      display: none!important;
+    }
+    .burger{
+        display: none;
+    }
+    .web-theme{
+        display: grid;
+        place-items: center;
+        padding: 0px 17px;
+    }
+    .web-theme:hover{
+        background-color: rgb(0, 0, 0);
+        transition: 0.83s;
+    
+    }
+    
+   .lis a:hover{
+      background-color: rgb(0, 0, 0);
+      transition: 0.95s;
+        }
+        .lis{
+            display: flex;
+            
+        }
+        .lis a{
+            padding: 18px 15px;
+            color: var(--nav);
+            font-size: 16px;
+            white-space: nowrap;
+            
+        }
+       
+        .navbar-gap{
+            opacity: 0;
+            height: 56px;
+            width: 100%;
+        }
+        
+      
+       
+       .main{
+        background-color: var(--mid);
+        height: 3000px;
+        display: grid;
+        justify-content: center;
+       }
+       
+   /*   explore winddow css*/
+
+.container{
+  width: 95vw;
+  height: 90vh;
+  margin: 10px;
+ display: grid;
+ grid-template-columns: 1.5fr 110px 1.7fr 2fr 6fr;
+}
+.boxing {
+    margin: 4px;
+    overflow: hidden;
+    user-select: none;
+    height: fit-content;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+}
+.rhead{
+    background: var(--nav);
+    padding: 4px 0px 4px 9px;
+}
+
+
+.row-container {
+  overflow: hidden;
+  white-space: nowrap;
+  
+  }
+
+  .rows {
+    padding: 3px 5px;
+    white-space: nowrap;
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  .default-rows{
+    padding: 3px 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    display: grid;
+    place-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+  }
+
+  .rows:nth-child(even) {
+    background: rgb(255, 255, 255);
+  }
+
+  .rows:nth-child(odd) {
+    background: #E1E7EF;
+  }
+
+  p {
+    padding: 0px 2px 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+  }
+  .rows:hover{
+    background: black;
+    color: var(--nav);
+  }
+  .selected{
+    background: black!important;
+    color: var(--nav);
+
+  }
+
+.cpt{
+  font-family: 'NotoSerifBengali';
+}
+
+
+
+}
+
+    
+
+
+  

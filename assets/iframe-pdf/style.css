@@ -1,0 +1,153 @@
+
+  .iframe-container {
+    width: auto;
+    max-width: 700px;
+    height: 85vh;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .refresh-container{
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 46px;
+    height: 115px;
+  }
+  .refreshButton{
+    width: 17px;
+    height: 17px;
+    opacity: 0.7;
+  }
+  .refreshButton:hover {
+    opacity: 1;
+    transition: 400;
+    width: 19px;
+    height: 19px;
+  }
+  .rotate {
+    animation: rotateAnimation 6s linear forwards;
+    pointer-events: none; /* Disable pointer events during animation */
+  }
+  
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .downloadButton{
+    width: 21px;
+    height: 21px;
+    opacity: 0.7;
+  }
+  .downloadButton:hover{
+    opacity: 1;
+    transition: 400;
+    width: 23px;
+    height: 23px;
+  }
+  .fullButton{
+   width: 21px;
+   opacity: 0.7;
+  }
+  .fullButton:hover{
+    opacity: 1;
+    transition: 400;
+    width: 23px;
+    height: 23px;
+  }
+  .minimizeButton{
+    width: 21px;
+    opacity: 0.7;
+  }
+  .minimizeButton:hover{
+    opacity: 1;
+    transition: 400;
+    width: 23px;
+    height: 23px;
+  }
+  .pdfsize{
+    color: #fff;
+    font-size: 10px;
+    opacity: 0.7;
+  }
+  .pdfsize:hover{
+    opacity: 0.9;
+  }
+  .arrow-cont{
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+    right: 18px;
+    bottom: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 125px;
+    height: 27px;
+    opacity: 0.7;
+    white-space: nowrap;
+  }
+  .arrow-cont:hover{
+    opacity: 0.9;
+  }
+  h3{
+    color: #fff;
+    font-size: 10px;
+    user-select: none;
+    opacity: 0.7;
+    font-family: "Roboto", sans-serif;
+  }
+  .verticalline{
+    width: 27px;
+    height: 34px;
+    position: absolute;
+    right: 6px;
+    bottom: -4px;
+  }
+  .closebtn{
+    width: 20px;
+    opacity: 0.9;
+  }
+  .closebtn:hover{
+    width: 26px;
+    opacity: 1;
+  }
+  
+  .loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    border-radius: 2px;
+    z-index: 80;
+  }
+  
+  .loading-progress {
+    width: 0;
+    height: 100%;
+    background-color: #ff1717;
+    border-radius: 2px 0 0 2px;
+    transition: width 0.3s ease-in-out;
+  }
