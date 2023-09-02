@@ -137,10 +137,17 @@ cataElements.forEach((cataElement, index) => {
     cataElement.classList.add('selected');
     
     localStorage.setItem('hcatagory', cataString);
+    localStorage.setItem('hchapters', null);
     const chaptElemen = document.querySelectorAll(".chapt");
 chaptElemen.forEach((element) => {
   element.classList.remove('selected');
 });
+const chapters = document.getElementById("chapters");
+const hchapt = localStorage.getItem("hchapters");
+      jchapt = `
+      <div class="default-rows">Select a Subject</div>
+      `;
+      chapters.innerHTML = jchapt;
     
     console.log(cataString); // Log to console (optional)
 
