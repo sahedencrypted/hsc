@@ -137,20 +137,60 @@ cataElements.forEach((cataElement, index) => {
     cataElement.classList.add('selected');
     
     localStorage.setItem('hcatagory', cataString);
+    const chaptElemen = document.querySelectorAll(".chapt");
+chaptElemen.forEach((element) => {
+  element.classList.remove('selected');
+});
     
     console.log(cataString); // Log to console (optional)
 
     
   // Get the corresponding value from the catacategories object
   let currentCata = catacategories[cataString] || null;
-  
-  // Print the current category (or null if no match)
-  console.log("Current Category:", currentCata);
+
   const subjects = document.querySelector('#subjects');
   subjects.innerHTML = currentCata;
+  
     
+    
+
+
+  //subject selection
+  const subjsElements = document.querySelectorAll('.subjs');
+  subjsElements.forEach((subjsElement, index) => {
+    subjsElement.addEventListener('click', () => {
+      const subjsNumber = index + 1;
+      const subjsString = `subjs${subjsNumber}`;
+
+      // Remove "selected" class from all subject elements
+      subjsElements.forEach((element) => {
+        element.classList.remove('selected');
+      });
+
+      // Add "selected" class to the clicked subject element
+      subjsElement.classList.add('selected');
+
+      localStorage.setItem('hsubjects', subjsString);
+
+      console.log(subjsString);
+
+      // Get the corresponding value from the catacategories object
+       let currentSubjs = subjscategories[subjsString] || null;
   
+       // Print the current category (or null if no match)
+      const chapters = document.querySelector('#chapters');
+      chapters.innerHTML = currentSubjs;
+      location.reload();
+ 
+    
+
+    });
+  });
   
+ 
+
+
+
   });
 });
 
@@ -166,6 +206,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+
+
+  
+
+
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -174,47 +219,136 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get the corresponding value from the catacategories object
   let domcurrentCata = catacategories[hcatagory] || null;
   subjects.innerHTML = domcurrentCata;
+
   if (domcurrentCata === null) {
-    domcurrentCata = `
-    <div class="default-rows">Select a Catagory</div>
-    `;
-    subjects.innerHTML = domcurrentCata;
+      domcurrentCata = `
+      <div class="default-rows">Select a Category</div>
+      `;
+      subjects.innerHTML = domcurrentCata;
   }
-});
 
 
-// subject item select
-const subjsElements = document.querySelectorAll('.subjs');
+  //hsubjects selected class adding section
+  const subjsElements = document.querySelectorAll(".subjs");
+  const storedsubjsString = localStorage.getItem('hsubjects');
+  if (storedsubjsString) {
+    const storedsubjsNumber = parseInt(storedsubjsString.replace('subjs', ''));
+    if (!isNaN(storedsubjsNumber)) {
+      const selectedsubjsElement = subjsElements[storedsubjsNumber - 1];
+      if (selectedsubjsElement) {
+        selectedsubjsElement.classList.add('selected');
+      }
+    }
+  }
+    //hsubjects chapter inerhtml adding
+    let domcurrentsubjs = subjscategories[storedsubjsString] || null;
+    const chapters = document.getElementById("chapters");
+    chapters.innerHTML = domcurrentsubjs;
+    if (domcurrentsubjs === null) {
+      domcurrentsubjs = `
+      <div class="default-rows">Nothing to Select</div>
+      `;
+      chapters.innerHTML = domcurrentsubjs;
+  }
 
-subjsElements.forEach((subjsElements, index) => {
-  subjsElements.addEventListener('click', () => {
-    const subjsNumber = index + 1;
-    const subjsString = `subjs${subjsNumber}`;
-    
-    // Remove "selected" class from all cata elements
-    subjsElements.forEach((element) => {
-      element.classList.remove('selected');
+
+//after load subjects clickble making
+  const subjsElemen = document.querySelectorAll('.subjs');
+  subjsElemen.forEach((subjsElement, index) => {
+    subjsElement.addEventListener('click', () => {
+      const subjsNumber = index + 1;
+      const subjsString = `subjs${subjsNumber}`;
+  
+      // Remove "selected" class from all subject elements
+      subjsElemen.forEach((element) => {
+        element.classList.remove('selected');
+      });
+  
+      // Add "selected" class to the clicked subject element
+      subjsElement.classList.add('selected');
+  
+      localStorage.setItem('hsubjects', subjsString);
+      console.log(subjsString);
+      // Get the corresponding value from the catacategories object
+       let currentSubjs = subjscategories[subjsString] || null;
+  
+       // Print the current category (or null if no match)
+      //console.log("Current Category:", currentSubjs);
+      const chapters = document.querySelector('#chapters');
+      chapters.innerHTML = currentSubjs;
+
+     
+      //chapter section
+  const chaptElemen = document.querySelectorAll('.chapt');
+  chaptElemen.forEach((chaptElement, index) => {
+    chaptElement.addEventListener('click', () => {
+      const chaptNumber = index + 1;
+      const chaptString = `chapt${chaptNumber}`;
+  
+      // Remove "selected" class from all subject elements
+      chaptElemen.forEach((element) => {
+        element.classList.remove('selected');
+      });
+  
+      // Add "selected" class to the clicked subject element
+      chaptElement.classList.add('selected');
+  
+      localStorage.setItem('hchapters', chaptString);
+      console.log(chaptString);
     });
-
-
-
-    // Add "selected" class to the clicked cata element
-    subjsElements.classList.add('selected');
-    
-    localStorage.setItem('hsubjects', subjsString);
-    
-    console.log(subjsString); // Log to console (optional)
-
-  
-  // Get the corresponding value from the catacategories object
-  let currentCata = catacategories[cataString] || null;
-  
-  // Print the current category (or null if no match)
-  console.log("Current Category:", currentCata);
-  const subjects = document.querySelector('#subjects');
-  subjects.innerHTML = currentCata;
-    
-  
-  
   });
+
+  
+
+   
+
+
+
+    });
+  });
+  
+  //chapter section
+  const chaptElemen = document.querySelectorAll('.chapt');
+  console.log(chaptElemen);
+  chaptElemen.forEach((chaptElement, chaptindex) => {
+    chaptElement.addEventListener('click', () => {
+      const chaptNumber = chaptindex + 1;
+      const chaptString = `chapt${chaptNumber}`;
+  
+      // Remove "selected" class from all subject elements
+      chaptElemen.forEach((element) => {
+        element.classList.remove('selected');
+      });
+  
+      // Add "selected" class to the clicked subject element
+      chaptElement.classList.add('selected');
+  
+      localStorage.setItem('hchapters', chaptString);
+      console.log(chaptString);
+      // Get the corresponding value from the catacategories object
+       let currentchapt = subjscategories[subjsString] || null;
+  
+       // Print the current category (or null if no match)
+      //console.log("Current Category:", currentSubjs);
+      const chapters = document.querySelector('#chapters');
+      chapters.innerHTML = currentSubjs;
+    });
+  });
+
+
+  //hchapters selected class adding onload
+  const chaptElements = document.querySelectorAll(".chapt");
+  const chaptString = localStorage.getItem('hchapters');
+  if (chaptString) {
+    const storedchaptNumber = parseInt(chaptString.replace('chapt', ''));
+    if (!isNaN(storedchaptNumber)) {
+      const selectedchaptElement = chaptElements[storedchaptNumber - 1];
+      if (selectedchaptElement) {
+        selectedchaptElement.classList.add('selected');
+      }
+    }
+  }
+
+
 });
+
