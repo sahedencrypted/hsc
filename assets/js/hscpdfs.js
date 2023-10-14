@@ -11,17 +11,45 @@ const pdficon = `
     </g>
 </svg>
 `;
+const iframe = document.getElementById('pdfFrame');
+  // Get the pdfID from local storage or set a default value
+const pdfID = localStorage.getItem('pdfID') || '';
+
+  // Set the iframe source
+iframe.src = `https://drive.google.com/file/d/${pdfID}/preview`;
+
 
 const cata1subjs1chapt1 =`
-            <div class="rows file-icon subjs">${pdficon}<p>PHY 1st</p></div>  
-            <div class="rows file-icon subjs">${pdficon}<p>PHY 2nd</p></div> 
-            <div class="rows file-icon subjs">${pdficon}<p>HM 1st</p></div> 
-            <div class="rows file-icon subjs">${pdficon}<p>HM 2nd</p></div>
-            <div class="rows file-icon subjs">${pdficon}<p>Chem 1st</p></div>  
-            <div class="rows file-icon subjs">${pdficon}<p>Chem 2nd</p></div> 
-            <div class="rows file-icon subjs">${pdficon}<p>Bio 1st</p></div> 
-            <div class="rows file-icon subjs">${pdficon}<p>Bio 2nd</p></div>
-            <div class="rows file-icon subjs">${pdficon}<p>ICT</p></div>  
-            <div class="rows file-icon subjs">${pdficon}<p>ENG</p></div> 
-            <div class="rows file-icon subjs">${pdficon}<p>BAN</p></div> 
+<div class="rows file-icon pdfz" id="18dxUcMyiGAXHzkB-3lt-uQ7hwdpOFGUd">${pdficon}<p>PHY 1st</p></div>
+<div class="rows file-icon pdfz" id="pdf2">${pdficon}<p>PHY 2nd</p></div>
+<div class="rows file-icon pdfz" id="pdf3">${pdficon}<p>HM 1st</p></div>
+<div class="rows file-icon pdfz" id="pdf4">${pdficon}<p>HM 2nd</p></div>
+<div class="rows file-icon pdfz" id="pdf5">${pdficon}<p>Chem 1st</p></div>
+<div class="rows file-icon pdfz" id="pdf6">${pdficon}<p>Chem 2nd</p></div>
+<div class="rows file-icon pdfz" id="pdf7">${pdficon}<p>Bio 1st</p></div>
+<div class="rows file-icon pdfz" id="pdf8">${pdficon}<p>Bio 2nd</p></div>
+<div class="rows file-icon pdfz" id="pdf9">${pdficon}<p>ICT</p></div>
+ 
 `;
+
+function checkAndRenderPDFContent() {
+// Retrieve values from local storage
+const storedChapters = localStorage.getItem('hchapters');
+const storedSubjects = localStorage.getItem('hsubjects');
+const storedCategory = localStorage.getItem('hcatagory');
+
+// Create the variable name to match
+const variableNameToMatch = `${storedCategory}${storedSubjects}${storedChapters}`;
+const pdfs = document.querySelector('#pdfs');
+// Check if the variable name matches
+if (variableNameToMatch === 'cata1subjs1chapt1') {
+    
+    pdfs.innerHTML = cata1subjs1chapt1;
+} else {
+    rrentCata = `
+    <div class="default-rows">Nothings Here</div>
+    `;
+    pdfs.innerHTML = rrentCata;
+}
+
+}

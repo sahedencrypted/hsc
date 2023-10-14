@@ -144,3 +144,4 @@ minimizeButton.addEventListener('click', function () {
 
 
 
+//zoom section
