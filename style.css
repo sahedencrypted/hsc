@@ -219,6 +219,7 @@
     place-items: center;
     text-overflow: ellipsis;
     overflow: hidden;
+    color: red;
 
   }
 

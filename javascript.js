@@ -376,7 +376,21 @@ PDFSelection();
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  const pdfzElements = document.querySelectorAll(".pdfz");
+  const pdfzString = localStorage.getItem('hpdfz');
+  if (pdfzString) {
+    const storedPdfzValue = pdfzString.replace('pdfz', '');
+    const parsedValue = parseInt(storedPdfzValue);
+    if (!isNaN(parsedValue) && parsedValue >= 1 && parsedValue <= pdfzElements.length) {
+      const selectedPdfzElement = pdfzElements[parsedValue - 1];
+      if (selectedPdfzElement) {
+        selectedPdfzElement.classList.add('selected');
+      }
+    }
+  }
+
   
+
 });
 
 
