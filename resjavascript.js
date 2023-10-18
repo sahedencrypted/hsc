@@ -1,10 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Check if the viewport width is less than or equal to 600px (for phones)
-  if (window.innerWidth <= 600) {
-    // Run the JavaScript code for phones
-    setupMobileBehavior();
-  }
-});
+
 
 function setupMobileBehavior() {
   // Get references to all divs with the class "pdfz"
@@ -35,5 +29,14 @@ function setupMobileBehavior() {
 }
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if the viewport width is less than or equal to 600px (for phones)
+  if (window.innerWidth <= 600) {
+    // Run the JavaScript code for phones
+    //console.log("got the phone")
+    setupMobileBehavior();
+  }
+});
 
 
