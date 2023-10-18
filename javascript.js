@@ -158,6 +158,9 @@ const hchapt = localStorage.getItem("hchapters");
       localStorage.setItem('hsubjects', subjsString);
 
       console.log(subjsString);
+      pdfs.innerHTML = `
+      <div class="default-rows">Nothings Here</div>
+      `;
 
       // Get the corresponding value from the catacategories object
        let currentSubjs = subjscategories[subjsString] || null;
@@ -275,6 +278,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
       localStorage.setItem('hsubjects', subjsString);
       console.log(subjsString);
+      pdfs.innerHTML = `
+      <div class="default-rows">Nothings Here</div>
+      `;
       // Get the corresponding value from the catacategories object
        let currentSubjs = subjscategories[subjsString] || null;
   
@@ -380,7 +386,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+// height transition on chapters box
+const diiiv1 = document.getElementById("subjects");
+const diiiv2 = document.getElementById("chapters");
+diiiv1.addEventListener("click", () => {
+      diiiv2.style.maxHeight = diiiv2.scrollHeight + "px";
 
+});
 
 
 

@@ -369,7 +369,11 @@ p {
 font-family: 'NotoSerifBengali';
 }
 
+#chapters{
+  max-height: auto;
+  transition: max-height 0.5s;
 
+}
 
   
 
