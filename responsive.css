@@ -337,6 +337,7 @@ white-space: nowrap;
   place-items: center;
   text-overflow: ellipsis;
   overflow: hidden;
+  color: red;
 
 }
 

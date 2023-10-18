@@ -86,7 +86,7 @@ let isHoverDisabled = false;
 downloadButton.addEventListener('click', () => {
   if (!isHoverDisabled) {
     const downloadLink = document.getElementById('downloadLink');
-    downloadLink.href = 'https://drive.google.com/uc?export=download&id=18dxUcMyiGAXHzkB-3lt-uQ7hwdpOFGUd';
+    downloadLink.href = `https://drive.google.com/uc?export=download&id=${pdfID}`;
 
     // Disable hovering and add a 6s delay before initiating the download
     isHoverDisabled = true;

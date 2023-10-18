@@ -20,11 +20,10 @@ iframe.src = `https://drive.google.com/file/d/${pdfID}/preview`;
 
 
 const cata1subjs1chapt1 =`
-<div class="rows file-icon pdfz" id="18dxUcMyiGAXHzkB-3lt-uQ7hwdpOFGUd">${pdficon}<p>PHY 1st</p></div>
-<div class="rows file-icon pdfz" id="pdf2">${pdficon}<p>PHY 2nd</p></div>
-<div class="rows file-icon pdfz" id="pdf3">${pdficon}<p>HM 1st</p></div>
-<div class="rows file-icon pdfz" id="pdf4">${pdficon}<p>HM 2nd</p></div>
-<div class="rows file-icon pdfz" id="pdf5">${pdficon}<p>Chem 1st</p></div>
+<div class="rows file-icon pdfz" id="12nu-3XZs1cxUr8YoybjsvswLoIikL08i">${pdficon}<p>ACS Vector LS 01</p></div>
+<div class="rows file-icon pdfz" id="1p_oVnFYMTNrYrHaQT8ciQHQHfI40-NnG">${pdficon}<p>ACS Vector LS 02</p></div>
+<div class="rows file-icon pdfz" id="1Ptf46vhm2ESlL8TdVsnKw-I8gOPaN9qu">${pdficon}<p>ACS Vector LS 03</p></div>
+<div class="rows file-icon pdfz" id="18dxUcMyiGAXHzkB-3lt-uQ7hwdpOFGUd">${pdficon}<p>Ruet Question Bank</p></div>
 <div class="rows file-icon pdfz" id="pdf6">${pdficon}<p>Chem 2nd</p></div>
 <div class="rows file-icon pdfz" id="pdf7">${pdficon}<p>Bio 1st</p></div>
 <div class="rows file-icon pdfz" id="pdf8">${pdficon}<p>Bio 2nd</p></div>
