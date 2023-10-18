@@ -173,6 +173,7 @@
         height: 3000px;
         display: grid;
         justify-content: center;
+        background-image: url(assets/images/pattern.png);
        }
        
    /*   explore winddow css*/

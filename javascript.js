@@ -127,7 +127,10 @@ const hchapt = localStorage.getItem("hchapters");
       `;
       chapters.innerHTML = jchapt;
     
-    console.log(cataString); // Log to console (optional)
+    console.log(cataString); 
+    pdfs.innerHTML = `
+      <div class="default-rows">Nothings Here</div>
+      `;
 
     
   // Get the corresponding value from the catacategories object
