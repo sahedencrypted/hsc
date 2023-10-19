@@ -192,6 +192,9 @@ const hchapt = localStorage.getItem("hchapters");
       console.log(chaptString);
       checkAndRenderPDFContent();
       PDFSelection();
+      checkAndSetupMobileBehavior(); //smothscroll down to div for phones
+      allRowScript();
+
 
     });
   });
@@ -312,6 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(chaptString);
       checkAndRenderPDFContent();
       PDFSelection();
+      allRowScript();
 
     });
   });
@@ -327,7 +331,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   //onload chapter section
   const chaptElemen = document.querySelectorAll('.chapt');
-  console.log(chaptElemen);
   chaptElemen.forEach((chaptElement, chaptindex) => {
     chaptElement.addEventListener('click', () => {
       const chaptNumber = chaptindex + 1;
@@ -344,6 +347,8 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('hchapters', chaptString);
       checkAndRenderPDFContent();
       PDFSelection();
+      checkAndSetupMobileBehavior(); //smothscroll down to div for phones
+      allRowScript();
       
       
     });
@@ -365,6 +370,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 checkAndRenderPDFContent();
 PDFSelection();
+checkAndSetupMobileBehavior(); //smothscroll down to div for phones
+allRowScript();
 
 });
 

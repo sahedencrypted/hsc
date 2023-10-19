@@ -214,6 +214,7 @@
     font-size: 17px;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    transition: transform 0.3s ease;
   }
   .default-rows{
     padding: 3px 5px;
@@ -242,18 +243,25 @@
     
   }
   .rows:hover{
-    background: rgba(131, 156, 240, 0.089);
+    transform: translateX(5px);
     color: var(--nav);
   }
   .selected{
-    transition: background 0.3s;
+    transition: background 0.4s;
     background: black!important;
     color: var(--nav);
 
   }
+  .selected:hover{
+    transform: translateX(0px)!important;
+  }
 
 .cpt{
   font-family: 'NotoSerifBengali';
+}
+.fulltext{
+  text-overflow: inherit;
+  overflow: visible;
 }
 
 #chapters{

@@ -368,8 +368,16 @@ p {
 
 }
 
+.selected:hover{
+  transform: translateX(0px)!important;
+}
+
 .cpt{
 font-family: 'NotoSerifBengali';
+}
+.fulltext{
+text-overflow: inherit;
+overflow: visible;
 }
 
 #chapters{
