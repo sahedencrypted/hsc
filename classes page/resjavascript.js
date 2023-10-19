@@ -4,8 +4,8 @@ function setupMobileBehavior() {
   // Get references to all divs with the class "pdfz"
   const clickableDivs = document.querySelectorAll('.pdfz');
 
-  // Get the height of your navbar (57px)
-  const navbarHeight = 57;
+  // Get the height of your navbar (55px)
+  const navbarHeight = 55;
 
   // Add click event listeners to each clickable div
   clickableDivs.forEach(function(div) {
@@ -30,13 +30,11 @@ function setupMobileBehavior() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Check if the viewport width is less than or equal to 600px (for phones)
+function checkAndSetupMobileBehavior() {
   if (window.innerWidth <= 600) {
-    // Run the JavaScript code for phones
-    //console.log("got the phone")
     setupMobileBehavior();
+    //console.log("scroll button clicked");
   }
-});
+}
 
 

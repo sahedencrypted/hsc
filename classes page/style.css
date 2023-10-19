@@ -249,8 +249,16 @@
 
   }
 
+  .selected:hover{
+    transform: translateX(0px)!important;
+  }
+
 .cpt{
   font-family: 'NotoSerifBengali';
+}
+.fulltext{
+  text-overflow: inherit;
+  overflow: visible;
 }
 
 #chapters{
@@ -258,7 +266,12 @@
   transition: max-height 0.5s;
 
 }
-
+.llpdfzone{
+  
+}
+.llclass{
+  background: #5367c1;
+}
 
 
 

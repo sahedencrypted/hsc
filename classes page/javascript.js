@@ -192,6 +192,7 @@ const hchapt = localStorage.getItem("hchapters");
       console.log(chaptString);
       checkAndRenderPDFContent();
       PDFSelection();
+      allRowScript();
 
     });
   });
@@ -312,6 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(chaptString);
       checkAndRenderPDFContent();
       PDFSelection();
+      allRowScript();
 
     });
   });
@@ -344,6 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('hchapters', chaptString);
       checkAndRenderPDFContent();
       PDFSelection();
+      allRowScript();
       
       
     });
@@ -365,6 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 checkAndRenderPDFContent();
 PDFSelection();
+allRowScript();
 
 });
 
@@ -398,7 +402,11 @@ diiiv1.addEventListener("click", () => {
 });
 
 
-
+const btnpdf = document.querySelector(".llpdfzone");
+const btnclass = document.querySelector(".llclass");
+btnpdf.addEventListener("click", function() {
+  window.location.href = "../index.html";
+});
 
 
 

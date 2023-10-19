@@ -50,8 +50,10 @@ function checkAndSetupMobileBehavior() {
 function addmarquee(){
   
   function addMarqueeEffect(row) {
+
+    
+     
     const cpt = row.querySelector('.cpt');
-  
     if (cpt) {
       // Add a "fulltext" class to the cpt div
       cpt.classList.add('fulltext');
@@ -100,8 +102,7 @@ function addmarquee(){
   
   
 
-  
-  
+   
   
 }
 

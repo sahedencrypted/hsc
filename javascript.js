@@ -404,7 +404,11 @@ diiiv1.addEventListener("click", () => {
 
 });
 
-
+const btnpdf = document.querySelector(".llpdfzone");
+const btnclass = document.querySelector(".llclass");
+btnclass.addEventListener("click", function() {
+  window.location.href = "classes page/classespg.html";
+});
 
 
 
