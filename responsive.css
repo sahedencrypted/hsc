@@ -385,7 +385,9 @@ overflow: visible;
   transition: max-height 0.5s;
 
 }
-
+.llpdfzone{
+  background: #f14f4f;
+}
   
 
 
