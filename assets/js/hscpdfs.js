@@ -20,14 +20,14 @@ iframe.src = `https://drive.google.com/file/d/${pdfID}/preview`;
 
 
 const cata1subjs1chapt1 =`
+<div class="rows file-icon pdfz" id="19DNjmrQHfAcvlUMAu5y8UrilNEOgi9cd">${pdficon}<p>06. Physics 1st  Paper.pdf</p></div>
 <div class="rows file-icon pdfz" id="12nu-3XZs1cxUr8YoybjsvswLoIikL08i">${pdficon}<p>ACS Vector LS 01</p></div>
 <div class="rows file-icon pdfz" id="1p_oVnFYMTNrYrHaQT8ciQHQHfI40-NnG">${pdficon}<p>ACS Vector LS 02</p></div>
 <div class="rows file-icon pdfz" id="1Ptf46vhm2ESlL8TdVsnKw-I8gOPaN9qu">${pdficon}<p>ACS Vector LS 03</p></div>
 <div class="rows file-icon pdfz" id="18dxUcMyiGAXHzkB-3lt-uQ7hwdpOFGUd">${pdficon}<p>Ruet Question Bank</p></div>
-<div class="rows file-icon pdfz" id="pdf6">${pdficon}<p>Chem 2nd</p></div>
-<div class="rows file-icon pdfz" id="pdf7">${pdficon}<p>Bio 1st</p></div>
-<div class="rows file-icon pdfz" id="pdf8">${pdficon}<p>Bio 2nd</p></div>
-<div class="rows file-icon pdfz" id="pdf9">${pdficon}<p>ICT</p></div>
+<div class="rows file-icon pdfz" id="1aa7o6bQY9bHy020dfYB0J80IaGveSJF7">${pdficon}<p>Bio Test paper 1.1</p></div>
+<div class="rows file-icon pdfz" id="10RejspsOJcemKbaossjS6SDVsCTSF25h">${pdficon}<p>ICT Test Paper 19</p></div>
+<div class="rows file-icon pdfz" id="1CAA0_yUHREhSpLCRKt56RC_s-f_XnQ1b">${pdficon}<p>Big File Password Protected</p></div>
  
 `;
 

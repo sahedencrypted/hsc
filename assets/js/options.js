@@ -5,19 +5,19 @@ const fileicon=`
   <path fill="#FFCA28" d="M40,12H8c-2.2,0-4,1.8-4,4v20c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V16C44,13.8,42.2,12,40,12z"/>
 </svg>
 `;
-
+//ALL subjects Section
 const cata1 =`
-            <div class="rows file-icon subjs">${fileicon}<p>PHY 1st</p></div>  
-            <div class="rows file-icon subjs">${fileicon}<p>PHY 2nd</p></div> 
-            <div class="rows file-icon subjs">${fileicon}<p>HM 1st</p></div> 
-            <div class="rows file-icon subjs">${fileicon}<p>HM 2nd</p></div>
-            <div class="rows file-icon subjs">${fileicon}<p>Chem 1st</p></div>  
-            <div class="rows file-icon subjs">${fileicon}<p>Chem 2nd</p></div> 
-            <div class="rows file-icon subjs">${fileicon}<p>Bio 1st</p></div> 
-            <div class="rows file-icon subjs">${fileicon}<p>Bio 2nd</p></div>
+            <div class="rows file-icon subjs">${fileicon}<p>Physics 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>Physics 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Math 1st</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Math 2nd</p></div>
+            <div class="rows file-icon subjs">${fileicon}<p>Chemistry 1st</p></div>  
+            <div class="rows file-icon subjs">${fileicon}<p>Chemistry 2nd</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Biology 1st</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Biology 2nd</p></div>
             <div class="rows file-icon subjs">${fileicon}<p>ICT</p></div>  
-            <div class="rows file-icon subjs">${fileicon}<p>ENG</p></div> 
-            <div class="rows file-icon subjs">${fileicon}<p>BAN</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>English</p></div> 
+            <div class="rows file-icon subjs">${fileicon}<p>Bangla</p></div> 
 `;
 const cata2 =`
             <div class="rows file-icon subjs">${fileicon}<p>PHY 1st</p></div>  
@@ -59,7 +59,7 @@ const catacategories = {
   
 
 
-  //chapters section
+//ALL Chapters Section
   const subjs1 = `
   <div class="rows file-icon chapt">${fileicon}<p class="cpt"> ০১ - ভৌতজগৎ ও পরিমাপ</p></div>  
   <div class="rows file-icon chapt">${fileicon}<p class="cpt"> ০২ - ভেক্টর</p></div> 

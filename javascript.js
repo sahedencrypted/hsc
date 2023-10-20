@@ -413,4 +413,9 @@ btnclass.addEventListener("click", function() {
 
 
 
+function removeskelectonclass() {
+  var ttf = document.getElementById("pdfFrame");
+  ttf.classList.remove("skeleton");
+}
+
 

@@ -16,9 +16,9 @@ function PDFSelection() {
         localStorage.setItem('hpdfz', pdfzString);
   
         // Log the ID to the console
-        const pdfID = pdfzElement.id;
-        localStorage.setItem('pdfID', pdfID);
-        iframe.src = `https://www.youtube.com/embed/${pdfID}`;
+        const vdoID = pdfzElement.id;
+        localStorage.setItem('vdoID', vdoID);
+        iframe.src = `https://www.youtube.com/embed/${vdoID}`;
       });
     });
   }

@@ -13,10 +13,10 @@ const pdficon = `
 `;
 const iframe = document.getElementById('pdfFrame');
   // Get the pdfID from local storage or set a default value
-const pdfID = localStorage.getItem('pdfID') || '';
+const vdoID = localStorage.getItem('vdoID') || '';
 
   // Set the iframe source
-iframe.src = `https://www.youtube.com/embed/${pdfID}`;
+iframe.src = `https://www.youtube.com/embed/${vdoID}`;
 
 
 const cata1subjs1chapt1 =`

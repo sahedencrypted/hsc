@@ -178,11 +178,11 @@
    /*   explore winddow css*/
 
 .container{
-  width: 95vw;
+  width: 97vw;
   height: 90vh;
   margin: 10px;
  display: grid;
- grid-template-columns: 1.5fr 110px 1.7fr 2fr 6fr;
+ grid-template-columns: 1.7fr 146px 1.6fr 2fr 6fr;
 }
 .boxing {
     margin: 4px;
@@ -210,7 +210,7 @@
     white-space: nowrap;
     font-size: 17px;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 7fr;
   }
   .default-rows{
     padding: 3px 5px;
@@ -221,6 +221,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     color: red;
+    background: #FFFFFF;
 
   }
 
@@ -267,10 +268,20 @@
 
 }
 .llpdfzone{
-  
+  background:  var(--nav)!important;
+  border-radius: 3px;
+}
+.llpdfzone:hover{
+  background: #f14f4f!important;
 }
 .llclass{
-  background:  #f14f4f;
+  background: #f14f4f;
+
+  border-radius: 3px;
+  border: 1px solid #f14f4f;
+}
+.pdfz{
+  padding: 5px 5px!important;
 }
 
 

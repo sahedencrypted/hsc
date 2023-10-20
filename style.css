@@ -181,11 +181,11 @@
    /*   explore winddow css*/
 
 .container{
-  width: 95vw;
+  width: 97vw;
   height: 90vh;
   margin: 10px;
  display: grid;
- grid-template-columns: 1.5fr 110px 1.7fr 2fr 6fr;
+ grid-template-columns: 1.7fr 146px 1.6fr 2fr 6fr;
 }
 .boxing {
     margin: 4px;
@@ -213,7 +213,7 @@
     white-space: nowrap;
     font-size: 17px;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 7fr;
     transition: transform 0.3s ease;
   }
   .default-rows{
@@ -225,6 +225,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     color: red;
+    background: #FFFFFF;
 
   }
 
@@ -272,10 +273,44 @@
 
 .llpdfzone{
   background: #f14f4f;
+  border-radius: 3px;
+  border: 1px solid #f14f4f;
 }
 .llclass{
-
+  background: #ffffff!important;
+  border-radius: 3px;
+  border: 1px solid var(--nav);
 }
+
+.llclass:hover{
+  background: var(--nav)!important;
+}
+.pdfz{
+  padding: 5px 5px!important;
+}
+
+
+
+
+.skeleton {
+  opacity: .7;
+  animation: skeleton-loading 1s linear infinite alternate;
+  transition: opacity 2s;
+}
+
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+
+
 
 
 

@@ -114,6 +114,7 @@ function addmarquee(){
 function allRowScript(){
   console.log("clicked")
   addmarquee();
+  
 
 
 }

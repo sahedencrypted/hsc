@@ -19,6 +19,8 @@ function PDFSelection() {
         const pdfID = pdfzElement.id;
         localStorage.setItem('pdfID', pdfID);
         iframe.src = `https://drive.google.com/file/d/${pdfID}/preview`;
+        var ttf = document.getElementById("pdfFrame");
+        ttf.classList.toggle("skeleton");
       });
     });
   }
