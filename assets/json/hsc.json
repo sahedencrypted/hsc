@@ -37,12 +37,12 @@
   "Chapters": {
     "name": "Subjects",
     "item1": [
-      "Physics 1st",
-      "Physics 2nd",
-      "Math 1st",
-      "Math 2nd",
-      "Chemistry 1st",
-      "Chemistry 2nd",
+      "Physics 1st (Ishaq)",
+      "Physics 2nd (Ishaq)",
+      "Math 1st (Ketab)🔥",
+      "Math 2nd (Ketab)",
+      "Chemistry 1st (Hazari)",
+      "Chemistry 2nd (Hazari)",
       "Biology 1st",
       "Biology 2nd",
       "ICT",
@@ -50,10 +50,10 @@
       "English"
     ],
     "item2": [
-      "Physics 1st",
-      "Physics 2nd",
-      "Math 1st",
-      "Math 2nd",
+      "Physics 1st Ishaq",
+      "Physics 2nd Ishaq",
+      "Math 1st Ketab🔥",
+      "Math 2nd Ketab",
       "Chemistry 1st",
       "Chemistry 2nd",
       "Biology 1st",
@@ -139,27 +139,27 @@
   "cata1subjs1chapt1": {
     "title": [
       "P-1.1 ভৌত জগৎ ও পরিমাপ",
-      "P-1.2 ভেক্টর\t",
-      "P-1.4 নিউটনিয়ান বলবিদ্যা\t",
+      "P-1.2 ভেক্টর",
+      "P-1.3 গতিবিদ্যা",
+      "P-1.4  নিউটনিয়ান বলবিদ্যা",
       "P-1.5 কাজ শক্তি ও ক্ষমতা",
-      "P-1.5 কাজ, শক্তি ও ক্ষমতা",
-      "P-1.6 মহাকর্ষ ও অভিকর্ষ\t",
       "P-1.6 মহাকর্ষ ও অভিকর্ষ",
       "P-1.7 পদার্থের গাঠনিক ধর্ম",
       "P-1.8 পর্যাবৃত্ত গতি",
+      "P-1.9 তরঙ্গ",
       "P-1.10 আদর্শ গ্যাস ও গ্যাসের গতিতত্ত্ব"
     ],
     "pdfID": [
-      "1DGvjqesliYcqz1Sn4zNh5lE0-AmTpPl4",
-      "1DJVx5FNxOnh691Fg3oWeXfcvrBXQ2MEF",
-      "1DHOcTFInKohFTvV_mKfDFLNDii17MX49",
-      "1DFgftQALndJ1752V2T3H3CQKqsY_-D4d",
-      "1DNbuYO8SCO35Ms3_x4UGuHSn5a4sWonM",
-      "1DGA43wxJkiQ22TrIl3ZUu8jCz9iNLn8P",
-      "1DORI8ZPuRguJ9rGhN3Z-y8ljjHLZmNSW",
-      "1DP3-7Mq0t0x2PAs_lNWQmdgREzAr2AcE",
-      "1DOYZUl8ufh9snOnq7bwiiq0DRQsQaZDS",
-      "1DQZYTqd3RlHaQNF2J0CUkirMo4Syq1Kh"
+      "16cMN6xSbbtILyfKRvv9OYo7XMHwmV5KY",
+      "16WVbejb_n3csP4KZd-cU9TcUvRSacDRK",
+      "16LiHsrOTW-Mf8ZKOuq0BSvhCN5KMHCgI",
+      "16iIKB7qjrgtqXluTXVxPZdI7_tgE8qjL",
+      "16egCpWVTyjwDuKajUw4rsv0QvET84vnv",
+      "16pQxdAqKc1bwshzLrOwRkzFpNOWNjJ73",
+      "16kYh0lDqkkZfTj1yuS-4ZQ6kUG56VMuJ",
+      "179F16xImfiHCqY9UgSwvQSVV5VCTQiEJ",
+      "16ztRvHobKLcw_wCtuXGdlfhA4G__NfwY",
+      "17CAtLmt3Gq675THaw7BLZSa7vWR4EhQ3"
     ]
   },
   "cata1subjs1chapt2": {
@@ -192,78 +192,80 @@
   },
   "cata1subjs1chapt3": {
     "title": [
-      "hello",
-      "whats up"
+      "M-1.1 ম্যাট্রিক্স ও নির্ণায়ক",
+      "M-1.3 সরলরেখা",
+      "M-1.4  বৃত্ত",
+      "M-1.5  বিন্যাস ও সমাবেশ",
+      "M-1.6 ত্রিকোণমিতিক অনুপাত",
+      "M-1.7 সংযুক্ত ও যৌগিক কোনের ত্রিকোণমিতিক অনুপাত",
+      "M-1.8 ফাংশন ও এর লেখচিত্র",
+      "M-1.9  অন্তরীকরন",
+      "M-1.10  যোগজীকরন"
     ],
     "pdfID": [
-      "hey man",
-      "its okay"
+      "1sNJuyeJ66nSVYhZXw2HJ_vw7vZ2NafQt",
+      "1UQEihYyliC-i_mH9Fbvx_4kHR7BlP3FX",
+      "1xdoNIeyadP704oNJlwXq56pDa1p8ndXY",
+      "1VGlfQi0_WowGuIOPc0noD0u7lotdHPIA",
+      "1TNzXG-BZ148DLI_ycPrmyEyC8pVq_KPU",
+      "1hj-cLYsNID3PY_C2S4T2_iHJCmcz1lot",
+      "1hv0zJ0_bAXcnPFfn7Qb9Cul88Ww3841_",
+      "1Gc4_r8jY_Gw9D8Eez2GNL6J7zDr2iCKn",
+      "1aaYuecGUrwrn2nAvGBDgykAYFGoJ7ye_"
     ]
   },
   "cata1subjs1chapt4": {
     "title": [
-      "Bangla 1st Paper-1.pdf",
-      "Bangla 1st Paper-2.pdf",
-      "Bangla 2nd Paper-1.pdf",
-      "Bangla 2nd Paper-2.pdf",
-      "Biology 1st Paper-1.pdf",
-      "Biology 1st Paper-2.pdf",
-      "Biology 2nd Paper-1.pdf",
-      "Biology 2nd Paper-2.pdf",
-      "Chemistry 1st Paper-1.pdf",
-      "Chemistry 1st Paper-2.pdf",
-      "Chemistry 2nd Paper-1.pdf",
-      "Chemistry 2nd Paper-2.pdf",
-      "English 1st Paper-1.pdf",
-      "English 1st Paper-2.pdf",
-      "English 2nd Paper-1.pdf",
-      "English 2nd Paper-2.pdf",
-      "Higher Math 1st Paper-1.pdf",
-      "Higher Math 1st Paper-2.pdf",
-      "Higher Math 2nd Paper-1.pdf",
-      "Higher Math 2nd Paper-2.pdf",
-      "ICT-1.pdf",
-      "ICT-2.pdf",
-      "Physics 1st Paper-1.pdf",
-      "Physics 1st Paper-2.pdf",
-      "Physics 2nd Paper-1.pdf",
-      "Physics 2nd Paper-2.pdf",
-      "Statistics 1st Paper-1.pdf",
-      "Statistics 1st Paper-2.pdf",
-      "Statistics 2nd Paper-1.pdf",
-      "Statistics 2nd Paper-2.pdf"
+      "M-2.1  বাস্তব সংখ্যা ও অসমতা",
+      "M-2.2 যোগাশ্রয়ী প্রোগ্রাম",
+      "M-2.3 জটিল সংখ্যা",
+      "M-2.4  বহুপদী ও বহুপদী সমীকরন",
+      "M-2.5 দ্বিপদী বিস্তৃতি",
+      "M-2.6  কনিক",
+      "M-2.7 বিপরীত ত্রিকোনমিতিক ফাংশন ও সমীকরণ",
+      "M-2.10 বিস্তার পরিমাপ ও সম্ভাবনা"
     ],
     "pdfID": [
-      "14TO2EbVsWZMEquYY215_J_mJbzYKR22-",
-      "11fJQhw8TI_FqwUQiIxENGAjNrdQ6ufMR",
-      "11d07AnREZ-mpe3KZu7kxt3Y5KDAYATO7",
-      "11a_3SL-MJn_NQ0cw9C-Nw3-eHwUSB-zp",
-      "11_SuxwiLCq8dUPmfrWXKrN3UXEf_or0J",
-      "12c7nzxde9CNBUBaWfmRGwWMTTGVt-fMU",
-      "12YPvGQcBuOrMjOQFqAtIFtZPVlGxCG4M",
-      "12XRICuadLjTIF-xlIWn08Kdb0kzA9fNw",
-      "12Wd0Zq1SH78qwqliLPY8A0d0Wyu6-WaJ",
-      "1219-13FiC90XlneWB4dryZUmLG-lFYvV",
-      "11yYVrtzsT7cutLGVhS_5cBY01IBl2djI",
-      "11xGBfkRwJ550wVbPWAKaE061EsVNV5X2",
-      "11wM0teK-vWVA2nM5x1eKAybPnr0yTAe-",
-      "11wDzF8dy22R-Ll0JGWOFnjKD9jrc2g4_",
-      "11tj-NWIkzFlFPtaggAKgGte5a_LAUXrs",
-      "11poUXZ1xvTc_QVcWlngh-9WutcysFFWa",
-      "11mFvLr60h_9dFOq-zqPUIWEogDuzrDhH",
-      "11iYnG0JBDELwEAftgFQjRTogIQrWpi9_",
-      "11iVk7GEG6K3qTibtEM46bEqO3687B-Aq",
-      "11htw8qc5uLrcQUZ4vK0BOuUY_tK5r76c",
-      "13JCAo7ockZSjvPPLXC1QivIENMaMNs7j",
-      "13I6A0vkWbbztqeTY6xO9oo_TSu9B9Y_3",
-      "13FlS7KvE_30lQIWxXUf1QGxmNQX4dAUL",
-      "12x6wQp5ZfN2MuG1L9R6J49e9kIpk7ZZD",
-      "12w5t9wHOqFcbzjlBn5HHmXHTPXiHdrF-",
-      "12p3BCuBEZqjRbz8j4wGO1O2JxVYtvjm7",
-      "12myI77_W1JXLN65SYTmYejpqaHMJsWsY",
-      "12gOcPodpJD-CO9kfW1rEf_f-abKMuCMA",
-      "12f63k5P8fV2ldQh2KLhRkJp11BiPklc8",
-      "13WlOrFyKy8V4JdYDoD8eUI5Vu39rnsPs"
+      "1StIS00bR8dCw69t2jL827tFRW1C_rbgI",
+      "1hvcxmsCs9zf4R5rgYnvUWaaXpNeFmbxf",
+      "1i871V4Wj2GSu22abHutIUnFaVgeZZWgP",
+      "14NuqS_rsVkqq0oyfBq0_gm789jJLrzGu",
+      "1hzUGc3kVA9BYFSGXqV8wo-a_xqycWuDs",
+      "1uFVHaagEOcJnUEHwbvlJ1ifA6sT6oPzJ",
+      "1henQYISQQ3X8w1ExQ-QF_8cjfRaptu1u",
+      "1i98Yfj1HxsYO7ZdxDqobYy2fq4W8KLEX"
+    ]
+  },
+  "cata1subjs1chapt5": {
+    "title": [
+      "C-1.1 ল্যাবরেটরির নিরাপদ ব্যবহার",
+      "C-1.2 গুণগত রসায়ন",
+      "C-1.3 মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধন",
+      "C-1.4 রাসায়নিক পরিবর্তন",
+      "C-1.5 কর্মমুখী রসায়ন"
+    ],
+    "pdfID": [
+      "1F_pmRZ3t3dg8nZlyvempjCGNgbYlt1aI",
+      "1FccWxS6kFywXlzT6e7SJNnCifT56Qkyi",
+      "1FmBsG8bQlUej3oy03ccRPIc5UG_WdD6U",
+      "1FndTgHtH9wB1VLEUShFJ91pKwilJuNrt",
+      "1Fq9yubyt0DG2lyeGLTjPhvatJSLzqGpT"
+    ]
+  },
+  "cata1subjs1chapt6": {
+    "title": [
+      "C-2.1 পরিবেশ রসায়ন",
+      "C-2.2 জৈব রসায়ন",
+      "C-2.3 পরিমানগত রসায়ন",
+      "C-2.4 তড়িৎ রসায়ন",
+      "C-2.5 অর্থনৈতিক রসায়ন"
+    ],
+    "pdfID": [
+      "1FwoDacJnbTxVw8HZ6m6nedW7mKWReS4c",
+      "1FwoStMrUMTaHAyABcKVovvGMzKcmbUjr",
+      "1G-lgk5vU6bUz8qqRQn23b0aXmzCkh4ld",
+      "1G2G6ejWXLn-u5TTg5Y1q9T2VUoUtP3ya",
+      "1G2JAbDFpTOBLJmbbuN-2bLP_7RYNyd7I"
     ]
   }
 }
