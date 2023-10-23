@@ -333,7 +333,7 @@ white-space: nowrap;
   grid-template-columns: 1fr 7fr;
 }
 .default-rows{
-  padding: 3px 5px;
+  padding: 4px 5px;
   white-space: nowrap;
   font-size: 14px;
   display: grid;
@@ -422,7 +422,10 @@ overflow: visible;
 }
 
 
-
+.pdf{
+  font-family: 'NotoSerifBengali';
+  font-size: 15px;
+}
 
 
 

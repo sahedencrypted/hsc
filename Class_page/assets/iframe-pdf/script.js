@@ -79,7 +79,32 @@ closeBtn.addEventListener('click', () => {
     localStorage.setItem('arrowContVisible', 'false');
 });
 
+//dowmload link
+const downloadButton = document.querySelector('.downloadButton');
+let isHoverDisabled = false;
 
+downloadButton.addEventListener('click', () => {
+  if (!isHoverDisabled) {
+    const downloadLink = document.getElementById('downloadLink');
+    const storedPdfID = localStorage.getItem('pdfID');
+    window.location.href = `https://drive.google.com/uc?export=download&id=${storedPdfID}`;
+    //downloadLink.href = `https://drive.google.com/uc?export=download&id=${storedPdfID}`;
+
+    // Disable hovering and add a 6s delay before initiating the download
+    isHoverDisabled = true;
+    downloadButton.style.opacity = '0.3';
+    downloadButton.style.pointerEvents = 'none';
+
+    setTimeout(() => {
+      downloadLink.click(); // Simulate a click on the hidden anchor tag
+      setTimeout(() => {
+        isHoverDisabled = false;
+        downloadButton.style.opacity = '0.5';
+        downloadButton.style.pointerEvents = 'auto';
+      }, 9000);
+    }, 9000);
+  }
+});
 
 
 

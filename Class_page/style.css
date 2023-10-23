@@ -173,6 +173,9 @@
         height: 3000px;
         display: grid;
         justify-content: center;
+        background-image: url(assets/images/pattern.png);
+        background-size: 134px;
+        box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.7);
        }
        
    /*   explore winddow css*/
@@ -211,9 +214,10 @@
     font-size: 17px;
     display: grid;
     grid-template-columns: 1fr 7fr;
+    transition: transform 0.3s ease;
   }
   .default-rows{
-    padding: 3px 5px;
+    padding: 5px 5px;
     white-space: nowrap;
     font-size: 14px;
     display: grid;
@@ -234,22 +238,21 @@
   }
 
   p {
-    padding: 0px 2px 0px;
+    padding: 0px 5px 0px;
     text-overflow: ellipsis;
     overflow: hidden;
     
   }
   .rows:hover{
-    background: rgba(131, 156, 240, 0.089);
+    transform: translateX(5px);
     color: var(--nav);
   }
   .selected{
-    transition: background 0.3s;
+    transition: background 0.4s;
     background: black!important;
     color: var(--nav);
 
   }
-
   .selected:hover{
     transform: translateX(0px)!important;
   }
@@ -267,6 +270,13 @@
   transition: max-height 0.5s;
 
 }
+.cata{
+  padding: 5px 5px;
+}
+.subjs{
+  padding: 5px 5px;
+}
+
 .llpdfzone{
   background:  var(--nav)!important;
   border-radius: 3px;
@@ -283,6 +293,31 @@
 .pdfz{
   padding: 5px 5px!important;
 }
+
+
+
+
+.skeleton {
+  opacity: .7;
+  animation: skeleton-loading 1s linear infinite alternate;
+  transition: opacity 2s;
+}
+
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+
+
+
+
 
 
 

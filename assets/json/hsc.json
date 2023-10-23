@@ -1,0 +1,269 @@
+{
+  "Category": {
+    "name": "Category",
+    "item1": [
+      "Academic",
+      "Admisson",
+      "Hand Notes"
+    ]
+  },
+  "Subjects": {
+    "name": "Type",
+    "item1": [
+      "Text Books-23",
+      "Test Papers-23",
+      "Hand Notes-23"
+    ],
+    "item2": [
+      "Marked Text Book-23",
+      "Udvash Notes-23",
+      "ACS LS varsity+GST"
+    ],
+    "item3": [
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd"
+    ],
+    "item4": [
+      "BAN",
+      "English",
+      "ICT",
+      "Physics 1st",
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd"
+    ]
+  },
+  "Chapters": {
+    "name": "Subjects",
+    "item1": [
+      "Physics 1st",
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd",
+      "Biology 1st",
+      "Biology 2nd",
+      "ICT",
+      "Bangla",
+      "English"
+    ],
+    "item2": [
+      "Physics 1st",
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd",
+      "Biology 1st",
+      "Biology 2nd"
+    ],
+    "item3": [
+      "০১ - ম্যাট্রিক্স ও নির্ণায়ক",
+      "০২ - ভেক্টর",
+      "০৩ - সরলরেখা",
+      "০৪ - বৃত্ত",
+      "০৫ - বিন্যাস ও সমাবেশ",
+      "০৬ - ত্রিকোণমিতিক অনুপাত",
+      "০৭ - সংযুক্ত ও যৌগিক কোণের ত্রিকোন..",
+      "০৮ - ফাংশন ও ফাংশনের লেখচিত্র",
+      "০৯ - অন্তরীকরণ",
+      "১০ - যোগজীকরণ"
+    ],
+    "item4": [
+      "০১ - বাস্তব সংখ্যা ও অসমতা",
+      "০২ - যোগাশ্রয়ী প্রোগ্রাম",
+      "০৩ - জটিল সংখ্যা",
+      "০৪ - বহুপদী ও বহুপদী সমীকরণ",
+      "০৫ - দ্বিপদী বিস্তৃতি",
+      "০৬ - কনিক",
+      "০৭ - বিপরীত ত্রিকোণমিতিক ফাংশন ও...",
+      "০৮ - স্থিতিবিদ্যা",
+      "০৯ - সমতলে বস্তুকনার গতি",
+      "১০ - বিস্তার পরিমাপ ও সম্ভাবনা"
+    ],
+    "item5": [
+      "০১ - ল্যাবরেটরির নিরাপদ ব্যবহার",
+      "০২ - গুণগত রসায়ন",
+      "০৩ - মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক ব..",
+      "০৪ - রাসায়নিক পরিবর্তন",
+      "০৫ - কর্মমুখী রসায়ন"
+    ],
+    "item6": [
+      "০১ - পরিবেশ রসায়ন",
+      "০২ - জৈব রসায়ন",
+      "০৩ - পরিমাণগত রসায়ন",
+      "০৪ - তড়িৎ রসায়ন",
+      "০৫ - অর্থনৈতিক রসায়ন"
+    ],
+    "item7": [
+      "০১ - কোষ ও এর গঠন",
+      "০২ - কোষ বিভাজন",
+      "০৩ - কোষ রসায়ন",
+      "০৪ - অণুজীব",
+      "০৫ - শৈবাল ও ছত্রাক",
+      "০৬ - ব্রায়োফাইটা ও টেরিডোফাইটা",
+      "০৭ - নগ্মবীজী ও আবৃতবীজী উদ্ভিদ",
+      "০৮ - টিসু ও টিসুতন্ত্র",
+      "০৯ - উদ্ভিদ শরীরতত্ত্ব",
+      "১০ - উদ্ভিদ প্রজনন"
+    ],
+    "item8": [
+      "০১ - প্রাণীর বিভিন্নতা ও শ্রেণীবিন্যাস",
+      "০২ - প্রাণীর পরিচিতি",
+      "০৩ - মানব শরীরতত্ব: পরিপাক ও শোষণ",
+      "০৪ - মানব শরীরতত্ব: রক্ত ও সঞ্চালন",
+      "০৫ - মানব শরীরতত্ব: শ্বশনক্রিয়া ও শ্বশন",
+      "০৬ - মানব শরীরতত্ব: বর্জ্য ও নিষ্কাশন",
+      "০৭ - মানব শরীরতত্ব: চলন ও অংঙ্গচলনা",
+      "০৮ - মানব শরীরতত্ব: সমন্বয় ও নিয়ন্ত্রণ",
+      "০৯ - মানব জীবনের ধারাবাহিকতা",
+      "১০ - মানবদেহের প্রতিরক্ষা",
+      "১১ - জীনতত্ব ও বিবর্তন",
+      "১২ - প্রাণীর আচরণ"
+    ],
+    "item9": [
+      "০১ - বিশ্ব ও বাংলাদেশ প্রেক্ষিত",
+      "০২ - কমিউনিকেশন সিস্টেম ও নেটওয়ার্ক",
+      "০৩ - সংখ্যা পদ্ধতি ও ডিজিটাল ডিভাইস",
+      "০৪ - ওয়েব ডিজাইন পরিচিতি ও HTML",
+      "০৫ - প্রোগ্রামিং ভাষা",
+      "০৬ - ডেটাবেজ ম্যানেজমেন্ট সিস্টেম"
+    ],
+    "item10": [],
+    "item11": [],
+    "item12": [],
+    "item13": []
+  },
+  "cata1subjs1chapt1": {
+    "title": [
+      "P-1.1 ভৌত জগৎ ও পরিমাপ",
+      "P-1.2 ভেক্টর\t",
+      "P-1.4 নিউটনিয়ান বলবিদ্যা\t",
+      "P-1.5 কাজ শক্তি ও ক্ষমতা",
+      "P-1.5 কাজ, শক্তি ও ক্ষমতা",
+      "P-1.6 মহাকর্ষ ও অভিকর্ষ\t",
+      "P-1.6 মহাকর্ষ ও অভিকর্ষ",
+      "P-1.7 পদার্থের গাঠনিক ধর্ম",
+      "P-1.8 পর্যাবৃত্ত গতি",
+      "P-1.10 আদর্শ গ্যাস ও গ্যাসের গতিতত্ত্ব"
+    ],
+    "pdfID": [
+      "1DGvjqesliYcqz1Sn4zNh5lE0-AmTpPl4",
+      "1DJVx5FNxOnh691Fg3oWeXfcvrBXQ2MEF",
+      "1DHOcTFInKohFTvV_mKfDFLNDii17MX49",
+      "1DFgftQALndJ1752V2T3H3CQKqsY_-D4d",
+      "1DNbuYO8SCO35Ms3_x4UGuHSn5a4sWonM",
+      "1DGA43wxJkiQ22TrIl3ZUu8jCz9iNLn8P",
+      "1DORI8ZPuRguJ9rGhN3Z-y8ljjHLZmNSW",
+      "1DP3-7Mq0t0x2PAs_lNWQmdgREzAr2AcE",
+      "1DOYZUl8ufh9snOnq7bwiiq0DRQsQaZDS",
+      "1DQZYTqd3RlHaQNF2J0CUkirMo4Syq1Kh"
+    ]
+  },
+  "cata1subjs1chapt2": {
+    "title": [
+      "P-2.1 তাপগতিবিদ্যা",
+      "P-2.2 স্থির তড়িৎ",
+      "P-2.3 চল তড়িৎ",
+      "P-2.4 তড়িৎ প্রবাহের চৌম্বক ক্রিয়া",
+      "P-2.5 তড়িৎ চৌম্বক আবেশ",
+      "P-2.6 জ্যামিতিক আলোকবিজ্ঞান",
+      "P-2.7 ভৌত আলোকবিজ্ঞান",
+      "P-2.8 আধুনিক পদার্থবিজ্ঞানের সুচনা",
+      "P-2.9 পরমানুর মডেল ও নিউক্লিয়ার পদার্থবিজ্ঞান",
+      "P-2.10 সেমিকন্ডাক্টর ও ইলেক্ট্রনিক্স",
+      "P-2.11 জ্যোতির্বিজ্ঞান"
+    ],
+    "pdfID": [
+      "17C0K30U2LtltbvAZF8thuNiNbRPBWzkB",
+      "17DcRW4Yv-UCaLyiNuAQPT6K1fx_wqNao",
+      "17CgO3mOVHebu_nwrUYAnNevE6qsVlljy",
+      "17Rk7hAtDedCu7azkVKE4eR10g3LHZQKf",
+      "17OiZBinQNw5mORGshfMpo3_XUVKxB0jv",
+      "17XuW4XjAcOpB9d3NawbRFI9HbllS-ueZ",
+      "17SmvnNPjNa80DoX_BBAkhW3xtXFDBKns",
+      "17bvSE5CtP-aRPxYvB9m7c6f9dT0Bkvwi",
+      "17aZAawZORvR0SRlWWWw5YRK6sAL-_atN",
+      "17fTeaZvxK2QBkh9z9tXgyibdx1SVEjqt",
+      "17dEUMuAIqR5i5Va2N_CIfc3m37CxTtfa"
+    ]
+  },
+  "cata1subjs1chapt3": {
+    "title": [
+      "hello",
+      "whats up"
+    ],
+    "pdfID": [
+      "hey man",
+      "its okay"
+    ]
+  },
+  "cata1subjs1chapt4": {
+    "title": [
+      "Bangla 1st Paper-1.pdf",
+      "Bangla 1st Paper-2.pdf",
+      "Bangla 2nd Paper-1.pdf",
+      "Bangla 2nd Paper-2.pdf",
+      "Biology 1st Paper-1.pdf",
+      "Biology 1st Paper-2.pdf",
+      "Biology 2nd Paper-1.pdf",
+      "Biology 2nd Paper-2.pdf",
+      "Chemistry 1st Paper-1.pdf",
+      "Chemistry 1st Paper-2.pdf",
+      "Chemistry 2nd Paper-1.pdf",
+      "Chemistry 2nd Paper-2.pdf",
+      "English 1st Paper-1.pdf",
+      "English 1st Paper-2.pdf",
+      "English 2nd Paper-1.pdf",
+      "English 2nd Paper-2.pdf",
+      "Higher Math 1st Paper-1.pdf",
+      "Higher Math 1st Paper-2.pdf",
+      "Higher Math 2nd Paper-1.pdf",
+      "Higher Math 2nd Paper-2.pdf",
+      "ICT-1.pdf",
+      "ICT-2.pdf",
+      "Physics 1st Paper-1.pdf",
+      "Physics 1st Paper-2.pdf",
+      "Physics 2nd Paper-1.pdf",
+      "Physics 2nd Paper-2.pdf",
+      "Statistics 1st Paper-1.pdf",
+      "Statistics 1st Paper-2.pdf",
+      "Statistics 2nd Paper-1.pdf",
+      "Statistics 2nd Paper-2.pdf"
+    ],
+    "pdfID": [
+      "14TO2EbVsWZMEquYY215_J_mJbzYKR22-",
+      "11fJQhw8TI_FqwUQiIxENGAjNrdQ6ufMR",
+      "11d07AnREZ-mpe3KZu7kxt3Y5KDAYATO7",
+      "11a_3SL-MJn_NQ0cw9C-Nw3-eHwUSB-zp",
+      "11_SuxwiLCq8dUPmfrWXKrN3UXEf_or0J",
+      "12c7nzxde9CNBUBaWfmRGwWMTTGVt-fMU",
+      "12YPvGQcBuOrMjOQFqAtIFtZPVlGxCG4M",
+      "12XRICuadLjTIF-xlIWn08Kdb0kzA9fNw",
+      "12Wd0Zq1SH78qwqliLPY8A0d0Wyu6-WaJ",
+      "1219-13FiC90XlneWB4dryZUmLG-lFYvV",
+      "11yYVrtzsT7cutLGVhS_5cBY01IBl2djI",
+      "11xGBfkRwJ550wVbPWAKaE061EsVNV5X2",
+      "11wM0teK-vWVA2nM5x1eKAybPnr0yTAe-",
+      "11wDzF8dy22R-Ll0JGWOFnjKD9jrc2g4_",
+      "11tj-NWIkzFlFPtaggAKgGte5a_LAUXrs",
+      "11poUXZ1xvTc_QVcWlngh-9WutcysFFWa",
+      "11mFvLr60h_9dFOq-zqPUIWEogDuzrDhH",
+      "11iYnG0JBDELwEAftgFQjRTogIQrWpi9_",
+      "11iVk7GEG6K3qTibtEM46bEqO3687B-Aq",
+      "11htw8qc5uLrcQUZ4vK0BOuUY_tK5r76c",
+      "13JCAo7ockZSjvPPLXC1QivIENMaMNs7j",
+      "13I6A0vkWbbztqeTY6xO9oo_TSu9B9Y_3",
+      "13FlS7KvE_30lQIWxXUf1QGxmNQX4dAUL",
+      "12x6wQp5ZfN2MuG1L9R6J49e9kIpk7ZZD",
+      "12w5t9wHOqFcbzjlBn5HHmXHTPXiHdrF-",
+      "12p3BCuBEZqjRbz8j4wGO1O2JxVYtvjm7",
+      "12myI77_W1JXLN65SYTmYejpqaHMJsWsY",
+      "12gOcPodpJD-CO9kfW1rEf_f-abKMuCMA",
+      "12f63k5P8fV2ldQh2KLhRkJp11BiPklc8",
+      "13WlOrFyKy8V4JdYDoD8eUI5Vu39rnsPs"
+    ]
+  }
+}

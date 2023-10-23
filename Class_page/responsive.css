@@ -251,6 +251,9 @@
   height: 3000px;
   display: grid;
   justify-content: center;
+  background-image: url(assets/images/pattern.png);
+  background-size: 120px;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.5);
  }
   
 
@@ -330,7 +333,7 @@ white-space: nowrap;
   grid-template-columns: 1fr 7fr;
 }
 .default-rows{
-  padding: 3px 5px;
+  padding: 4px 5px;
   white-space: nowrap;
   font-size: 14px;
   display: grid;
@@ -351,7 +354,7 @@ white-space: nowrap;
 }
 
 p {
-  padding: 0px 2px 0px;
+  padding: 0px 4px 0px;
   text-overflow: ellipsis;
   overflow: hidden;
   
@@ -383,12 +386,12 @@ overflow: visible;
   transition: max-height 0.5s;
 
 }
-
+.llpdfzone{
+  border-radius: 3px;
+}
 .llclass{
   background:  #f14f4f;
-  margin-bottom: 2px;
   border-radius: 3px;
-  border: 1px solid #f14f4f;
 } 
 .pdfz{
   padding: 5px 5px!important;
@@ -398,6 +401,22 @@ overflow: visible;
   overflow: auto;
 }
 
+.skeleton {
+  opacity: .7;
+  animation: skeleton-loading 1s linear infinite alternate;
+  transition: opacity 2s;
+}
+
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
 
 
 

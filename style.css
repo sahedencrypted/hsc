@@ -185,7 +185,7 @@
   height: 90vh;
   margin: 10px;
  display: grid;
- grid-template-columns: 1.7fr 146px 1.6fr 2fr 6fr;
+ grid-template-columns: 130px 1.8fr 1.4fr 2fr 5.6fr;
 }
 .boxing {
     margin: 4px;
@@ -209,7 +209,7 @@
   }
 
   .rows {
-    padding: 3px 5px;
+    padding: 5px 5px;
     white-space: nowrap;
     font-size: 17px;
     display: grid;
@@ -217,7 +217,7 @@
     transition: transform 0.3s ease;
   }
   .default-rows{
-    padding: 3px 5px;
+    padding: 5px 5px;
     white-space: nowrap;
     font-size: 14px;
     display: grid;
@@ -270,6 +270,12 @@
   transition: max-height 0.5s;
 
 }
+.cata{
+  padding: 5px 5px;
+}
+.subjs{
+  padding: 5px 5px;
+}
 
 .llpdfzone{
   background: #f14f4f;
@@ -311,7 +317,10 @@
 
 
 
-
+.pdf{
+  font-family: 'NotoSerifBengali';
+  font-size: 15px;
+}
 
 
 
