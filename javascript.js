@@ -152,39 +152,52 @@ function createSubjectsItemDivs(data) {
 
 
 
+
 function createChaptersItemDivs(data) {
-  var chaptersData = data["Chapters"]; // Assuming "Chapters" is the correct key
-  var chaptersDiv = document.getElementById("Catagory_3"); // Assuming "Catagory_3" is the correct element ID
+  const storedSubjects = localStorage.getItem('hsubjects');
+  const storedCategory = localStorage.getItem('hcatagory');
+
+  // Create the variable name to match
+  const variableNameToMatch = `${storedCategory}${storedSubjects}`;
+
+  var chaptersData = data; // Assuming data contains objects with categories
+  var chaptersDiv = document.getElementById("Catagory_3");
   var itemsDiv = document.getElementById("Catagory_3items");
-
-  chaptersDiv.textContent = chaptersData.name; // Set the category name
-
-  // Define the number you want to access
-  var hcaptersvalue = localStorage.getItem('hsubjects'); // Assuming "hsubjects" is the correct key
-  const number = extractNumberFromString(hcaptersvalue);
-  var numberToAccess = number;
 
   // Clear the existing content of itemsDiv
   itemsDiv.innerHTML = "";
 
-  // Check the number and access the corresponding items
-  var itemsToAccess = chaptersData["item" + numberToAccess] || [];
+  // Find the category that matches variableNameToMatch
+  var matchedCategory = chaptersData[variableNameToMatch];
 
-  itemsToAccess.forEach(function (item) {
-    var div = document.createElement("div");
-    div.className = "rows file-icon chapt";
+  if (matchedCategory) {
+    chaptersDiv.textContent = variableNameToMatch; // Set the category name based on the matched variable
 
-    div.innerHTML = `
-      <svg style="height: 19px; width: 19px; opacity: 0.9; margin-right: 4px;" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48">
-        <path fill="#FFA000" d="M40,12H22l-4-4H8c-2.2,0-4,1.8-4,4v8h40v-4C44,13.8,42.2,12,40,12z"/>
-        <path fill="#FFCA28" d="M40,12H8c-2.2,0-4,1.8-4,4v20c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V16C44,13.8,42.2,12,40,12z"/>
-      </svg>
-      <p class="">${item}</p>`;
+    var itemsToAccess = matchedCategory.items || [];
 
-    itemsDiv.appendChild(div);
-  });
-  chapterselect()
+    itemsToAccess.forEach(function (item) {
+      var div = document.createElement("div");
+      div.className = "rows file-icon chapt";
+
+      div.innerHTML = `
+        <svg style="height: 19px; width: 19px; opacity: 0.9; margin-right: 4px;" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48">
+          <path fill="#FFA000" d="M40,12H22l-4-4H8c-2.2,0-4,1.8-4,4v8h40v-4C44,13.8,42.2,12,40,12z"/>
+          <path fill="#FFCA28" d="M40,12H8c-2.2,0-4,1.8-4,4v20c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V16C44,13.8,42.2,12,40,12z"/>
+        </svg>
+        <p class="">${item}</p>`;
+
+      itemsDiv.appendChild(div);
+    });
+  } else {
+    // Handle the case when there are no matching categories
+    itemsDiv.innerHTML = `
+    <div class="default-rows">Updating Soon</div>
+    `;
+  }
+
+  chapterselect();
 }
+
 
 
 
@@ -288,40 +301,50 @@ loadJSON(function (data) {
 });
 
 
-//loadJSON(createSubjectsItemDivs);
-//loadJSON(createChaptersItemDivs);
+
 loadJSON(function (data) {
-  var chaptersData = data["Chapters"]; // Assuming "Chapters" is the correct key
-  var chaptersDiv = document.getElementById("Catagory_3"); // Assuming "Catagory_3" is the correct element ID
+  const storedSubjects = localStorage.getItem('hsubjects');
+  const storedCategory = localStorage.getItem('hcatagory');
+
+  // Create the variable name to match
+  const variableNameToMatch = `${storedCategory}${storedSubjects}`;
+
+  var chaptersData = data; // Assuming data contains objects with categories
+  var chaptersDiv = document.getElementById("Catagory_3");
   var itemsDiv = document.getElementById("Catagory_3items");
-
-  chaptersDiv.textContent = chaptersData.name; // Set the category name
-
-  // Define the number you want to access
-  var hcaptersvalue = localStorage.getItem('hsubjects'); // Assuming "hsubjects" is the correct key
-  const number = extractNumberFromString(hcaptersvalue);
-  var numberToAccess = number;
 
   // Clear the existing content of itemsDiv
   itemsDiv.innerHTML = "";
 
-  // Check the number and access the corresponding items
-  var itemsToAccess = chaptersData["item" + numberToAccess] || [];
+  // Find the category that matches variableNameToMatch
+  var matchedCategory = chaptersData[variableNameToMatch];
 
-  itemsToAccess.forEach(function (item) {
-    var div = document.createElement("div");
-    div.className = "rows file-icon chapt";
+  if (matchedCategory) {
+    chaptersDiv.textContent = variableNameToMatch; // Set the category name based on the matched variable
 
-    div.innerHTML = `
-      <svg style="height: 19px; width: 19px; opacity: 0.9; margin-right: 4px;" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48">
-        <path fill="#FFA000" d="M40,12H22l-4-4H8c-2.2,0-4,1.8-4,4v8h40v-4C44,13.8,42.2,12,40,12z"/>
-        <path fill="#FFCA28" d="M40,12H8c-2.2,0-4,1.8-4,4v20c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V16C44,13.8,42.2,12,40,12z"/>
-      </svg>
-      <p class="">${item}</p>`;
+    var itemsToAccess = matchedCategory.items || [];
 
-    itemsDiv.appendChild(div);
-  });
-  chapterselect()
+    itemsToAccess.forEach(function (item) {
+      var div = document.createElement("div");
+      div.className = "rows file-icon chapt";
+
+      div.innerHTML = `
+        <svg style="height: 19px; width: 19px; opacity: 0.9; margin-right: 4px;" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48">
+          <path fill="#FFA000" d="M40,12H22l-4-4H8c-2.2,0-4,1.8-4,4v8h40v-4C44,13.8,42.2,12,40,12z"/>
+          <path fill="#FFCA28" d="M40,12H8c-2.2,0-4,1.8-4,4v20c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V16C44,13.8,42.2,12,40,12z"/>
+        </svg>
+        <p class="">${item}</p>`;
+
+      itemsDiv.appendChild(div);
+    });
+  } else {
+    // Handle the case when there are no matching categories
+    itemsDiv.innerHTML = `
+    <div class="default-rows">Updating Soon</div>
+    `;
+  }
+
+  chapterselect();
   //onload add selected class
   {const subjsElements = document.querySelectorAll(".chapt");
   const storedsubjsString = localStorage.getItem('hchapters');
@@ -336,7 +359,8 @@ loadJSON(function (data) {
   }}
 
 });
-//loadJSON(createPdfzoneItemDivs);
+
+
 loadJSON(function (data) {
 const storedChapters = localStorage.getItem('hchapters');
 const storedSubjects = localStorage.getItem('hsubjects');

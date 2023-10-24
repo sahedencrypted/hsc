@@ -1,171 +1,278 @@
 {
-    "Category": {
-        "name": "Category",
-        "item1": ["Text books", "Test paper", "Guide"]
-    },
-    "Subjects": {
-        "name": "Subjects",
-        "item1": [
-                    "Physics 1st",
-                    "Physics 2nd",
-                    "Math 1st",
-                    "Math 2nd",
-                    "Chemistry 1st",
-                    "Chemistry 2nd",
-                    "Biology 1st",
-                    "Biology 2nd",
-                    "ICT",
-                    "English",
-                    "Bangla"],
-        "item2": ["Math 1st", "Math 2nd"],
-        "item3": ["Physics 2nd", "Math 1st", "Math 2nd"],
-        "item4": ["BAN", "English", "ICT", "Physics 1st", "Physics 2nd", "Math 1st", "Math 2nd"]
-    },
-    "Chapters": {
-        "name": "Chapters",
-        "item1": [
-                    "০১ - ভৌতজগৎ ও পরিমাপ",
-                    "০২ - ভেক্টর",
-                    "০৩ - গতিবিদ্যা",
-                    "০৪ - নিউটনিয়ান বলবিদ্যা",
-                    "০৫ - কাজ শক্তি ও ক্ষমতা",
-                    "০৬ - মহাকর্ষ ও অভিকর্ষ",
-                    "০৭ - পদার্থের গাঠনিক ধর্ম",
-                    "০৮ - পর্যাবৃত্ত গতি",
-                    "০৯ - তরঙ্গ",
-                    "১০ - গ্যাসের গতি তত্ত্ব"
-                ],
-        "item2": [
-                    "০১ - তাপগতি বিদ্যা",
-                    "০২ - স্থির তড়িৎ",
-                    "০৩ - চল তড়িৎ",
-                    "০৪ - তড়িৎ প্রবাহের চৌম্বক ক্রিয়া ও চুম্বকত্ব",
-                    "০৫ - তাড়িতচৌম্বকীয় অবেশ ও পরিবর্তী...",
-                    "০৬ - জ্যামিতিক আলোকবিজ্ঞান",
-                    "০৭ - ভৌত আলোকবিজ্ঞান",
-                    "০৮ - আধুনিক পদার্থ বিজ্ঞান",
-                    "০৯ - পরমাণুর মডেল এবং নিউক্লিয়ার",
-                    "১০ - সেমিকন্ডাক্টট"
-                ],
-        "item3": [
-                    "০১ - ম্যাট্রিক্স ও নির্ণায়ক",
-                    "০২ - ভেক্টর",
-                    "০৩ - সরলরেখা",
-                    "০৪ - বৃত্ত",
-                    "০৫ - বিন্যাস ও সমাবেশ",
-                    "০৬ - ত্রিকোণমিতিক অনুপাত",
-                    "০৭ - সংযুক্ত ও যৌগিক কোণের ত্রিকোন..",
-                    "০৮ - ফাংশন ও ফাংশনের লেখচিত্র",
-                    "০৯ - অন্তরীকরণ",
-                    "১০ - যোগজীকরণ"
-                ],
-        "item4": [
-                    "০১ - বাস্তব সংখ্যা ও অসমতা",
-                    "০২ - যোগাশ্রয়ী প্রোগ্রাম",
-                    "০৩ - জটিল সংখ্যা",
-                    "০৪ - বহুপদী ও বহুপদী সমীকরণ",
-                    "০৫ - দ্বিপদী বিস্তৃতি",
-                    "০৬ - কনিক",
-                    "০৭ - বিপরীত ত্রিকোণমিতিক ফাংশন ও...",
-                    "০৮ - স্থিতিবিদ্যা",
-                    "০৯ - সমতলে বস্তুকনার গতি",
-                    "১০ - বিস্তার পরিমাপ ও সম্ভাবনা"
-                ],
-        "item5": [
-                    "০১ - ল্যাবরেটরির নিরাপদ ব্যবহার",
-                    "০২ - গুণগত রসায়ন",
-                    "০৩ - মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক ব..",
-                    "০৪ - রাসায়নিক পরিবর্তন",
-                    "০৫ - কর্মমুখী রসায়ন"
-                ],
-        "item6": [
-                    "০১ - পরিবেশ রসায়ন",
-                    "০২ - জৈব রসায়ন",
-                    "০৩ - পরিমাণগত রসায়ন",
-                    "০৪ - তড়িৎ রসায়ন",
-                    "০৫ - অর্থনৈতিক রসায়ন"
-                ],
-        "item7": [
-                    "০১ - কোষ ও এর গঠন",
-                    "০২ - কোষ বিভাজন",
-                    "০৩ - কোষ রসায়ন",
-                    "০৪ - অণুজীব",
-                    "০৫ - শৈবাল ও ছত্রাক",
-                    "০৬ - ব্রায়োফাইটা ও টেরিডোফাইটা",
-                    "০৭ - নগ্মবীজী ও আবৃতবীজী উদ্ভিদ",
-                    "০৮ - টিসু ও টিসুতন্ত্র",
-                    "০৯ - উদ্ভিদ শরীরতত্ত্ব",
-                    "১০ - উদ্ভিদ প্রজনন"
-                ],
-        "item8": [
-                    "০১ - প্রাণীর বিভিন্নতা ও শ্রেণীবিন্যাস",
-                    "০২ - প্রাণীর পরিচিতি",
-                    "০৩ - মানব শরীরতত্ব: পরিপাক ও শোষণ",
-                    "০৪ - মানব শরীরতত্ব: রক্ত ও সঞ্চালন",
-                    "০৫ - মানব শরীরতত্ব: শ্বশনক্রিয়া ও শ্বশন",
-                    "০৬ - মানব শরীরতত্ব: বর্জ্য ও নিষ্কাশন",
-                    "০৭ - মানব শরীরতত্ব: চলন ও অংঙ্গচলনা",
-                    "০৮ - মানব শরীরতত্ব: সমন্বয় ও নিয়ন্ত্রণ",
-                    "০৯ - মানব জীবনের ধারাবাহিকতা",
-                    "১০ - মানবদেহের প্রতিরক্ষা",
-                    "১১ - জীনতত্ব ও বিবর্তন",
-                    "১২ - প্রাণীর আচরণ"
-                ],
-        "item9": [
-                    "০১ - বিশ্ব ও বাংলাদেশ প্রেক্ষিত",
-                    "০২ - কমিউনিকেশন সিস্টেম ও নেটওয়ার্ক",
-                    "০৩ - সংখ্যা পদ্ধতি ও ডিজিটাল ডিভাইস",
-                    "০৪ - ওয়েব ডিজাইন পরিচিতি ও HTML",
-                    "০৫ - প্রোগ্রামিং ভাষা",
-                    "০৬ - ডেটাবেজ ম্যানেজমেন্ট সিস্টেম"
-                ],
-        "item10": [],
-        "item11": [],
-        "item12": [],
-        "item13": []
-    },
-    "cata1subjs1chapt1": {
-        "title":[
-                "ভেক্টর-১ | Vector -1 | Engineering Archive | Chinmoy Saha",
-                "privet batch ACS Vector LS 01",
-                "Qualitative Chemistry-4 (Part 1)",
-                "ACS Vector LS 03",
-                "Ruet Question Bank",
-                "Bio Test paper 1.1",
-                "ICT Test Paper 19",
-                "Big File Password Protected"
-            ],
-        "vdoID":[
-                "Dg553ntnp_A?si=R7gv5KRZ31J3LvOe",
-                "sdP07AwFkqs?si=ItROhxXWwkcU2Ij-",
-                "5BodNsiqHAM?si=KXAd1hmynxQQUw3m",
-                "1Ptf46vhm2ESlL8TdVsnKw-I8gOPaN9qu",
-                "18dxUcMyiGAXHzkB-3lt-uQ7hwdpOFGUd",
-                "1aa7o6bQY9bHy020dfYB0J80IaGveSJF7",
-                "10RejspsOJcemKbaossjS6SDVsCTSF25h",
-                "1CAA0_yUHREhSpLCRKt56RC_s-f_XnQ1b"
-                ]
-    },
-    "cata1subjs1chapt2": {
-        "title":[
-            "Vector -1 | Engineering Archive | Chinmoy Saha",
-            "Vector -2 | Engineering Archive | Chinmoy Saha",
-            "Vector -3 | Engineering Archive | Chinmoy Saha",
-            "Vector -4 | Engineering Archive | Chinmoy Saha"
-            ],
-        "vdoID":[
-            "6J0lvxjudws",
-            "RwHdFq24RP4",
-            "ydc9yWa_hM4",
-            "tqtvHJ-x5to"
-                ]
-    },
-    "cata1subjs1chapt3": {
-        "title":[
-                
-            ],
-        "vdoID":[
-                
-                ]
-    }
+  "Category": {
+    "name": "Category",
+    "item1": [
+      "Text books",
+      "Test paper",
+      "Guide",
+      "UNMESH Medical Master Class"
+    ]
+  },
+  "Subjects": {
+    "name": "Subjects",
+    "item1": [
+      "Physics 1st",
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd",
+      "Biology 1st",
+      "Biology 2nd",
+      "ICT",
+      "English",
+      "Bangla"
+    ],
+    "item2": [
+      "Math 1st",
+      "Math 2nd"
+    ],
+    "item3": [
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd"
+    ],
+    "item4": [
+      "Physics 1st",
+      "Physics 2nd",
+      "Biology 1st",
+      "Biology 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd",
+      "GK Master Class",
+      "English Master Class"
+    ]
+  },
+  "cata4subjs1": {
+    "items": [
+      "০১ - ভৌতজগৎ ও পরিমাপ",
+      "০২ - ভেক্টর",
+      "০৩ - গতিবিদ্যা",
+      "০৪ - নিউটনিয়ান বলবিদ্যা",
+      "০৫ - কাজ শক্তি ও ক্ষমতা",
+      "০৬ - মহাকর্ষ ও অভিকর্ষ",
+      "০৭ - পদার্থের গাঠনিক ধর্ম",
+      "০৮ - পর্যাবৃত্ত গতি",
+      "০৯ - তরঙ্গ",
+      "১০ - গ্যাসের গতি তত্ত্ব"
+    ]
+  },
+  "cata4subjs2": {
+    "items": [
+      "০১ - তাপগতি বিদ্যা",
+      "০২ - স্থির তড়িৎ",
+      "০৩ - চল তড়িৎ",
+      "০৪ - তড়িৎ প্রবাহের চৌম্বক ক্রিয়া ও চুম্বকত্ব",
+      "০৫ - তাড়িতচৌম্বকীয় অবেশ ও পরিবর্তী...",
+      "০৬ - জ্যামিতিক আলোকবিজ্ঞান",
+      "০৭ - ভৌত আলোকবিজ্ঞান",
+      "০৮ - আধুনিক পদার্থ বিজ্ঞান",
+      "০৯ - পরমাণুর মডেল এবং নিউক্লিয়ার",
+      "১০ - সেমিকন্ডাক্টট"
+    ]
+  },
+  "cata4subjs3": {
+    "items": [
+      "০১ - ম্যাট্রিক্স ও নির্ণায়ক",
+      "০২ - ভেক্টর",
+      "০৩ - সরলরেখা",
+      "০৪ - বৃত্ত",
+      "০৫ - বিন্যাস ও সমাবেশ",
+      "০৬ - ত্রিকোণমিতিক অনুপাত",
+      "০৭ - সংযুক্ত ও যৌগিক কোণের ত্রিকোন..",
+      "০৮ - ফাংশন ও ফাংশনের লেখচিত্র",
+      "০৯ - অন্তরীকরণ",
+      "১০ - যোগজীকরণ"
+    ]
+  },
+  "cata4subjs4": {
+    "items": [
+      "০১ - বাস্তব সংখ্যা ও অসমতা",
+      "০২ - যোগাশ্রয়ী প্রোগ্রাম",
+      "০৩ - জটিল সংখ্যা",
+      "০৪ - বহুপদী ও বহুপদী সমীকরণ",
+      "০৫ - দ্বিপদী বিস্তৃতি",
+      "০৬ - কনিক",
+      "০৭ - বিপরীত ত্রিকোণমিতিক ফাংশন ও...",
+      "০৮ - স্থিতিবিদ্যা",
+      "০৯ - সমতলে বস্তুকনার গতি",
+      "১০ - বিস্তার পরিমাপ ও সম্ভাবনা"
+    ]
+  },
+  "cata1subjs1": {
+    "items": [
+      "hello"
+    ]
+  },
+  "cata1subjs6": {
+    "items": []
+  },
+  "cata1subjs7": {
+    "items": []
+  },
+  "cata1subjs8": {
+    "items": []
+  },
+  "cata1subjs9": {
+    "items": []
+  },
+  "cata1subjs10": {
+    "items": []
+  },
+  "cata1subjs1chapt1": {
+    "title": [
+      "ভেক্টর-১ | Vector -1 | Engineering Archive | Chinmoy Saha",
+      "privet batch ACS Vector LS 01",
+      "Qualitative Chemistry-4 (Part 1)",
+      "ACS Vector LS 03",
+      "Ruet Question Bank",
+      "Bio Test paper 1.1",
+      "ICT Test Paper 19",
+      "Big File Password Protected"
+    ],
+    "vdoID": [
+      "Dg553ntnp_A?si=R7gv5KRZ31J3LvOe",
+      "sdP07AwFkqs?si=ItROhxXWwkcU2Ij-",
+      "5BodNsiqHAM?si=KXAd1hmynxQQUw3m",
+      "1Ptf46vhm2ESlL8TdVsnKw-I8gOPaN9qu",
+      "18dxUcMyiGAXHzkB-3lt-uQ7hwdpOFGUd",
+      "1aa7o6bQY9bHy020dfYB0J80IaGveSJF7",
+      "10RejspsOJcemKbaossjS6SDVsCTSF25h",
+      "1CAA0_yUHREhSpLCRKt56RC_s-f_XnQ1b"
+    ]
+  },
+  "cata1subjs1chapt2": {
+    "title": [
+      "Vector -1 | Engineering Archive | Chinmoy Saha",
+      "Vector -2 | Engineering Archive | Chinmoy Saha",
+      "Vector -3 | Engineering Archive | Chinmoy Saha",
+      "Vector -4 | Engineering Archive | Chinmoy Saha"
+    ],
+    "vdoID": [
+      "6J0lvxjudws",
+      "RwHdFq24RP4",
+      "ydc9yWa_hM4",
+      "tqtvHJ-x5to"
+    ]
+  },
+  "cata4subjs1chapt1": {
+    "title": [
+      "P-1 C 01 L 01",
+      "P-1 C 01 L 02",
+      "P-1 C 01 Q Solve"
+    ],
+    "vdoID": [
+      "cvkCFNtig5U",
+      "Uhx11ojoSyI",
+      "L5lj3gvMh5A"
+    ]
+  },
+  "cata4subjs1chapt2": {
+    "title": [
+      "P-1 C 02 L 01",
+      "P-1 C 02 L 02",
+      "P-1 C 02 Q Solve L 01",
+      "P-1 C 02 Q Solve L 02"
+    ],
+    "vdoID": [
+      "yEyD-M6n7d8",
+      "NZ8iia_Oong",
+      "-mvLXLyECMw",
+      "R7d-cgt3rO4"
+    ]
+  },
+  "cata4subjs1chapt3": {
+    "title": [
+      "P-1 C 03 L 01",
+      "P-1 C 03 L 02",
+      "P-1 C 03 Q Solve"
+    ],
+    "vdoID": [
+      "9lynpcRheFM",
+      "eu-nV9g7Xz8",
+      "oBeZoksEvoA"
+    ]
+  },
+  "cata4subjs1chapt4": {
+    "title": [
+      "P-1 C 04 L 01",
+      "P-1 C 04 L 02",
+      "P-1 C 04 Q Solve L 01",
+      "P-1 C 04 Q Solve L 02"
+    ],
+    "vdoID": [
+      "8W8W_h4JwwQ",
+      "Auu6BJCTkE0",
+      "AiQuYeGUKKE",
+      "Mn35voTMYv8"
+    ]
+  },
+  "cata4subjs1chapt5": {
+    "title": [
+      "P-1 C 05 L 01",
+      "P-1 C 05 L 02 P 01",
+      "P-1 C 05 L 03",
+      "P-1 C 05 Q Slove"
+    ],
+    "vdoID": [
+      "RGgn5Lde3dU",
+      "fBx4QKz4O2s",
+      "iCBo3APPdJI",
+      "I0ZJrHYZM6w"
+    ]
+  },
+  "cata4subjs1chapt6": {
+    "title": [
+      "P-1 C 06 L 01",
+      "P-1 C 06 L 02",
+      "P-1 C 06 Q Solve"
+    ],
+    "vdoID": [
+      "12sxksykRb4",
+      "_sd_cTZs64w",
+      "_r8pf9IiHHA"
+    ]
+  },
+  "cata4subjs1chapt7": {
+    "title": [
+      "P-1 C 07 L 01",
+      "P-1 C 07 L 02",
+      "P-1 C 07 Q Solve L 01"
+    ],
+    "vdoID": [
+      "rcl9ajEQZng",
+      "2tYeYbDkg48",
+      "sho9SVHbstg"
+    ]
+  },
+  "cata4subjs1chapt8": {
+    "title": [
+      "P-1 C 08 L 01",
+      "P-1 C 08 Q Solve"
+    ],
+    "vdoID": [
+      "hFc3_aaZBYg",
+      "wSsdQqceHvY"
+    ]
+  },
+  "cata4subjs1chapt9": {
+    "title": [
+      "SB P-1 C 09 L 01",
+      "SB P-1 C 09 L 02"
+    ],
+    "vdoID": [
+      "6ddaI6AXPWM",
+      "aTa8FeeDEbU"
+    ]
+  },
+  "cata4subjs1chapt10": {
+    "title": [
+      "P-1 C 10 L 01",
+      "P-1 C 10 Q Solve"
+    ],
+    "vdoID": [
+      "225iGBQ671k",
+      "MichtpJs16s"
+    ]
+  }
 }
