@@ -47,32 +47,33 @@
       "ICT",
       "Bangla",
       "English"
-    ]},
-    "cata1subjs2": {
-      "items": [
-        "Physics 1st (Ishaq)",
-        "Physics 2nd (Ishaq)",
-        "Math 1st (Ketab)🔥",
-        "Math 2nd (Ketab)",
-        "Chemistry 1st (Hazari)",
-        "Chemistry 2nd (Hazari)"
-        
-      ]},
-      "cata1subjs3": {
-        "items": [
-          "Physics 1st (Ishaq)",
-          "Physics 2nd (Ishaq)",
-          "Math 1st (Ketab)🔥",
-          "Math 2nd (Ketab)",
-          "Chemistry 1st (Hazari)",
-          "Chemistry 2nd (Hazari)",
-          "Biology 1st",
-          "Biology 2nd",
-          "ICT",
-          "Bangla",
-          "English"
-        ]},
-   
+    ]
+  },
+  "cata1subjs2": {
+    "items": [
+      "Physics 1st (Ishaq)",
+      "Physics 2nd (Ishaq)",
+      "Math 1st (Ketab)🔥",
+      "Math 2nd (Ketab)",
+      "Chemistry 1st (Hazari)",
+      "Chemistry 2nd (Hazari)"
+    ]
+  },
+  "cata1subjs3": {
+    "items": [
+      "Physics 1st (Ishaq)",
+      "Physics 2nd (Ishaq)",
+      "Math 1st (Ketab)🔥",
+      "Math 2nd (Ketab)",
+      "Chemistry 1st (Hazari)",
+      "Chemistry 2nd (Hazari)",
+      "Biology 1st",
+      "Biology 2nd",
+      "ICT",
+      "Bangla",
+      "English"
+    ]
+  },
   "cata1subjs1chapt1": {
     "title": [
       "P-1.1 ভৌত জগৎ ও পরিমাপ",
@@ -203,6 +204,84 @@
       "1G-lgk5vU6bUz8qqRQn23b0aXmzCkh4ld",
       "1G2G6ejWXLn-u5TTg5Y1q9T2VUoUtP3ya",
       "1G2JAbDFpTOBLJmbbuN-2bLP_7RYNyd7I"
+    ]
+  },
+  "cata1subjs1chapt7": {
+    "title": [
+      "B-1.0 হাসান_স্যারকাভার_সূচীপত্র",
+      "B-1.1 কোষ ও এর গঠন",
+      "B-1.2 কোষ বিভাজন",
+      "B-1.3 কোষ রসায়ন",
+      "B-1.4 অনুজীব",
+      "B-1.5 শৈবাল ও ছত্রাক",
+      "B-1.6 ব্রায়োফাইটা_ও_টেরিডোফাইটা",
+      "B-1.7 নগ্নবীজী_ও_আবৃতবীজী_উদ্ভিদ",
+      "B-1.8 টিস্যু_ও_টিস্যুতন্ত্র",
+      "B-1.9 উদ্ভিদ শারীরতত্ত্ব",
+      "B-1.10 উদ্ভিদ প্রজনন",
+      "B-1.11 জীব প্রযুক্তি",
+      "B-1.12 জীবের_পরিবেশ,_বিস্তার_ও_সংরক্ষন"
+    ],
+    "pdfID": [
+      "1107LclnR7rqCi8BuSz4dos7YP-RxFdYj",
+      "10xXkRMlkAlCg88gNYkdc9Lugdf1eQcus",
+      "11ZMnt1nvxCqLkUMkEaqs_EdW1shTzwm0",
+      "117eGUQM0PXVSCKANTkHWebGVFmcF1VRV",
+      "116gW7oqlNNz66w-tikJO47VayGj_J6ua",
+      "11Zs1it1hngRlKHdJ50qekG9BlnE1GDMA",
+      "11k89n5IsVjaMp_TfrnVWvVOGQ6ysD7KN",
+      "11lMG546Np-s9cGO61PD9K3_IcZ0Z5AqE",
+      "11FPxT9Wh7U28YVZfmTSQiT0jMiVNBR9_",
+      "11MuH8AJQGeXLzRRd7mAP7-sKdezOiLE_",
+      "11MMoZ_z85xXIQGs9C8oEpLVoIpnVZ5vv",
+      "11Vlw1jF94ehmqDZaPjVrp6G8m5Iv4Z6L",
+      "11Apcs8-sD3VfuPIB2jk9h6t52XcKYAtG"
+    ]
+  },
+  "cata1subjs1chapt8": {
+    "title": [
+      "B-2.0 আজমল_স্যারকাভার_সূচীপত্র",
+      "B-2.1 প্রাণীর_বিভিন্নতা_ও_শ্রেণিবিন্যাস",
+      "B-2.2.1 প্রাণীর_পরিচিতিহাইড্রা",
+      "B-2.2.2 প্রাণীর_পরিচিতিঘাসফড়িং",
+      "B-2.2.3_প্রাণীর_পরিচিতিরুই_মাছ",
+      "B-2.3 পরিপাক ও শোষণ",
+      "B-2.4 রক্ত সংবহন",
+      "B-2.5 শ্বসন_ও_শ্বাসক্রিয়া",
+      "B-2.6 বর্জ্য ও নিষ্কাশন",
+      "B-2.7 চলন ও অঙ্গ চালনা",
+      "B-2.8 সমন্বয়_ও_নিয়ন্ত্রন",
+      "B-2.9 মানব_জীবনের_ধারাবাহিকতা",
+      "B-2.10 মানবদেহের_প্রতিরক্ষা",
+      "B-2.11 জিনতত্ত্ব ও বিবর্তন",
+      "B-2.12 প্রাণীর আচরন"
+    ],
+    "pdfID": [
+      "10nBPpf7C-HeMx7NL0zP1eVYd6wxeAPIy",
+      "10kkDfpGKdiDf9Em6C3Pr3HM_d3GviE-G",
+      "10v5bG9YJn8rr9hjkd9Yd9t9CDcubSZSk",
+      "10clITixE1-n4JHfr8BSuLdx06EiQ-51x",
+      "10__1HAi6zvWdh4TD19upuzhtJIAa-ida",
+      "10S4hiAgo0RVGZ347VNlnia8glFqxNtS6",
+      "10ZSZ6ou4CcqJmHGo5x2t_igWVwJfNtkf",
+      "10LxReP_5rRN3NQXXWkEj9nF92cLjdizd",
+      "10XKhAlNgAG750jr0g26tM2TjKh-zqfbf",
+      "10qQ4xIab1wTPpot49kb7Gnd72uBreKXs",
+      "10KHy1eGY1gskhUAoPAU7Dri3qf52jGT5",
+      "10Po8R8mq2ZOtXhi5_Y6OrgM1dt5_3T6J",
+      "10UIQ9CdCPik_3Fc7L9QhVmyocAYAmyPo",
+      "10cTRpkhBGt2J6Gy2F7K9ePjh__MRxRa-",
+      "10qccZL4fMhKleA6e1FM5DVWyjuT9P31W"
+    ]
+  },
+  "cata1subjs1chapt9": {
+    "title": [
+      "ICT(Board Book)",
+      "ICT(Mahbub Sir-20)"
+    ],
+    "pdfID": [
+      "1ga4jv1PKb1_adCrB1Qx798H_BkfPt-7r",
+      "1wHs8L04k5Qaqzj5MLdUbPdK-mRK8nUVF"
     ]
   }
 }
