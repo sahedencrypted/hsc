@@ -185,7 +185,7 @@
   height: 90vh;
   margin: 10px;
  display: grid;
- grid-template-columns: 1.7fr 146px 1.6fr 2fr 6fr;
+ grid-template-columns: 2fr 143px 1.4fr 1.7fr 6fr;
 }
 .boxing {
     margin: 4px;
