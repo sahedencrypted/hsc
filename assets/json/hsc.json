@@ -3,8 +3,8 @@
     "name": "Category",
     "item1": [
       "Academic",
-      "Admisson",
-      "Hand Notes"
+      "Admisson🔥",
+      "ACS LS Varsity+GST"
     ]
   },
   "Subjects": {
@@ -17,12 +17,15 @@
     "item2": [
       "Marked Text Book-23",
       "Udvash Notes-23",
-      "ACS LS varsity+GST"
+      "ACS LS Varsity+GST"
     ],
     "item3": [
+      "Physics 1st",
       "Physics 2nd",
       "Math 1st",
-      "Math 2nd"
+      "Math 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd"
     ],
     "item4": [
       "BAN",
@@ -32,6 +35,19 @@
       "Physics 2nd",
       "Math 1st",
       "Math 2nd"
+    ]
+  },
+  "cata3subjs1": {
+    "items": [
+      "P-1.2 ভেক্টর",
+      "P-1.3 গতিবিদ্যা",
+      "P-1.4  নিউটনিয়ান বলবিদ্যা",
+      "P-1.5 কাজ শক্তি ও ক্ষমতা",
+      "P-1.6 মহাকর্ষ ও অভিকর্ষ",
+      "P-1.7 পদার্থের গাঠনিক ধর্ম",
+      "P-1.8 পর্যাবৃত্ত গতি",
+      "P-1.9 তরঙ্গ",
+      "P-1.10 আদর্শ গ্যাস ও গ্যাসের গতিতত্ত্ব"
     ]
   },
   "cata1subjs1": {
@@ -282,6 +298,22 @@
     "pdfID": [
       "1ga4jv1PKb1_adCrB1Qx798H_BkfPt-7r",
       "1wHs8L04k5Qaqzj5MLdUbPdK-mRK8nUVF"
+    ]
+  },
+  "cata3subjs1chapt1": {
+    "title": [
+      "Lecture Sheet_1",
+      "Lecture Sheet_2",
+      "Lecture Sheet_3",
+      "Practice Without solve",
+      "Practice With solve"
+    ],
+    "pdfID": [
+      "12nu-3XZs1cxUr8YoybjsvswLoIikL08i",
+      "1p_oVnFYMTNrYrHaQT8ciQHQHfI40-NnG",
+      "1Ptf46vhm2ESlL8TdVsnKw-I8gOPaN9qu",
+      "15Q53eCENFGCy-hzf6aDy_feemKnfetGh",
+      "1fOL6tU7YxU2isxE-uvALDYHF1_Lgd0VM"
     ]
   }
 }
