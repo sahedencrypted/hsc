@@ -4,7 +4,10 @@
     "item1": [
       "Academic",
       "Admisson🔥",
-      "ACS LS Varsity+GST"
+      "ACS LS Varsity+GST",
+      "ACS LS Engineering",
+      "FRB-23 Practice",
+      "ACS-24"
     ]
   },
   "Subjects": {
@@ -35,6 +38,90 @@
       "Physics 2nd",
       "Math 1st",
       "Math 2nd"
+    ],
+    "item5": [
+      "Practice Sheets"
+    ],
+    "item6": [
+      "Physics 1st",
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd"
+    ]
+  },
+  "cata6subjs1": {
+    "items": [
+      "০১ - ভৌতজগৎ ও পরিমাপ",
+      "০২ - ভেক্টর",
+      "০৪ - নিউটনিয়ান বলবিদ্যা",
+      "০৫ - কাজ শক্তি ও ক্ষমতা",
+      "০৬ - মহাকর্ষ ও অভিকর্ষ",
+      "০৭ - পদার্থের গাঠনিক ধর্ম",
+      "০৮ - পর্যাবৃত্ত গতি",
+      "১০ - গ্যাসের গতি তত্ত্ব"
+    ]
+  },
+  "cata6subjs2": {
+    "items": [
+      "০১ - তাপগতি বিদ্যা",
+      "০২ - স্থির তড়িৎ",
+      "০৩ - চল তড়িৎ",
+      "০৭ - ভৌত আলোকবিজ্ঞান",
+      "০৮ - আধুনিক পদার্থ বিজ্ঞান",
+      "০৯ - পরমাণুর মডেল এবং নিউক্লিয়ার",
+      "১০ - সেমিকন্ডাক্টট"
+    ]
+  },
+  "cata6subjs3": {
+    "items": [
+      "০১ - ম্যাট্রিক্স ও নির্ণায়ক",
+      "০২ - ভেক্টর",
+      "০৩ - সরলরেখা",
+      "০৪ - বৃত্ত",
+      "০৭ - সংযুক্ত ও যৌগিক কোণের ত্রিকোন..",
+      "০৯ - অন্তরীকরণ",
+      "১০ - যোগজীকরণ"
+    ]
+  },
+  "cata6subjs4": {
+    "items": [
+      "০৩ - জটিল সংখ্যা",
+      "০৪ - বহুপদী ও বহুপদী সমীকরণ",
+      "০৬ - কনিক",
+      "০৭ - বিপরীত ত্রিকোণমিতিক ফাংশন ও...",
+      "০৮ - স্থিতিবিদ্যা",
+      "০৯ - সমতলে বস্তুকনার গতি"
+    ]
+  },
+  "cata6subjs5": {
+    "items": [
+      "০২ - গুণগত রসায়ন",
+      "০৩ - মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক ব..",
+      "০৪ - রাসায়নিক পরিবর্তন",
+      "০৫ - কর্মমুখী রসায়ন"
+    ]
+  },
+  "cata6subjs6": {
+    "items": [
+      "০১ - পরিবেশ রসায়ন",
+      "০২ - জৈব রসায়ন",
+      "০৩ - পরিমাণগত রসায়ন",
+      "০৪ - তড়িৎ রসায়ন"
+    ]
+  },
+  "cata5subjs1": {
+    "items": [
+      "ICT",
+      "Physics 1st",
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd",
+      "Biology 1st",
+      "Biology 2nd"
     ]
   },
   "cata3subjs1": {
@@ -67,12 +154,15 @@
   },
   "cata1subjs2": {
     "items": [
-      "Physics 1st (Ishaq)",
-      "Physics 2nd (Ishaq)",
-      "Math 1st (Ketab)🔥",
-      "Math 2nd (Ketab)",
-      "Chemistry 1st (Hazari)",
-      "Chemistry 2nd (Hazari)"
+      "Physics 1st",
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd",
+      "Biology 1st",
+      "Biology 2nd",
+      "ICT"
     ]
   },
   "cata1subjs3": {
@@ -314,6 +404,152 @@
       "1Ptf46vhm2ESlL8TdVsnKw-I8gOPaN9qu",
       "15Q53eCENFGCy-hzf6aDy_feemKnfetGh",
       "1fOL6tU7YxU2isxE-uvALDYHF1_Lgd0VM"
+    ]
+  },
+  "cata5subjs1chapt1": {
+    "title": [
+      "Chapter-1",
+      "Chapter-2",
+      "Chapter-3",
+      "Chapter-4",
+      "Chapter-5"
+    ],
+    "pdfID": [
+      "1-X9sncbB65CSPwbcGGTUkgnPiAYbIEuK",
+      "1aV4cPYEfmYTrES48ZonvFnCwsMm2Bd0Y",
+      "1g4MIdc__zgYOBtkkl2Y_z6lqY90LAsJn",
+      "11pgK89XM14ZNopm1pW4rit9AsSvyAkI1",
+      "15yhEaOduJieIGgkndl_xoAtDE5TTBpzM"
+    ]
+  },
+  "cata1subjs2chapt1": {
+    "title": [
+      "P-0 কাভার-সুচীপত্র",
+      "P-1.1 ভৌত জগৎ ও পরিমাপ",
+      "P-1.2 ভেক্টর",
+      "P-1.4 নিউটনিয়ান বলবিদ্যা",
+      "P-1.5 কাজ, শক্তি ও ক্ষমতা",
+      "P-1.6 মহাকর্ষ ও অভিকর্ষ",
+      "P-1.7 পদার্থের গাঠনিক ধর্ম",
+      "P-1.8 পর্যাবৃত্তিক গতি",
+      "P-1.10 আদর্শ গ্যাস ও গ্যাসের গতিতত্ত্ব",
+      "Test Paper MCQ"
+    ],
+    "pdfID": [
+      "1Ix5szrb4LR2uHQrV-6vsNJfebmwif6d8",
+      "1PzRB72C_5_IWxggriVT8OFeM5-2xe2eZ",
+      "1cVPjapLlHZbASRyPKkGLtbSbYLMK5Gbm",
+      "1RURQO3Dfa2PF-xEVtb3a09mJ8HOlTWqi",
+      "1wyaKhSVXDpl9MVWUUVkLFSXoxr1ZKu33",
+      "13ga8CFR-rNLtESAl-XHG7CFYXqnFhrXx",
+      "1FGHfPfzx36f7kFQLutfvYbSy6DOvFl06",
+      "1AqGhAgMaxy75XAbi7WMd5LLaDbfqs6Bj",
+      "1YMRR5IgMcwmVIFXUilGc35LAPV1xJuja",
+      "1hM1-nHQC-IDnRlb2lPeqEXEu2X2f9F6O"
+    ]
+  },
+  "cata6subjs3chapt4": {
+    "title": [
+      "Lecture Sheet_1",
+      "Lecture Sheet_2",
+      "Home Work_1",
+      "Lecture Sheet_3",
+      "Lecture Sheet_4",
+      "Lecture Sheet_5",
+      "Lecture Sheet_6",
+      "Lecture Sheet_7",
+      "Home Work_2",
+      "Lecture Sheet_9",
+      "Lecture Sheet_10"
+    ],
+    "pdfID": [
+      "1fonkjAmQA3Jxt-23PxyrKegJDIfo9MRX",
+      "1NMsFHu7Y2MJ2CWYwkY22b-SCMahuoKTi",
+      "110U_RbEpDiDsnGnSBEj7lRW14sENO2lV",
+      "1GFjyxRmMPk5crfj7VkpjpweTRifXgZle",
+      "1Iyyd2AE9iLzuoczb-wwFOfOqHhUairnb",
+      "1WCNpr4ZErcDtlZsQa-AZU500GhlAMDZe",
+      "1IyGFFikS5flWwnXD8qlJd7SIoxwA7oxE",
+      "15TaadtT6265io7sDhGivcINllpMvsJEW",
+      "1I-jNknP4uBRNiRfkk2ZGU3PME9-hxh9R",
+      "1VulsqKFIIQ1KaHEYkYWi6-n-_A1PHOtC",
+      "1BVhzEDOe835YHRnc7PgJx6EJ92CNDsfy"
+    ]
+  },
+  "cata6subjs3chapt3": {
+    "title": [
+      "Lecture Sheet_1",
+      "Lecture Sheet_2",
+      "Home Work_1",
+      "Lecture Sheet_3",
+      "Home Work_2",
+      "Lecture Sheet_4",
+      "Home Work_3",
+      "Lecture Sheet_5",
+      "Home Work_4",
+      "Lecture Sheet_6",
+      "Home Work_5",
+      "Lecture Sheet_7",
+      "Home Work_6",
+      "Lecture Sheet_8",
+      "Home Work_7",
+      "Lecture Sheet_9",
+      "Home Work_8",
+      "Lecture Sheet_10",
+      "Home Work_9",
+      "Lecture Sheet_11",
+      "Lecture Sheet_12",
+      "Lecture Sheet_13",
+      "Home Work_10",
+      "Lecture Sheet_14",
+      "Home Work_11",
+      "Lecture Sheet_15",
+      "Lecture Sheet_16",
+      "Home Work_12",
+      "Lecture Sheet_17",
+      "Home Work_13",
+      "Lecture Sheet_18",
+      "Home Work_14",
+      "Lecture Sheet_19",
+      "Lecture Sheet_20",
+      "Home Work_15"
+    ],
+    "pdfID": [
+      "1_kdIop0T0e6Jv5-Lne-oyn2YGXRlGRw1",
+      "1vScWO1z7XpsVMyLc7GhEeQkKkPdCFh7s",
+      "1GC6K7thtK5KnFkO6DpIYVKt5bGKArun2",
+      "1JiuowbZ54RcnOUx2S4zX53nW0sRtvTLx",
+      "1d4SsTrdbMblc_pCoNhD5KsVJZ9_a2DPs",
+      "1HDmHOJ7Q6yBal9_dqGKjB-0sE78zPzPF",
+      "1aLtrGvmuyJq62cpDGNpRyUMD-VVtF8G1",
+      "1550H6OmAnP5fgXJLLoWro68whORz90E2",
+      "1kJklU3WJAtRJsHQn6cA0HkVTQhLFmSV5",
+      "1vfXmQTATCwOMSJFhF9DPiQq8ePUL6Jf0",
+      "1cTZHmbxBVf2D082pAa-yRSI-hLzVMJ7b",
+      "1EXWRD-8huMS0rHcnISfHGKBz8K9Ssw-C",
+      "1BSznHnHUx-ZS4PhZuryBG6jiG0AXKSTm",
+      "1gA0qqDaLQFh7y0gmIsitZUNntEmWVs9i",
+      "17g8diYBPoVQCUHOLGVKR6t4M2AD14WJY",
+      "1WR0GDjH9S1UKWoHsa1JfgYYR3pxia8y_",
+      "1J3TBBzXpRv2fIt8onLGUyBE-Ta5HvvTb",
+      "1XcmBZ39Rcf0RalpBwfqsQtIsvaX74SNX",
+      "1Xg069HWWFla4SzOQ8sWEtstME7TCS5aZ",
+      "1_NU8PSJ3sKzPXD8bqF_e9QdNMcunNrsW",
+      "1xtcYgJZFWEr2_wm5-ZKHjxL1EBvMXyYQ",
+      "1IpvA4DZoS44z7cDQ-Jv5OG4lNhUulsaA",
+      "18PBBo8ofgkshur1zdxH7YAvqbeO9oPUt",
+      "1H_zTUV-ha80abgDxhkWvUAjeunQ62Sz9",
+      "11XwqsLwyhe_PkV1EtiWIXQkYJSeePNt5",
+      "1loQuZe_dRGmSywRspe74PxaRGx6j45UN",
+      "1bh0SC5Z4Y3Jk_O-wKVmLWHUwiEDj3Dz-",
+      "1JmNAWNKM-VRoMF7tX_NjV6raTTPN6O28",
+      "1W1q9_CXW5CPfOktj5wojvnfuC-6OT4Hq",
+      "1Kr_wgm51CSCQOoHhOsR3jHEp8TeCjzVW",
+      "1RjoCu1Eb6Re4gqJlVmI68MPW0hLETXDl",
+      "1mAnZJNbP3eiSC0OTJXXqbf1qBKMJszov",
+      "1dkPZEZQejXLTkekLPALQA4D_YBbXgNDz",
+      "1dkPZEZQejXLTkekLPALQA4D_YBbXgNDz",
+      "1btJnO0djUwsSV1jdilcGdNbMga36Zygo"
     ]
   }
 }
