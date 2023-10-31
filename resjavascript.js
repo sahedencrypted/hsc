@@ -111,6 +111,8 @@ function addmarquee(){
 
 
 
+
+
 function allRowScript(){
   console.log("clicked")
   
@@ -122,9 +124,32 @@ function allRowScript(){
 
 
 
+const hoveredElement = document.querySelector(".books");
+const hoveredElement2 = document.querySelector(".subjects");
+const hoveredElement3 = document.querySelector(".chapters");
+const hoveredElement4 = document.querySelector(".pdfs");
+const targetDiv = document.querySelector(".container");
 
+ {hoveredElement.addEventListener("mouseenter", function () {
+      targetDiv.style.gridTemplateColumns = "210px 1.4fr 1.5fr 1.9fr 5.6fr"; // Change the grid-template-columns as needed
+    });
+    hoveredElement.addEventListener("mouseleave", function () {
+      targetDiv.style.gridTemplateColumns = '';});}
 
+ {hoveredElement2.addEventListener("mouseenter", function () {
+      targetDiv.style.gridTemplateColumns = "175px 1.7fr 1.5fr 1.9fr 5.6fr"; // Change the grid-template-columns as needed
+    });
+    hoveredElement2.addEventListener("mouseleave", function () {
+      targetDiv.style.gridTemplateColumns = '';});}
 
+  {hoveredElement3.addEventListener("mouseenter", function () {
+      targetDiv.style.gridTemplateColumns = "175px 1.4fr 1.9fr 1.9fr 5.6fr"; // Change the grid-template-columns as needed
+    });
+    hoveredElement3.addEventListener("mouseleave", function () {
+      targetDiv.style.gridTemplateColumns = '';});}
 
-
-
+  {hoveredElement4.addEventListener("mouseenter", function () {
+      targetDiv.style.gridTemplateColumns = "175px 1.4fr 1.5fr 2.4fr 5.6fr"; // Change the grid-template-columns as needed
+    });
+    hoveredElement4.addEventListener("mouseleave", function () {
+      targetDiv.style.gridTemplateColumns = '';});}
