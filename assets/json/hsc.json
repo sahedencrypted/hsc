@@ -6,7 +6,6 @@
       "Admisson🔥",
       "ACS LS Varsity+GST",
       "ACS LS Engineering",
-      "FRB-23 Practice",
       "ACS-24"
     ]
   },
@@ -15,7 +14,8 @@
     "item1": [
       "Text Books-23",
       "Test Papers-23",
-      "Hand Notes-23"
+      "Hand Notes-23",
+      "FRB-23 Practice"
     ],
     "item2": [
       "Marked Text Book-23",
@@ -40,18 +40,18 @@
       "Math 2nd"
     ],
     "item5": [
-      "Practice Sheets"
-    ],
-    "item6": [
       "Physics 1st",
       "Physics 2nd",
       "Math 1st",
       "Math 2nd",
       "Chemistry 1st",
       "Chemistry 2nd"
+    ],
+    "item6": [
+      
     ]
   },
-  "cata6subjs1": {
+  "cata5subjs1": {
     "items": [
       "০১ - ভৌতজগৎ ও পরিমাপ",
       "০২ - ভেক্টর",
@@ -63,7 +63,7 @@
       "১০ - গ্যাসের গতি তত্ত্ব"
     ]
   },
-  "cata6subjs2": {
+  "cata5subjs2": {
     "items": [
       "০১ - তাপগতি বিদ্যা",
       "০২ - স্থির তড়িৎ",
@@ -74,7 +74,7 @@
       "১০ - সেমিকন্ডাক্টট"
     ]
   },
-  "cata6subjs3": {
+  "cata5subjs3": {
     "items": [
       "০১ - ম্যাট্রিক্স ও নির্ণায়ক",
       "০২ - ভেক্টর",
@@ -85,7 +85,7 @@
       "১০ - যোগজীকরণ"
     ]
   },
-  "cata6subjs4": {
+  "cata5subjs4": {
     "items": [
       "০৩ - জটিল সংখ্যা",
       "০৪ - বহুপদী ও বহুপদী সমীকরণ",
@@ -95,7 +95,7 @@
       "০৯ - সমতলে বস্তুকনার গতি"
     ]
   },
-  "cata6subjs5": {
+  "cata5subjs5": {
     "items": [
       "০২ - গুণগত রসায়ন",
       "০৩ - মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক ব..",
@@ -103,7 +103,7 @@
       "০৫ - কর্মমুখী রসায়ন"
     ]
   },
-  "cata6subjs6": {
+  "cata5subjs6": {
     "items": [
       "০১ - পরিবেশ রসায়ন",
       "০২ - জৈব রসায়ন",
@@ -111,7 +111,7 @@
       "০৪ - তড়িৎ রসায়ন"
     ]
   },
-  "cata5subjs1": {
+  "cata1subjs4": {
     "items": [
       "ICT",
       "Physics 1st",
@@ -162,7 +162,11 @@
       "Chemistry 2nd",
       "Biology 1st",
       "Biology 2nd",
-      "ICT"
+      "ICT",
+      "Bangla 1st",
+      "Bangla 2nd",
+      "English 1st",
+      "English 2nd"
     ]
   },
   "cata1subjs3": {
@@ -406,7 +410,7 @@
       "1fOL6tU7YxU2isxE-uvALDYHF1_Lgd0VM"
     ]
   },
-  "cata5subjs1chapt1": {
+  "cata1subjs4chapt1": {
     "title": [
       "Chapter-1",
       "Chapter-2",
@@ -448,7 +452,7 @@
       "1hM1-nHQC-IDnRlb2lPeqEXEu2X2f9F6O"
     ]
   },
-  "cata6subjs3chapt4": {
+  "cata5subjs3chapt4": {
     "title": [
       "Lecture Sheet_1",
       "Lecture Sheet_2",
@@ -476,7 +480,7 @@
       "1BVhzEDOe835YHRnc7PgJx6EJ92CNDsfy"
     ]
   },
-  "cata6subjs3chapt3": {
+  "cata5subjs3chapt3": {
     "title": [
       "Lecture Sheet_1",
       "Lecture Sheet_2",
@@ -550,6 +554,284 @@
       "1dkPZEZQejXLTkekLPALQA4D_YBbXgNDz",
       "1dkPZEZQejXLTkekLPALQA4D_YBbXgNDz",
       "1btJnO0djUwsSV1jdilcGdNbMga36Zygo"
+    ]
+  },
+  "cata1subjs2chapt2": {
+    "title": [
+      "P-2.1 তাপগতিবিদ্যা",
+      "P-2.2 স্থির তড়িৎ",
+      "P-2.3 চল তড়িৎ",
+      "P-2.7 ভৌত আলোকবিজ্ঞান",
+      "P-2.8 আধুনিক পদার্থবিজ্ঞানের সূচনা",
+      "P-2.9 পরমাণুর মডেল এবং নিউক্লিয়ার পদার্থবিজ্ঞান",
+      "P-2.10 সেমিকন্ডাক্টার ও ইলেকট্রনিক্স",
+      "Test Paper MCQ"
+    ],
+    "pdfID": [
+      "1wpryZYTE9aqDhIoPL3InIrbyFIxQcwTO",
+      "1Id8tpniAHQZIv-0K8jrBQbdYNb7ON2jB",
+      "1QJXu3yYmcbVA0SlrZdjBevKfM7cL7bFt",
+      "1oB6f7nmuxQJ3N2eivgag3UrlgaFhOGqF",
+      "1Uok1wJvjNcqsT3RW_DUEowHIbx6Dlo2V",
+      "1yNhhpqDDLApOrmSZrOycqnA5F_IUnQxt",
+      "1oC0aFh69WBBmRTKBvYh07w4yLgsezWWK",
+      "103inqgVyl0KPrUoR2txRGlSKLWM-eCgD"
+    ]
+  },
+  "cata1subjs2chapt3": {
+    "title": [
+      "M-1.1 ম্যাট্রিক্স ও নির্ণায়ক",
+      "M-1.3 সরলরেখা",
+      "M-1.4 বৃত্ত",
+      "M-1.7 সংযুক্ত কোণের ত্রিকোণমিতিক অনুপাত",
+      "M-1.9 অন্তরীকরণ",
+      "M-1.10 যোগজীকরণ",
+      "Test Paper MCQ"
+    ],
+    "pdfID": [
+      "1WB_SRb3yzMvTnmgiaLaMDClgDt8dV46u",
+      "1BdMn3TkHbm1ORMF_xYZK4hGPkSZi1bYS",
+      "1y96oDiqt8-itLj8Jm-9uJMlx7hqqarsN",
+      "1FCSJgtwzu6D0xFWj3OW_2CSzFWillghU",
+      "1Z-UeAWGSvPtzEwqvpx4NH2jkywhGfFHV",
+      "1lbIykzf3QJ7wcABdaXxdvSAWkL-saONV",
+      "1XqaqdcD15D0NHUFN_3AqB3wBZRO--5Zb"
+    ]
+  },
+  "cata1subjs2chapt4": {
+    "title": [
+      "M-2.3 জটিল সংখ্যা",
+      "M-2.4 বহুপদী ও বহুপদী সমীকরণ",
+      "M-2.6 কনিক",
+      "M-2.7 বিপরীত ত্রিকোণমিতিক ফাংশন ও ত্রিকোণমিতিক সমীকরণ",
+      "M-2.8 স্থিতিবিদ্যা",
+      "M-2.9 সমতলে বস্তুকণার গতি",
+      "Test Paper MCQ"
+    ],
+    "pdfID": [
+      "11YmFZZg71zEdxWZMpcobawgCsziqcOMI",
+      "1YhW47GkSz13kQ4wS7BQAMMmDHRxVPrBV",
+      "1cr-wwEZbEFRzE1bdVXtN9p7iHQiqUvdQ",
+      "1BJFq4xPv36l0Se6s0VaZQ0MSknYwFUS-",
+      "1XUhy4LQtlcfl-aocCnyQPE8a4RApKPOA",
+      "1r_cIDbOzdJQ2YotmSYZX8_8PCOFNCAMj",
+      "1dNAIYv7UhRBdSqEyVZXvjk_Vqg_PLYU4"
+    ]
+  },
+  "cata1subjs2chapt5": {
+    "title": [
+      "C-1.2 গুণগত রসায়ন",
+      "C-1.3 মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধন",
+      "C-1.4 রাসায়নিক পরিবর্তন",
+      "C-1.5 কর্মমুখী রসায়ন",
+      "Test Paper MCQ"
+    ],
+    "pdfID": [
+      "1pPkNktacSv1-jTYSdNCBm0GsLnXPQqEZ",
+      "1K2sHRGietWWdNz2HbKBByJvURJA-YBp6",
+      "16PjheKIGKKn_l4tW6nMptpp1DSiCRSsz",
+      "1GzCYljMcrutD_ta0_jpy2-2A3hWVd3al",
+      "1sPcKxGygtvbKMYRLZ4VpvaKWsIrKnPsp"
+    ]
+  },
+  "cata1subjs2chapt6": {
+    "title": [
+      "C-2.1 পরিবেশ রসায়ন",
+      "C-2.2 জৈব রসায়ন",
+      "C-2.3 পরিমাণগত রসায়ন",
+      "C-2.4 তড়িৎ রসায়ন",
+      "Test Paper MCQ"
+    ],
+    "pdfID": [
+      "1m6RIkX_U4vUdd1JQeuWtC7DJ5sBgaH0M",
+      "1zi8y0ninwtGDnwb3ZVsz0ejGYNTe79BO",
+      "1HyTNBzPVhPF9FqQdtwc6fZ_sQmtm6Qaq",
+      "1NN7d2QW7YoCeUI5llAIroHQ0ULTDA4q1",
+      "1oKjTyacZ1se7JHpvuBGPgL5Xv4M8m4I4"
+    ]
+  },
+  "cata1subjs2chapt7": {
+    "title": [
+      "B-1.1 কোষ ও এর গঠন",
+      "B-1.2 কোষ বিভাজন",
+      "B-1.4 অনুজীব",
+      "B-1.7 নগ্নবীজী ও আবৃতবীজী উদ্ভিদ",
+      "B-1.8 টিস্যু ও টিস্যুতন্ত্র",
+      "B-1.9 উদ্ভিদ শারীরতত্ত্ব",
+      "B-1.11 জীব প্রযুক্তি",
+      "Test Paper MCQ"
+    ],
+    "pdfID": [
+      "1U6liGOS7PlQoUQNJ6OAVd5Mi3e8Lw809",
+      "1jZAk2bxYvMkwVxeomDr3aUvcbR00-FgK",
+      "1-HzjGGsmDwwyadhUS24kRK_O6BsK6qHD",
+      "1mmbuCFX0g9Ko5w-4t57nZaIM1zuM4Sh7",
+      "1MLX4JDKaEfeWL9Beljmi2O-05bifDA5y",
+      "1clNMM5Wc7OcsJdQ2jIKegrhTLCnUYHB1",
+      "15RFvw1nb9EZKypFhCf-eBmZmRc7Mv91Y",
+      "1nvFHs9YY7GlhHd7aN9n1ITK-FIT74EKK"
+    ]
+  },
+  "cata1subjs2chapt8": {
+    "title": [
+      "B-2.1 প্রাণির বিভিন্নতা ও শ্রেণিবিন্যাস",
+      "B-2.2 প্রাণির পরিচিতি",
+      "B-2.3 পরিপাক ও শোষণ",
+      "B-2.4 রক্ত ও সঞ্চালন",
+      "B-2.5 শ্বসন ও শ্বাসক্রিয়া",
+      "B-2.7 চলন ও অঙ্গচালনা",
+      "B-2.11 জিনতত্ত্ব ও বিবর্তন"
+    ],
+    "pdfID": [
+      "1INcrJZSrSvTJEBnYr6si1wWNVBKWr8bC",
+      "158ysS0TrcAj0H-2i9htVjvZWXmUNwJeN",
+      "1OB7Vjld0EY_kL5KJxRv9ngn-iS9yVnML",
+      "1fwGTNYkrYDi-8nUVzKrbefBpUer2uwvh",
+      "1jXmLb1tLakQ94FgWN9lDYEciorHGvhHt",
+      "1mjjQrzv92PCJ7uQKPiO4sI0_uW9MiXny",
+      "1JWDhyiH-gOPqB1BzvWGTSQFhzkCx8HyH"
+    ]
+  },
+  "cata1subjs2chapt9": {
+    "title": [
+      "1. বিশ্ব ও বাংলাদেশ প্রেক্ষিত",
+      "2. কমিউনিকেশন সিস্টেম ও নেটওয়ার্কিং",
+      "3. সংখ্যা পদ্ধতি ও ডিজিটাল ডিভাইস",
+      "4. ওয়েব ডিজাইন পরিচিতি এবং HTML",
+      "5. প্রোগ্রামিং ভাষা",
+      "Test Paper MCQ"
+    ],
+    "pdfID": [
+      "1wZoW762UGKiwyV94FCFE3aCgRWkN0osK",
+      "1oe_IkBGrlIwYu5g9TwulLm-Xcl0iOB1s",
+      "1bWwaik2UgH7jDRJi0dmuhRrXRwIGgk-Z",
+      "1yExOXmOXWerrPJ9GAko2FhKrRv9dXuBM",
+      "17zLtZRkmWj1CrqYojeRDMccYkvhP5Kyc",
+      "1JzuxJjLcznqG5NkH2iXe9xvG1TH08mbl"
+    ]
+  },
+  "cata1subjs2chapt10": {
+    "title": [
+      "1.0 কাভার-সূচীপত্র",
+      "1.1 গদ্য-অপরিচিতা",
+      "1.2 গদ্য-আমার পথ",
+      "1.3 গদ্য-বায়ান্নর দিনগুলো",
+      "1.4 গদ্য-বিলাসী",
+      "1.5 গদ্য-মানব কল্যাণ",
+      "1.6 গদ্য-মাসি-পিসি",
+      "1.7 গদ্য-রেইনকোট",
+      "1.8 কবিতা-আঠারো বচর বয়স",
+      "1.9 কবিতা-আমি কিংবদন্তির কথা বলছি",
+      "1.10 কবিতা-তাহারেই পড়ে মনে",
+      "1.11 কবিতা-ফেব্রুয়ারি ১৯৬৯",
+      "1.12 কবিতা-বিদ্রোহী",
+      "1.13 কবিতা-সোনার তরী",
+      "1.14 কবিতা-প্রতিদান",
+      "1.15 নাটক-সিরাজউদ্দৌলা",
+      "1.16 উপন্যাস-লালসালু",
+      "Test Paper MCQ"
+    ],
+    "pdfID": [
+      "1JG2tVe12rBK-WM7ChQ-NtKP9jjsEH_ms",
+      "1qPVQCjOyTojZ2-IO7hCDkCrQihnxTNKm",
+      "1zPlHLRRh-ymX4jTII1diO2Wpitg990LB",
+      "1-Qco4bX59l658gGkJJwSKrskBnQyKC7F",
+      "1minbaef2DDz_XCv-0UlOAk7B7fFejEmG",
+      "1ZriBYs2O94WLfEdkmqafTnYyNl7-TZtO",
+      "1YjFgxK_HR4bXsV9iGSVIHnthXi22rVr2",
+      "1dIgdirWO-MrnGsIfb5NfLbTlYKIIHFk9",
+      "1uZAKvlbcNo1mDonBbFSejO0B4Fden24f",
+      "1M2CYHXGBB7tvzxFMwbf_XJt3cxHIC_ew",
+      "1zQinRt6gWbu5uVqn8BKdPrgdyZpAM_x5",
+      "1wsHYtXrGxX80SU815ZD38oh0yKo7QUV8",
+      "14oUYj8Knsh-pC4GqvS-EGREKi0ZzxEaP",
+      "12Vgop-dmYjKpCytg2QUFkexx363TqNM3",
+      "1XA3vk4sbFe7lJE77lOxcOAQ1pd623QSV",
+      "1QtWfZVtIvDHm5p21Xo1-cMOlVvQqifqz",
+      "1zXyyKDe5zhFnXa5aEJi8I6jN9t9Nqm_A",
+      "1lv4r-rINhPt_m9uE2IxVLP9UVDtaEDtz"
+    ]
+  },
+  "cata1subjs2chapt11": {
+    "title": [
+      "2.1 ব্যাকরণ-বাংলা উচ্চারনের নিয়ম",
+      "2.2 ব্যাকরণ-বাংলা বানানের নিয়ম",
+      "2.3 ব্যাকরণ-বাংলা ভাষার ব্যাকরণিক শব্দশ্রেণি",
+      "2.4 ব্যাকরণ-বাংলা শব্দ গঠন : উপসর্গ ও সমাস",
+      "2.5 ব্যাকরণ-বাক্যতত্ত্ব",
+      "2.6 ব্যাকরণ-বাংলা ভাষার অপপ্রয়োগ ও শুদ্ধ প্রয়োগ",
+      "2.7 নির্মিতি-পারিভাষিক শব্দ/অনুবাদ",
+      "2.8 নির্মিতি-দিনলিপ লিখন/প্রতিবেদন",
+      "2.9 নির্মিতি-বৈদ্যুতিক চিঠি/আবেদন পত্র",
+      "2.10 নির্মিতি-সারাংশ/ভাব-সম্প্রসারণ",
+      "2.11 নির্মিতি-সংলাপ/খুদে গল্প",
+      "2.12 নির্মিতি-প্রবন্ধ- নিবন্ধ রচনা"
+    ],
+    "pdfID": [
+      "17VwbHpTCSsEbsqVgq945zEBiZ7PN9p9F",
+      "1ISKoRGxFHHXDrfPJ7vUAp8OIwxjh_kn_",
+      "1weovFZI4uqz97QN7PqbGVM8kNeUE2EJp",
+      "1mnb9lxCHM499F3ISZ7RMAqqUIsXnyrjY",
+      "1o2ycuy6ofMTM2exVV53Hc8nCx8Wg5TtH",
+      "1ZYWon10j_FFxHx3xNiaGTFkgJLS6xHXi",
+      "15NQ4lQIVdSzFv-H2eMFvhiUNcAYU6K6m",
+      "1q1WjtG2vdLcGI9FN8QAJYtnGg1ycLslM",
+      "1npFnlsb8RpIuBrU3zOHyipazpAzmQdBg",
+      "1PI8G3RqlwZqDBgGfhcdNfAHgBcI1KFJI",
+      "1yRa9_CCzbOrHSVsmIj-L2H0jhLYoTU11",
+      "1AbaYkMmakQ4xF967C9JRAab98UonLYep"
+    ]
+  },
+  "cata1subjs2chapt12": {
+    "title": [
+      "1.1 English 1st Test Question 1-19",
+      "1.1 English 1st Test Solution 1-19",
+      "1.2 English 1st Test Question 20-41",
+      "1.2 English 1st Test Solution 20-41",
+      "1.3 English 1st Test Question 42-62",
+      "1.3 English 1st Test Solution 42-62",
+      "1.4 English 1st Test Question 63-84",
+      "1.4 English 1st Test Solution 63-84",
+      "1.5 English 1st Board Question 85-11",
+      "1.5 English 1st Board Solution 85-111"
+    ],
+    "pdfID": [
+      "1JrDTF6fUZNc_KcGU5o9hqgHGi68BY6ob",
+      "1K9J_k8PkWwf-7-OdX3wh4MyEWgNvuxGQ",
+      "1JurNaHF9bSdG7G60h7bqTsv-dbgOH35q",
+      "1KCQW6ZOtUh_N1cxW3tgM8EB6pb6_Yi07",
+      "1Jy5zgDbOFur_QkDcts5mY1_p_WgNOojm",
+      "1KGTZR_tGcPuFrM4D-RYvqN5LU5s4EJF3",
+      "1K50Sxx9KdgpzRiYQRB1je8x3eZwD9NOv",
+      "1KJj9HgErgY40R2eNdkSG53CKf2NAq0aB",
+      "1K7B6ZLYAM6hZiO3OKDocljBCXzjjvY1H",
+      "1KSC4d8-3YPGl45gyImvMPg8N7-hfE2rn"
+    ]
+  },
+  "cata1subjs2chapt13": {
+    "title": [
+      "2.1 English 2nd Test Question 112-136",
+      "2.1 English 2nd Test Solution 112-136",
+      "2.2 English 2nd Test Question 137-161",
+      "2.2 English 2nd Test Solution 137-161",
+      "2.3 English 2nd Test Question 162-187",
+      "2.3 English 2nd Test Solution 162-187",
+      "2.4 English 2nd Test Question 188-201",
+      "2.4 English 2nd Test Solution 188-201",
+      "2.5 English 2nd Board Question 202-228",
+      "2.5 English 2nd Board Solution 202-228"
+    ],
+    "pdfID": [
+      "1KiweCUIAJsaulMkDA4DIu1h4qSS3W1aX",
+      "1LFDaKqn1tOM9hgdUSchz_P4qtmOwew4X",
+      "1Kj6vLdBRGQbWwYXGvwR62hDlZHa1MOxC",
+      "1LSMeaSzIR9cd30hZHQuOA4oE4Za1WqOG",
+      "1L-JowBJKXLj-3mnsAPoFUNncbSshsArS",
+      "1LVT5bA7jWwWz5bXWV1V0Z0eEV3VGmtgc",
+      "1L5u7T09zy3zaML0hAeMsVBp3BrD7KKWZ",
+      "1LkrIb_rfhEU17lbhy9ux2TcwlRoWKeJD",
+      "1LDpZl8kBFPfeiFOQhYDith53rC87wRA8",
+      "1LltwdPrA_IbeFGlDidD0SNcs5htOUvkv"
     ]
   }
 }

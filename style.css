@@ -204,8 +204,13 @@
 .row-container {
   overflow: hidden;
   white-space: nowrap;
-  transition: max-height 0.6s ease-in;
   
+  
+  
+  }
+  #pdfs{
+    overflow-y: auto;
+    transition: max-height 0.6s ease-in;
   }
 
   .rows {
@@ -321,6 +326,36 @@
   font-family: 'NotoSerifBengali';
   font-size: 15px;
 }
+
+#pdfs::-webkit-scrollbar {
+  width: 1px;
+  height: 9px;
+}
+#pdfs:hover::-webkit-scrollbar {
+  width: 6px;
+  height: 9px;
+}
+#pdfs::-webkit-scrollbar-thumb {
+  background-color: var(--nav);
+  border-radius: 10px;
+}
+
+#pdfs::-webkit-scrollbar-thumb:hover {
+  background-color: #444746;
+}
+
+/* Hide scrollbar track */
+#pdfs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+
+
+
+
+
+
 
 
 

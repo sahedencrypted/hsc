@@ -245,6 +245,7 @@ function createPdfzoneItemDivs(data, selectedGroup) {
   }
   PDFSelection()
   checkAndSetupMobileBehavior()
+  setPDFContainerHeight("pdfs");
 }
 
 
@@ -358,6 +359,8 @@ loadJSON(function (data) {
     }
   }}
 
+  
+
 });
 
 
@@ -372,6 +375,7 @@ const variableNameToMatch = `${storedCategory}${storedSubjects}${storedChapters}
 
   if (data[variableNameToMatch]) {
       createPdfzoneItemDivs(data, variableNameToMatch);
+      
   }
   else{
     var itemsDiv = document.getElementById("pdfs");
@@ -392,6 +396,9 @@ const variableNameToMatch = `${storedCategory}${storedSubjects}${storedChapters}
       }
     }
   }}
+  
+  
+
   
 });
 

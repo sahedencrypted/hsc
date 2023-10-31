@@ -181,6 +181,7 @@ function chapterselect(){
     
       if (data[variableNameToMatch]) {
           createPdfzoneItemDivs(data, variableNameToMatch);
+          setPDFContainerHeight("pdfs");
       }
       else{
         var itemsDiv = document.getElementById("pdfs");
@@ -193,10 +194,35 @@ function chapterselect(){
   PDFSelection();
   checkAndSetupMobileBehavior(); //smothscroll down to div for phones
   allRowScript();
+  
 
 
           });
        });
 }
 
+
+
+
+function setPDFContainerHeight(containerId) {
+  const container = document.getElementById(containerId);
+
+  if (!container) {
+    console.error(`Container with id "${containerId}" not found.`);
+    return;
+  }
+
+  const maxHeight = 393; // Set the maximum height in pixels
+
+  // Calculate the height based on the content in the container
+  const contentHeight = container.scrollHeight;
+
+  if (contentHeight > maxHeight) {
+    container.style.maxHeight = `${maxHeight}px`;
+  } else {
+    container.style.maxHeight = `${contentHeight}px`;
+  }
+}
+
+// Call the function with your container's ID
 
