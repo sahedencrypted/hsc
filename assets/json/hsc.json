@@ -47,9 +47,7 @@
       "Chemistry 1st",
       "Chemistry 2nd"
     ],
-    "item6": [
-      
-    ]
+    "item6": []
   },
   "cata5subjs1": {
     "items": [
@@ -386,12 +384,20 @@
   },
   "cata1subjs1chapt9": {
     "title": [
-      "ICT(Board Book)",
-      "ICT(Mahbub Sir-20)"
+      "ICT_Chapter_1_NCTB_23",
+      "ICT_Chapter_2_NCTB_23",
+      "ICT_Chapter_3_NCTB_23",
+      "ICT_Chapter_4_NCTB_23",
+      "ICT_Chapter_5_NCTB_23",
+      "ICT_Chapter_6_NCTB_23"
     ],
     "pdfID": [
-      "1ga4jv1PKb1_adCrB1Qx798H_BkfPt-7r",
-      "1wHs8L04k5Qaqzj5MLdUbPdK-mRK8nUVF"
+      "170k9CTZL0Yn9dOujQTaZUViJOUE6HGje",
+      "1nF7zyAKSHPucweDj6RUBzJIhSoxB_jZm",
+      "16hjlTvn39BqS0P1J7o0UXhgm_3O5W44a",
+      "1fLz1w_t5zZQ59Lig7LdqU_to2_rZIsFz",
+      "1G12jFOOPH9ZV4Lp7eniA_5MoD8WgaVjM",
+      "12BOPYgcnV9uUebNFBM2i2aNz-YjaJf3j"
     ]
   },
   "cata3subjs1chapt1": {
