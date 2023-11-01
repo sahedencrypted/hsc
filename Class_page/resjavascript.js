@@ -123,7 +123,8 @@ function allRowScript(){
 
 
 
-
+function rrcheckAndSetupMobileBehavior() {
+  if (window.innerWidth >= 600) { 
 const hoveredElement = document.querySelector(".books");
 const hoveredElement2 = document.querySelector(".subjects");
 const hoveredElement3 = document.querySelector(".chapters");
@@ -154,4 +155,5 @@ const targetDiv = document.querySelector(".container");
     hoveredElement4.addEventListener("mouseleave", function () {
       targetDiv.style.gridTemplateColumns = '';});}
 
-
+    }};
+  rrcheckAndSetupMobileBehavior();

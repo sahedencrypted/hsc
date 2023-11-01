@@ -122,7 +122,7 @@ fullButton.addEventListener('click', function () {
   } else if (iframeContainer.msRequestFullscreen) {
     iframeContainer.msRequestFullscreen();
   }
-  setupPinchToZoom();
+  //setupPinchToZoom();
   fullButton.style.display = 'none';
   minimizeButton.style.display = 'block';
 });
