@@ -18,14 +18,7 @@ function PDFSelection() {
         // Log the ID to the console
         const pdfID = pdfzElement.id;
         localStorage.setItem('pdfID', pdfID);
-        if (window.innerWidth >= 600) {
         iframe.src = `https://drive.google.com/file/d/${pdfID}/preview`;
-        console.log("pc");
-        }
-        else{
-          console.log("phone");
-          iframe.src = `https://drive.google.com/file/d/${pdfID}/view`;
-        }
         var ttf = document.getElementById("pdfFrame");
         ttf.classList.toggle("skeleton");
       });

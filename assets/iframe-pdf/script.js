@@ -122,7 +122,7 @@ fullButton.addEventListener('click', function () {
   } else if (iframeContainer.msRequestFullscreen) {
     iframeContainer.msRequestFullscreen();
   }
-
+  setupPinchToZoom();
   fullButton.style.display = 'none';
   minimizeButton.style.display = 'block';
 });
@@ -146,4 +146,39 @@ minimizeButton.addEventListener('click', function () {
 
 
 
-//zoom section
+//zoom in out
+function setupPinchToZoom() {
+  const zoomFrame = document.getElementById("iframeContainer");
+  let currentZoom = 1;
+  let initialTouchDistance = null;
+
+  zoomFrame.addEventListener("touchstart", (event) => {
+    if (event.touches.length === 2) {
+      // Calculate the initial distance between the two touch points.
+      initialTouchDistance = Math.hypot(
+        event.touches[0].clientX - event.touches[1].clientX,
+        event.touches[0].clientY - event.touches[1].clientY
+      );
+    }
+  });
+
+  zoomFrame.addEventListener("touchmove", (event) => {
+    if (event.touches.length === 2) {
+      // Calculate the new distance between the two touch points.
+      const newTouchDistance = Math.hypot(
+        event.touches[0].clientX - event.touches[1].clientX,
+        event.touches[0].clientY - event.touches[1].clientY
+      );
+
+      // Calculate the scale factor based on the change in touch distance.
+      const scaleChange = (newTouchDistance - initialTouchDistance) / initialTouchDistance;
+      currentZoom += scaleChange;
+
+      // Apply the new zoom level to the pdfFrame.
+      zoomFrame.style.transform = `scale(${currentZoom})`;
+
+      // Update the initial touch distance for the next move event.
+      initialTouchDistance = newTouchDistance;
+    }
+  });
+}

@@ -56,7 +56,6 @@
     width: 21px;
     height: 21px;
     opacity: 0.7;
-    margin-bottom: 7px;
   }
   .downloadButton:hover{
     opacity: 1;
@@ -84,14 +83,7 @@
     width: 23px;
     height: 23px;
   }
-  .pdfsize{
-    color: #fff;
-    font-size: 10px;
-    opacity: 0.7;
-  }
-  .pdfsize:hover{
-    opacity: 0.9;
-  }
+
   .arrow-cont{
     position: absolute;
     background: black;
