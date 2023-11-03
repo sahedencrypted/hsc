@@ -29,5 +29,9 @@ iframe {
 {
 .arrow-cont{
   display: none;
+
+}
+.iframe-container {
+  margin-top: 16px;
 }
 }
