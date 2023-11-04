@@ -80,13 +80,31 @@
     color: var(--nav);
     white-space: nowrap;
     margin-right: 138px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.vr-cont{
+  position: absolute;
+}
+.version{
+  border-radius: 5px;
+  color: #f14f4f;
+  border: 1px solid #f14f4f;
+  font-size: 10px;
+  padding: 1px 3px;
+  position: relative;
+  top: 8px;
+  left: 36px;
+  opacity: 0.8;
+  font-family: 'Dosis';
 }
     .burger{
-      display: grid;
+    display: grid;
     place-items: center;
     height: 54px;
     width: 56px;
     transition: background 1s;
+    opacity: 0.8;
         
     }
     .burger svg{
@@ -248,7 +266,7 @@
        }
 .main{
   background-color: var(--mid);
-  height: 1000px;
+  height: 2000px;
   display: grid;
   justify-content: center;
   background-image: url(assets/images/pattern.png);

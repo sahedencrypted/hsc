@@ -52,7 +52,7 @@
       top: -106px;
       width: 100%;
       height: 117vh;
-      background: #fff url(assets/images/loader.gif) no-repeat center;
+      background: #fff url(../assets/images/loader.gif) no-repeat center;
       z-index: 99;
       background-size: 41px;
              }
@@ -87,6 +87,7 @@
     height: 54px;
     width: 56px;
     transition: background 1s;
+    opacity: 0.8;
         
     }
     .burger svg{
@@ -248,7 +249,7 @@
        }
 .main{
   background-color: var(--mid);
-  height: 1000px;
+  height: 2000px;
   display: grid;
   justify-content: center;
   background-image: url(assets/images/pattern.png);
