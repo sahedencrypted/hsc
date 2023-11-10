@@ -1,0 +1,21 @@
+Vector_Lecture_1
+Vector_Lecture_2
+Vector_Lecture_3
+Vector_Lecture_4
+Vector_Lecture_5
+Vector_Lecture_6
+Vector_Lecture_7
+Vector_Lecture_8
+Vector_Lecture_9
+Vector_Lecture_10
+Vector_Lecture_11
+Vector_Lecture_12
+Vector_Lecture_13
+Vector_Lecture_14
+Vector_Lecture_15
+Vector_Lecture_16
+Vector_Lecture_17
+Vector_QnA_Class
+Vector_Recap_class_Part1
+Vector_Recap_class_Part2
+Vector_(Recap + CQ/MCQ Class) Part 2

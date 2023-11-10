@@ -371,10 +371,7 @@
 
 
 
-.books:hover + .container{
-  max-width: 60vw!important;
-  grid-template-columns: 200px 1.4fr 1.5fr 1.9fr 5.6fr!important;
-}
+
 
 
 

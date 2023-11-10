@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="">
+    <title>HSC Preparation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="assets/videoplayer/style.css">
+    <link rel="shortcut icon" type="x-icon" href="https://drive.google.com/uc?export=download&id=1n4iZk-2QqB-ZsC2OjUi2erJdkcRshu7c">
+    <link rel="stylesheet" href="assets/iframe-pdf/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+    @font-face {
+        font-family: "NotoSerifBengali";
+        src: url("assets/fonts/NotoSerifBengali.ttf");
+    }
+    @font-face {
+        font-family:"Heavitas";
+        src: url(assets/fonts/Heavitas.ttf);
+    }
+</style>
+    
+<body  onload="myLoad()" class="light-theme">
+
+    <div id="loding"></div>
+    <nav class="navbar">
+        <div class="logo">
+            hsc.pages.dev
+        </div>
+        <div class="lis">
+            <div class="web-theme themebtn">
+                <svg class="sun-icon close"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2V3" stroke="var(--nav)" stroke-width="1.056" stroke-linecap="round"></path> <path d="M12 21V22" stroke="var(--nav)" stroke-width="1.056" stroke-linecap="round"></path> <path d="M22 12L21 12" stroke="var(--nav)" stroke-width="1.056" stroke-linecap="round"></path> <path d="M3 12L2 12" stroke="var(--nav)" stroke-width="1.056" stroke-linecap="round"></path> <path d="M19.0708 4.92969L18.678 5.32252" stroke="var(--nav)" stroke-width="1.056" stroke-linecap="round"></path> <path d="M5.32178 18.6777L4.92894 19.0706" stroke="var(--nav)" stroke-width="1.056" stroke-linecap="round"></path> <path d="M19.0708 19.0703L18.678 18.6775" stroke="var(--nav)" stroke-width="1.056" stroke-linecap="round"></path> <path d="M5.32178 5.32227L4.92894 4.92943" stroke="var(--nav)" stroke-width="1.056" stroke-linecap="round"></path> <path d="M6.34141 10C6.12031 10.6256 6 11.2987 6 12C6 15.3137 8.68629 18 12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C11.2987 6 10.6256 6.12031 10 6.34141" stroke="var(--nav)" stroke-width="1.056" stroke-linecap="round"></path> </g></svg>
+                <svg class="mun-icon open"  xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 24 24" fill="none">
+                    <path d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.7553 2.29085V2.29085L12.1432 2.93276ZM7.37554 20.013C7.017 19.8056 6.5582 19.9281 6.3508 20.2866C6.14339 20.6452 6.26591 21.104 6.62446 21.3114L7.37554 20.013ZM2.68862 17.3755C2.89602 17.7341 3.35482 17.8566 3.71337 17.6492C4.07191 17.4418 4.19443 16.983 3.98703 16.6245L2.68862 17.3755ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.5828 12.531 3.57467L11.7553 2.29085C9.65609 3.5593 8.25 5.86509 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.7324 2.63168C11.6686 2.56527 11.6538 2.50244 11.6503 2.47703C11.6461 2.44587 11.6482 2.35557 11.7553 2.29085L12.531 3.57467C13.0342 3.27065 13.196 2.71398 13.1368 2.27627C13.0754 1.82126 12.7166 1.25 12 1.25V2.75ZM21.7092 12.2447C21.6444 12.3518 21.5541 12.3539 21.523 12.3497C21.4976 12.3462 21.4347 12.3314 21.3683 12.2676C21.2899 12.1923 21.25 12.0885 21.25 12H22.75C22.75 11.2834 22.1787 10.9246 21.7237 10.8632C21.286 10.804 20.7293 10.9658 20.4253 11.469L21.7092 12.2447ZM12 21.25C10.3139 21.25 8.73533 20.7996 7.37554 20.013L6.62446 21.3114C8.2064 22.2265 10.0432 22.75 12 22.75V21.25ZM3.98703 16.6245C3.20043 15.2647 2.75 13.6861 2.75 12H1.25C1.25 13.9568 1.77351 15.7936 2.68862 17.3755L3.98703 16.6245Z" fill="var(--nav)"/>
+                    </svg>
+                
+            </div>
+             
+            <a href="../index.html" target="_self">PDF_Zone</a>
+            <a href="#" target="_self">Upload PDF</a>
+            <a href="#" target="_self">About Us</a>
+        </div>  
+        <div class="burger">
+            <svg width="26px" height="26px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#667FEA"></path> </g></svg>
+            
+        </div>
+       
+    </nav>
+    <div id="list" class="list listt">
+        <div class="listtop">
+                                      <div class="p">k</div>
+            <a class="mhome" href="../index.html" target="_self">PDF_Zone</a>
+            <a href="#">Java Script</a>
+            <a href="https://youtu.be/cv7ZdA9mWxU" target="_blank">Subscribe</a>
+            <a href="#">Send</a>
+            <a href="#">Share</a>
+            
+            </div>
+       
+    </div>
+    <div onclick="mui()" class="bac"></div>
+    <div class="navbar-gap"></div>
+   <!--  Explore window  -->
+
+
+    <main class="main" >
+        
+    <div class="container" >       
+        <div class="books boxing">
+            <div id="Category_1" class="rhead"></div>
+            <div id="Category_1items" class="row-container"></div>  
+        </div>
+
+        <div class="subjects boxing">
+          <div id="Catagory_2" class="rhead" ></div>  
+          <div id="Catagory_2items" id="subjects" class="row-container">
+            <div class="default-rows">Select a Category</div>
+            </div>
+        </div>
+
+        <div class="chapters boxing">
+          <div id="Catagory_3" class="rhead" >Chapters</div> 
+          <div id="Catagory_3items" class="row-container">
+            <div class="default-rows">Select a Category</div>
+            </div>
+        </div>
+
+        <div class="pdfs boxing llpdf-container">
+          <div id="pdfzone" class="rhead llpdfzone" >PDF Zone</div> 
+          <div id="Catagory_4items" class="rhead llclass" >Class</div>
+            <div style="max-height: 320px;" class="row-container scrollable">
+                <div id="pdfs" class="row-container">
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="iframe-container" id="iframeContainer">
+            <div class="video-container paused" data-volume-level="high">
+                <img class="thumbnail-img">
+                <div class="video-controls-container">
+                  <div class="timeline-container">
+                    
+                    <div class="timeline">
+                      <img class="preview-img">
+                      <div class="thumb-indicator"></div>
+                      <div id="progress-bar-container">
+                        <div id="progress-bar"></div>
+                      </div>
+            
+                    </div>
+                  </div>
+                  <div class="controls">
+                    <button class="play-pause-btn">
+                      <svg class="play-icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                      </svg>
+                      <svg class="pause-icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M14,19H18V5H14M6,19H10V5H6V19Z" />
+                      </svg>
+                    </button>
+                    <div class="volume-container">
+                      <button class="mute-btn">
+                        <svg class="volume-high-icon" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+                        </svg>
+                        <svg class="volume-low-icon" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M5,9V15H9L14,20V4L9,9M18.5,12C18.5,10.23 17.5,8.71 16,7.97V16C17.5,15.29 18.5,13.76 18.5,12Z" />
+                        </svg>
+                        <svg class="volume-muted-icon" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" />
+                        </svg>
+                      </button>
+                      <input class="volume-slider" type="range" min="0" max="1" step="any" value="1">
+                    </div>
+                    <div class="duration-container">
+                      <div class="current-time">0:00</div>
+                      /
+                      <div class="total-time"></div>
+                    </div>
+                    <button class="speed-btn wide-btn">
+                      1x
+                    </button>
+                    <button class="mini-player-btn">
+                      <svg viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zm-10-7h9v6h-9z"/>
+                      </svg>
+                    </button>
+                    <button class="theater-btn">
+                      <svg class="tall" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19 6H5c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 10H5V8h14v8z"/>
+                      </svg>
+                      <svg class="wide" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19 7H5c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm0 8H5V9h14v6z"/>
+                      </svg>
+                    </button>
+                    <button class="full-screen-btn">
+                      <svg class="open" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                      </svg>
+                      <svg class="close" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <video preload="auto"  id="videoPlayer">
+                </video>
+              </div>
+        </div>    
+        
+        
+   </div>
+      
+    
+
+
+
+
+
+
+  </main>
+
+</body>
+<script src="assets/functions/functions.js"></script>
+<script src="javascript.js"></script>
+<script src="assets/iframe-pdf/script.js"></script>
+<script src="assets/js/options.js"></script>
+<script src="assets/js/hscpdfs.js"></script>
+<script src="resjavascript.js"></script>
+  <script src="assets/videoplayer/script.js" defer></script>
+</html>
