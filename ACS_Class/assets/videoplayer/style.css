@@ -282,3 +282,9 @@
   .timeline-container:hover .timeline {
     height: 100%;
   }
+
+
+  .psettings{
+    width: 25px!important;
+    height: 25px!important;
+  }

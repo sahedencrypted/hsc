@@ -315,7 +315,10 @@
   }
 }
 
-
+.scrollable{
+  max-height: 320px;
+  overflow: auto;
+}
 
 
 

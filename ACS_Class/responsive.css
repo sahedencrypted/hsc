@@ -419,7 +419,10 @@ overflow: visible;
   }
 }
 
-
+.scrollable{
+  max-height: 290px;
+  overflow: auto;
+}
 
 
 

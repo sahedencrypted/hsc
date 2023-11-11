@@ -1,5 +1,4 @@
 const playPauseBtn = document.querySelector(".play-pause-btn")
-const theaterBtn = document.querySelector(".theater-btn")
 const fullScreenBtn = document.querySelector(".full-screen-btn")
 const miniPlayerBtn = document.querySelector(".mini-player-btn")
 const muteBtn = document.querySelector(".mute-btn")
@@ -26,9 +25,6 @@ document.addEventListener("keydown", e => {
       break
     case "f":
       toggleFullScreenMode()
-      break
-    case "t":
-      toggleTheaterMode()
       break
     case "i":
       toggleMiniPlayerMode()
@@ -185,13 +181,9 @@ video.addEventListener("volumechange", () => {
 })
 
 // View Modes
-theaterBtn.addEventListener("click", toggleTheaterMode)
 fullScreenBtn.addEventListener("click", toggleFullScreenMode)
 miniPlayerBtn.addEventListener("click", toggleMiniPlayerMode)
 
-function toggleTheaterMode() {
-  videoContainer.classList.toggle("theater")
-}
 
 
 //fullscreenmode
@@ -247,54 +239,8 @@ video.addEventListener("pause", () => {
 })
 
 
-/* getting the src from page 1 */
-window.addEventListener("DOMContentLoaded", function() {
-  const elementId = localStorage.getItem('elementId');
-  const videoPlayer = document.getElementById('videoPlayer');
-
-  if (elementId) {
-      const videoSrc = `https://drive.google.com/uc?export=download&id=${elementId}`; // Modify this path as per your file structure
-      videoPlayer.src = videoSrc;
-  } else {
-      // If no ID is received, you can show a default video or handle the case as needed
-  }
-
-
-});
-var elementId = localStorage.getItem('elementId');
-console.log(` Id Value is : '${elementId}' in Local Storage:`);
-window.addEventListener('load', function () {
-    /* setTimeout(togglePlay, 3000);  */
-    console.log("got yeh")
-    video.play().catch(error => {
-      // Video playback failed, handle the error
-      console.log('Video playback failed:');
-      
-    });
-   
-});
-
-/* sending id  src to videoplayer page */
-document.addEventListener("DOMContentLoaded", function () {
-  // Get the current elementId from localStorage (if any)
-  let elementId = localStorage.getItem('elementId');
-
-  const playcontElements = document.querySelectorAll(".playcont");
-  playcontElements.forEach(function (element) {
-    element.addEventListener("click", function (event) {
-      const clickedElement = event.target;
-      if (clickedElement.classList.contains("playbt")) {
-        const id = element.id;
-
-        // Check if the id is different from the current elementId
-        if (id !== elementId) {
-          // Replace the current elementId in localStorage with the new id
-          localStorage.setItem('elementId', id);
-          elementId = id; // Update the current elementId variable
-          console.log(elementId);
-          window.location.reload();
-        }
-      }
-    });
-  });
-});
+//settings
+const settingsBtn = document.querySelector(".psettings");
+settingsBtn.addEventListener("click",()=>{
+  console.log("clicked");
+})
