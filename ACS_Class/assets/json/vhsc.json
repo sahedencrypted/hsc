@@ -1,0 +1,257 @@
+{
+  "Category": {
+    "name": "Category",
+    "item1": [
+      "Physics",
+      "Higher Math",
+      "UDVASH Eng Master Class",
+      "UNMESH Medi Master Class"
+    ]
+  },
+  "Subjects": {
+    "name": "Subjects",
+    "item1": [
+      "Physics 1st",
+      "Physics 2nd"
+    ],
+    "item2": [
+      "Math 1st",
+      "Math 2nd"
+    ],
+    "item3": [
+      "Physics 1st",
+      "Physics 2nd",
+      "Math 1st",
+      "Math 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd",
+      "English"
+    ],
+    "item4": [
+      "Physics 1st",
+      "Physics 2nd",
+      "Biology 1st",
+      "Biology 2nd",
+      "Chemistry 1st",
+      "Chemistry 2nd",
+      "GK+English Master Class"
+    ]
+  },
+  "cata1subjs1": {
+    "items": [
+      "০১ - ভৌতজগৎ ও পরিমাপ",
+      "০২ - ভেক্টর",
+      "০৪ - নিউটনিয়ান বলবিদ্যা",
+      "০৫ - কাজ শক্তি ও ক্ষমতা",
+      "০৬ - মহাকর্ষ ও অভিকর্ষ",
+      "০৭ - পদার্থের গাঠনিক ধর্ম",
+      "০৮ - পর্যাবৃত্ত গতি",
+      "১০ - গ্যাসের গতি তত্ত্ব"
+    ]
+  },
+  "cata1subjs2": {
+    "items": [
+      "০১ - তাপগতি বিদ্যা",
+      "০২ - স্থির তড়িৎ",
+      "০৩ - চল তড়িৎ",
+      "০৭ - ভৌত আলোকবিজ্ঞান",
+      "০৮ - আধুনিক পদার্থ বিজ্ঞান",
+      "০৯ - পরমাণুর মডেল এবং নিউক্লিয়ার",
+      "১০ - সেমিকন্ডাক্টট"
+    ]
+  },
+  "cata2subjs1": {
+    "items": [
+      "০১ - ম্যাট্রিক্স ও নির্ণায়ক",
+      "০২ - ভেক্টর",
+      "০৩ - সরলরেখা",
+      "০৪ - বৃত্ত",
+      "০৭ - সংযুক্ত ও যৌগিক কোণের ত্রিকোন..",
+      "০৯ - অন্তরীকরণ",
+      "১০ - যোগজীকরণ"
+    ]
+  },
+  "cata2subjs2": {
+    "items": [
+      "০৩ - জটিল সংখ্যা",
+      "০৪ - বহুপদী ও বহুপদী সমীকরণ",
+      "০৬ - কনিক",
+      "০৭ - বিপরীত ত্রিকোণমিতিক ফাংশন ও...",
+      "০৮ - স্থিতিবিদ্যা",
+      "০৯ - সমতলে বস্তুকনার গতি"
+    ]
+  },
+  "cata3subjs5": {
+    "items": [
+      "০২ - গুণগত রসায়ন",
+      "০৩ - মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক ব..",
+      "০৪ - রাসায়নিক পরিবর্তন",
+      "০৫ - কর্মমুখী রসায়ন"
+    ]
+  },
+  "cata3subjs6": {
+    "items": [
+      "০১ - পরিবেশ রসায়ন",
+      "০২ - জৈব রসায়ন",
+      "০৩ - পরিমাণগত রসায়ন",
+      "০৪ - তড়িৎ রসায়ন"
+    ]
+  },
+  "cata3subjs7": {
+    "items": [
+      "English P-1",
+      "English P-2"
+    ]
+  },
+  "cata2subjs4": {
+    "items": []
+  },
+  "cata1subjs1chapt1": {
+    "title": [
+      "ভেক্টর-১ | Vector -1 | Engineering Archive | Chinmoy Saha",
+      "privet batch ACS Vector LS 01",
+      "Qualitative Chemistry-4 (Part 1)",
+      "ACS Vector LS 03",
+      "Ruet Question Bank",
+      "Bio Test paper 1.1",
+      "ICT Test Paper 19",
+      "Big File Password Protected"
+    ],
+    "vdoID": [
+      "Dg553ntnp_A?si=R7gv5KRZ31J3LvOe",
+      "sdP07AwFkqs?si=ItROhxXWwkcU2Ij-",
+      "5BodNsiqHAM?si=KXAd1hmynxQQUw3m",
+      "1Ptf46vhm2ESlL8TdVsnKw-I8gOPaN9qu",
+      "18dxUcMyiGAXHzkB-3lt-uQ7hwdpOFGUd",
+      "1aa7o6bQY9bHy020dfYB0J80IaGveSJF7",
+      "10RejspsOJcemKbaossjS6SDVsCTSF25h",
+      "1CAA0_yUHREhSpLCRKt56RC_s-f_XnQ1b"
+    ]
+  },
+  "cata1subjs1chapt2": {
+    "title": [
+      "ভেক্টর | পর্ব ১",
+      "ভেক্টর | পর্ব ২",
+      "ভেক্টর | পর্ব ৩",
+      "Calculator Tricks Part 1 (Casio fx991EX) (Start from 45:00 minute)",
+      "Calculator Tricks Part 2 (Casio fx991 ES Plus)",
+      "ভেক্টর | পর্ব ৪",
+      "Calculator Tricks Part 3 (Casio fx991 ES Plus)",
+      "ভেক্টর | পর্ব ৫",
+      "ভেক্টর | পর্ব ৬",
+      "ভেক্টর | পর্ব ৭",
+      "ভেক্টর | পর্ব ৮",
+      "ভেক্টর | পর্ব ৯",
+      "ভেক্টর | পর্ব ১০",
+      "ভেক্টর | পর্ব ১১",
+      "ভেক্টর | পর্ব ১২",
+      "ভেক্টর | পর্ব ১৩",
+      "ভেক্টর | পর্ব ১৪",
+      "ভেক্টর | পর্ব ১৫",
+      "ভেক্টর | পর্ব ১৬",
+      "ভেক্টর | পর্ব ১৭",
+      "ভেক্টর | QnA Class",
+      "ভেক্টর (Recap + MCQ Booster) পর্ব ১",
+      "ভেক্টর (Recap + MCQ Booster) পর্ব ২"
+    ],
+    "vdoID": [
+      "https://storage.googleapis.com/teachstack/video_lectures/9efb177a-dd6e-4a58-9d0b-d8701153e84c.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/c88ad7c6-2180-445a-b3ee-41c99260aa0e.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/2f42bf96-0e4b-43d4-8c92-0e62079bae8e.mp4",
+      "https://i.ytimg.com/vi/7MiunbiePrc/hqdefault.mp4",
+      "https://i.ytimg.com/vi/mu5ryZ9QCbI/hqdefault.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/69812236-4f56-4ceb-9e94-650b94f97683.mp4",
+      "https://i.ytimg.com/vi/q2TcNxdnRtQ/hqdefault.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/ea42e7cf-945f-487f-9531-d83c73b82b14.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/05487b65-facc-4940-9c76-503a69344a4f.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/9beaec31-ee5f-4828-85f7-58457a5b0377.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/eb505011-e8a2-480b-9944-11c3f652446d.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/5fa7a109-20d5-4d6b-bf99-dd99e2b38995.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/51d81cbc-2d09-486c-b98e-904834b20f22.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/12397d19-9fa7-4929-b1c1-38a23419b1d9.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/bd2c78d0-85fa-428e-85e6-bacbd4b3dddc.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/8718d52d-e329-4d65-948b-554636ab3877.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/e2f13222-3406-4f88-9efb-3e60c365c332.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/f13a37dc-7d8b-4fbb-bd24-ad066e3db268.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/b797ebdc-6f0d-4581-b2c4-19d27665fd0a.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/4ef3f74c-3760-4a16-affb-f1f60b5419b1.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/0e4b4e60-30d6-456c-88d3-3628e102df93.mp4",
+      "https://i.ibb.co/rdhwXzG/Purple-Geometric-Finance-Trading-You-Tube-Thumbnail-1.png",
+      "https://i.ibb.co/Czk0dfv/Purple-Geometric-Finance-Trading-You-Tube-Thumbnail.png"
+    ]
+  },
+  "cata1subjs1chapt5": {
+    "title": [
+      "মহাকর্ষ.. | পর্ব ১",
+      "মহাকর্ষ.. | পর্ব ২",
+      "মহাকর্ষ.. | পর্ব ৩",
+      "মহাকর্ষ.. | পর্ব ৪",
+      "মহাকর্ষ.. | পর্ব ৫",
+      "মহাকর্ষ.. | পর্ব ৬",
+      "মহাকর্ষ.. | পর্ব ৭",
+      "মহাকর্ষ.. | পর্ব ৮",
+      "মহাকর্ষ.. | পর্ব ৯",
+      "মহাকর্ষ.. | QnA Class"
+    ],
+    "vdoID": [
+      "https://storage.googleapis.com/teachstack/video_lectures/b65a87dd-15b4-4d95-985d-f053bbc34601.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/b7bd015d-fdd2-4452-a8f5-bd7303c07c40.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/63bace52-c0c8-4c17-b73b-ea37765ed66a.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/5c135873-ce4b-44fd-948c-f21ef7ad96c7.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/7572bef4-b883-42c8-b9d1-1c143839a91d.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/477a8762-37f4-4011-b9b3-144179c8efce.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/df3762d4-4341-444c-8634-c865ef61aea9.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/4d728cd4-24d9-4feb-aa01-9f88b31b5050.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/0f0c24d0-7fff-4d4a-a531-f3d23c2d5b98.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/ed41a36a-c2df-4d65-885f-ab57ea9a6c8f.mp4"
+    ]
+  },
+  "cata1subjs1chapt6": {
+    "title": [
+      "পদার্থের গাঠনিক ধর্ম 01",
+      "পদার্থের গাঠনিক ধর্ম 02",
+      "পদার্থের গাঠনিক ধর্ম 03",
+      "পদার্থের গাঠনিক ধর্ম 04",
+      "পদার্থের গাঠনিক ধর্ম 05",
+      "পদার্থের গাঠনিক ধর্ম 06",
+      "পদার্থের গাঠনিক ধর্ম 07",
+      "পদার্থের গাঠনিক ধর্ম 08"
+    ],
+    "vdoID": [
+      "https://storage.googleapis.com/teachstack/video_lectures/879c9570-8711-40af-a171-dea6e8ec9aea.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/3458c00a-5fbd-4182-9231-a2d4649be70b.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/ff7d02e9-c06c-46c3-8cef-a15e9ceb771a.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/495f84a3-8bb6-4801-95e8-9155db031e64.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/f7398716-2654-4014-aaf8-ae0c96da6e9b.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/d05e8838-2310-4127-a757-a21cca2905fb.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/dafd795a-28cf-457e-bf0f-4784e4f7892e.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/232d1f95-5907-4e05-a7bd-e1ec390b29c2.mp4"
+    ]
+  },
+  "cata1subjs1chapt7": {
+    "title": [
+      "পর্যাবৃত্ত গতি | পর্ব ১",
+      "পর্যাবৃত্ত গতি | পর্ব ২",
+      "পর্যাবৃত্ত গতি | পর্ব ৩",
+      "পর্যাবৃত্ত গতি | পর্ব ৪",
+      "পর্যাবৃত্ত গতি | পর্ব ৫",
+      "পর্যাবৃত্ত গতি | পর্ব ৬",
+      "পর্যাবৃত্ত গতি | পর্ব ৭",
+      "পর্যাবৃত্ত গতি | পর্ব ৮",
+      "পর্যাবৃত্ত গতি | পর্ব ৯",
+      "পর্যাবৃত্ত গতি | Q n A ক্লাস"
+    ],
+    "vdoID": [
+      "https://storage.googleapis.com/teachstack/video_lectures/819844ee-f4fe-4b1f-bbc3-72aa8b0b3f7b.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/eaaa610c-367f-400c-b811-95003300a1f4.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/78a3953a-c266-4f34-b3ed-36f7853456a6.mp4",
+      "https://www.youtube.com/embed/qH_K_alOFB4?autoplay=0&controls=0&disablekb=1&playsinline=1&cc_load_policy=0&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fb2m24.aparsclassroom.com%2Fb2m24%2FCycle-3%2FChapter-8%2FClass-64cc0232c03af909339aaba8&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fb2m24.aparsclassroom.com&widgetid=1",
+      "https://storage.googleapis.com/teachstack/video_lectures/f282dfac-46e1-4110-afcc-b1ce44ebca08.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/2e8d4d4f-0231-4e87-b27f-a9d1be4ac0b3.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/c108ec6b-a1e6-4bb4-b651-d4410ea475a2.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/4c929f00-6838-4c51-b6ff-176b3fc4dad7.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/71285080-bbde-46b2-973a-d0a0829f091e.mp4",
+      "https://www.youtube.com/embed/bA9HvXdHcSI?autoplay=0&controls=0&disablekb=1&playsinline=1&cc_load_policy=0&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fb2m24.aparsclassroom.com%2Fb2m24%2FCycle-3%2FChapter-8%2FClass-64cc0232c03af909339aaba8&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fb2m24.aparsclassroom.com&widgetid=1"
+    ]
+  }
+}
