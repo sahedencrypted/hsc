@@ -290,10 +290,6 @@
 }
 
 /* paste css of mobile */
-/*iframe change*/
-.iframe-container{
-  height: 228px!important;
-}
 .container{
   width: 98vw;
   height: 60vh;
