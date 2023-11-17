@@ -390,6 +390,7 @@ function checkDimensions() {
   }
   else{
 
+
   }
 }
 
@@ -412,7 +413,7 @@ svgCont.addEventListener("click", function(){
    svgCont.innerHTML=pausesvg;
    setTimeout(function () {
     svgCont.innerHTML="";
-    }, 5630);
+    }, 630);
    togglePlay();
   }
   else{

@@ -301,7 +301,7 @@
 
 }
 .left-sp{
-    /* background: red; */
+    background: rgba(255, 0, 0, 0.219);
     display: grid;
     align-items: center;
 }
@@ -322,7 +322,7 @@
 }
 
 .middle-pause{
-    /* background: green; */
+    background: rgba(0, 128, 0, 0.295);
     display: grid;
     place-items: center;
 }
@@ -348,7 +348,7 @@
 
 
 .right-sp{
-    /* background: blue; */
+    background: rgba(0, 0, 255, 0.212);
     display: grid;
     align-items: center;
 }
