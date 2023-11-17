@@ -188,6 +188,7 @@ function toggleMiniPlayerMode() {
     document.exitPictureInPicture()
   } else {
     video.requestPictureInPicture()
+    onloadlandeascpe=true;
   }
 }
 
@@ -335,22 +336,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-//
-function checkDimensions() {
-  if (window.innerWidth <= 600) {
-  var targetDiv = document.querySelector('.video-container');
-  let speedBC = document.querySelector('.lf-speedback-cont');
-  var divHeight = targetDiv.offsetHeight;
-  console.log(divHeight);
-  let margintodo = (window.innerHeight - divHeight)/2;
-  speedBC.setAttribute("style",`height:${divHeight +6}px;margin-top:${margintodo-2.5}px;`);
-  }
-  else{
-
-
-  }
-}
 
 //fullscreenmode
 fullScreenBtn.addEventListener("click", toggleFullScreenMode)
