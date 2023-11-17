@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px){
+
     *, *::before, *::after {
         box-sizing: border-box;
       }
@@ -370,4 +370,3 @@
 
 
 
-}

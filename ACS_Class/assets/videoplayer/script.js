@@ -196,7 +196,7 @@ function toggleFullScreenMode() {
       screen.orientation.lock("landscape-primary").then(function () {
         console.log("Orientation locked to landscape");
       }).catch(function (error) {
-        console.error("Could not lock orientation: " + error);
+        console.error("Could not lock orientation500: " + error);
       });
     } else {
       console.log("Screen.orientation API not supported");
@@ -207,6 +207,16 @@ function toggleFullScreenMode() {
     document.exitFullscreen();
     let speedBCc = document.querySelector('.lf-speedback-cont');
     speedBCc.setAttribute("style",``);
+    if (screen.orientation) {
+      // Set the orientation back to portrait
+      screen.orientation.unlock().then(function () {
+        console.log("Orientation unlocked");
+      }).catch(function (error) {
+        console.error("Could not unlock orientation: " + error);
+      });
+    } else {
+      console.log("Screen.orientation API not supported");
+    }
   }
 }
 
