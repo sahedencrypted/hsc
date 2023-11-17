@@ -181,50 +181,8 @@ video.addEventListener("volumechange", () => {
 })
 
 // View Modes
-fullScreenBtn.addEventListener("click", toggleFullScreenMode)
+
 miniPlayerBtn.addEventListener("click", toggleMiniPlayerMode)
-
-
-
-//fullscreenmode
-function toggleFullScreenMode() {
-  if (document.fullscreenElement == null) {
-    videoContainer.requestFullscreen();
-    checkDimensions();
-    if (screen.orientation) {
-      // Set the orientation to landscape
-      screen.orientation.lock("landscape-primary").then(function () {
-        console.log("Orientation locked to landscape");
-      }).catch(function (error) {
-        console.error("Could not lock orientation500: " + error);
-      });
-    } else {
-      console.log("Screen.orientation API not supported");
-    }
-    
-
-  } else {
-    document.exitFullscreen();
-    let speedBCc = document.querySelector('.lf-speedback-cont');
-    speedBCc.setAttribute("style",``);
-    if (screen.orientation) {
-      // Set the orientation back to portrait
-      screen.orientation.unlock().then(function () {
-        console.log("Orientation unlocked");
-      }).catch(function (error) {
-        console.error("Could not unlock orientation: " + error);
-      });
-    } else {
-      console.log("Screen.orientation API not supported");
-    }
-  }
-}
-
-
-
-
-
-
 function toggleMiniPlayerMode() {
   if (videoContainer.classList.contains("mini-player")) {
     document.exitPictureInPicture()
@@ -381,10 +339,10 @@ document.addEventListener('DOMContentLoaded', function () {
 //
 function checkDimensions() {
   if (window.innerWidth <= 600) {
-  // Get the reference to the target div
   var targetDiv = document.querySelector('.video-container');
   let speedBC = document.querySelector('.lf-speedback-cont');
   var divHeight = targetDiv.offsetHeight;
+  console.log(divHeight);
   let margintodo = (window.innerHeight - divHeight)/2;
   speedBC.setAttribute("style",`height:${divHeight +6}px;margin-top:${margintodo-2.5}px;`);
   }
@@ -393,6 +351,81 @@ function checkDimensions() {
 
   }
 }
+
+//fullscreenmode
+fullScreenBtn.addEventListener("click", toggleFullScreenMode)
+function toggleFullScreenMode() {
+  if (document.fullscreenElement == null) {
+    videoContainer.requestFullscreen();
+    onloadlandeascpe=false;
+    handleOrientationChange();
+    if (screen.orientation) {
+      // Set the orientation to landscape
+      screen.orientation.lock("landscape-primary").then(function () {
+        console.log("Orientation locked to landscape");
+        handleOrientationChange();
+      }).catch(function (error) {
+        console.error("Could not lock orientation500: " + error);
+        
+      });
+    } else {
+      console.log("Screen.orientation API not supported");
+    }
+    
+
+  } else {
+    document.exitFullscreen();
+    onloadlandeascpe=true;
+    let speedBCc = document.querySelector('.lf-speedback-cont');
+    speedBCc.setAttribute("style",``);
+    if (screen.orientation) {
+      // Set the orientation back to portrait
+      screen.orientation.unlock().then(function () {
+        console.log("Orientation unlocked");
+      }).catch(function (error) {
+        console.error("Could not unlock orientation: " + error);
+      });
+    } else {
+      console.log("Screen.orientation API not supported");
+    }
+  }
+}
+
+var videoheight="";
+var margintodo ="";
+var onloadlandeascpe=true;
+ function setSpedbackFrameinMiddleinProtate(){
+  if (window.innerWidth <= 600) {
+    var targetDiv = document.querySelector('.video-container');
+    var divHeight = targetDiv.offsetHeight;
+    videoheight=divHeight;
+    margintodo = (window.innerHeight - videoheight)/2;
+    }
+ }
+function handleOrientationChange() {
+  if (window.orientation === 90 || window.orientation === -90) {
+    console.log("Device is in landscape mode");
+    let speedBC = document.querySelector('.lf-speedback-cont');
+    speedBC.setAttribute("style",``);
+  } else {
+    console.log("Device is not in landscape mode");
+    console.log(videoheight);
+    if(onloadlandeascpe===false){
+      setSpedbackFrameinMiddleinProtate();
+      let speedBC = document.querySelector('.lf-speedback-cont');
+      speedBC.setAttribute("style",`height:${videoheight +6}px;margin-top:${margintodo-2.5}px;`);
+    }
+    else{
+      
+    }
+    
+  }
+}
+
+window.addEventListener("orientationchange", handleOrientationChange);
+
+
+
 
 //play pause animation
 const playsvg = `
