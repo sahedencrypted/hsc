@@ -191,6 +191,16 @@ function toggleFullScreenMode() {
   if (document.fullscreenElement == null) {
     videoContainer.requestFullscreen();
     checkDimensions();
+    if (screen.orientation) {
+      // Set the orientation to landscape
+      screen.orientation.lock("landscape-primary").then(function () {
+        console.log("Orientation locked to landscape");
+      }).catch(function (error) {
+        console.error("Could not lock orientation: " + error);
+      });
+    } else {
+      console.log("Screen.orientation API not supported");
+    }
     
 
   } else {
