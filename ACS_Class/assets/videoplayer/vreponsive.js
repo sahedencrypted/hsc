@@ -340,7 +340,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
         videoContainer.requestFullscreen();
         onloadlandeascpe=false;
         handleOrientationChange();
-        if (screen.orientation) {
+        /* if (screen.orientation) {
           // Set the orientation to landscape
           screen.orientation.lock("landscape-primary").then(function () {
             console.log("Orientation locked to landscape");
@@ -351,7 +351,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
           });
         } else {
           console.log("Screen.orientation API not supported");
-        }
+        } */
         
     
       } else {
@@ -359,7 +359,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
         onloadlandeascpe=true;
         let speedBCc = document.querySelector('.lf-speedback-cont');
         speedBCc.setAttribute("style",``);
-        /* if (screen.orientation) {
+        if (screen.orientation) {
           // Set the orientation back to portrait
           screen.orientation.unlock().then(function () {
             console.log("Orientation unlocked");
@@ -368,7 +368,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
           });
         } else {
           console.log("Screen.orientation API not supported");
-        } */
+        }
       }
     }
     //fixing spped back cont over the video
