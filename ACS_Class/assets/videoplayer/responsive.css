@@ -69,7 +69,20 @@
         padding: 0.35rem 0.4rem 0.6rem;
         align-items: center;
       }
-      
+
+      @media only screen and (min-width: 600px)
+{
+.video-controls-container .controls {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem 0.75rem;
+  align-items: center;
+}
+.timeline-container {
+  margin-inline: 1.4rem;
+
+}
+}
       .video-controls-container .controls button {
         background: none;
         border: none;
@@ -163,10 +176,17 @@
       
       .timeline-container {
         height: 7px;
-        margin-inline: .5rem;
+        margin-inline: .8rem;
         cursor: pointer;
         display: flex;
         align-items: center;
+      }
+      @media only screen and (min-width: 600px)
+      {
+      .timeline-container {
+        margin-inline: 1.4rem;
+      
+      }
       }
       /* preloadbar */
       #progress-bar-container {
@@ -336,7 +356,9 @@
     height: 40px;
     animation: spin 1.3s ease infinite;
     margin-bottom: 4px;
-    opacity: 0.9;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 70;
 }
 
 @keyframes spin {
@@ -350,7 +372,9 @@
   
 }
 .play-pause-cont{
-  margin-bottom: 4px;
+  margin-bottom: 2px;
+  position: relative;
+  z-index: 80;
 }
 .play-svg-cont{
   background: rgba(0, 0, 0, 0.521);

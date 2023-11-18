@@ -47,7 +47,7 @@
        --mid:#1A212D;
     
     }
-    #loding{
+    /* #loding{
       position: fixed;
       top: -106px;
       width: 100%;
@@ -55,7 +55,7 @@
       background: #fff url(../assets/images/loader.gif) no-repeat center;
       z-index: 99;
       background-size: 41px;
-             }
+             } */
     
     .navbar {
       position: fixed;

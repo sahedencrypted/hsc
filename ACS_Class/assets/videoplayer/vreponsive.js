@@ -340,7 +340,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
         videoContainer.requestFullscreen();
         onloadlandeascpe=false;
         handleOrientationChange();
-        /* if (screen.orientation) {
+        if (screen.orientation) {
           // Set the orientation to landscape
           screen.orientation.lock("landscape-primary").then(function () {
             console.log("Orientation locked to landscape");
@@ -351,7 +351,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
           });
         } else {
           console.log("Screen.orientation API not supported");
-        } */
+        }
         
     
       } else {
@@ -405,65 +405,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
     
     window.addEventListener("orientationchange", handleOrientationChange);
     
-    const oopen =document.querySelector(".op");
-    const cclose =document.querySelector(".cl");
     
-    video.addEventListener('loadeddata', function () {
-      const loader =document.querySelector(".loaderrs");
-      
-      console.log("loaded");
-    });
-    video.addEventListener('waiting', function() {
-      console.log('Video is buffering...');
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-      console.log('first time video load');
-    
-    });
-    var checkplaypause = "";
-    let previousValue = document.querySelector('.current-time').innerText;
-    function trackUpdates() {
-      setInterval(function() {
-          const currentValue = document.querySelector('.current-time').innerText;
-          if (currentValue !== previousValue) {
-              console.log('Div value updated:', currentValue);
-              previousValue = currentValue;
-              video.addEventListener("play", () => {
-              })
-              if(videoContainer.classList.contains("paused")){
-                  console.log("animation is stopped due to video is paused")
-              }
-              
-              
-          }
-          else{
-            if(checkplaypause==="playing"){
-              console.log("animation will be added");
-            }
-          }
-      }, 1000); // Check every second
-    }
-    trackUpdates();
-    
-    // loading animation
-    function runForSeconds(seconds) {
-      const loaderr = document.querySelector(".loaderrs");
-      loaderr.classList.remove("cl");
-      loaderr.classList.add("op");
-      
-      console.log(`Function started with duration: ${seconds} seconds`);
-      // Convert seconds to milliseconds
-      const duration = seconds * 1000;
-      setTimeout(function() {
-          loaderr.classList.add("cl");
-          loaderr.classList.remove("op");
-          console.log(`Function completed after ${seconds} seconds`);
-      }, duration);
-    }
-    
-runForSeconds(5);
-
-
 // Play/Pause
 let timeoutId;
 var COntpaaalying = false;
@@ -489,13 +431,13 @@ playPauseBtn.addEventListener('click', ()=>{
   }
   togglePlay();
 });
-video.addEventListener("click", togglePlay)
+/* video.addEventListener("click", togglePlay) */
 
 function togglePlay() {
   video.paused ? video.play() : video.pause()
   
 }
-
+var checkplaypause =""
 video.addEventListener("play", () => {
   checkplaypause = "playing";
   videoContainer.classList.remove("paused")
@@ -509,7 +451,6 @@ video.addEventListener("play", () => {
   }
 
   
-
 })
 
 video.addEventListener("pause", () => {
@@ -543,7 +484,6 @@ speedCont.addEventListener("click", () => {
   }
 });
 
-
 toggleopclf(playbtnnn,pausebtnnn,playpasuefcont);
 playpasuefcont.addEventListener('click', (event) => {
   togglePlay();
@@ -552,6 +492,101 @@ playpasuefcont.addEventListener('click', (event) => {
 
 
 
+// loading animation
+const loaderr = document.querySelector(".loaderrs");
+const oopen =document.querySelector(".op");
+const cclose =document.querySelector(".cl");
+const getsrcchangeclick = document.getElementById("pdfs");
+var svdoclicked = false;
+getsrcchangeclick.addEventListener("click",()=>{
+  svdoclicked =true;
+  addThisTosrcCahngeEvnt()
+})
+function addThisTosrcCahngeEvnt(){
+  loaderr.classList.remove("cl");
+  loaderr.classList.add("op");
+}
+video.addEventListener('loadeddata', function () {
+  loaderr.classList.remove("op")
+  loaderr.classList.add("cl");
+  console.log("loaded");
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('first time video load');
+
+});
+function runForSeconds(seconds) {
+  const loaderr = document.querySelector(".loaderrs");
+  loaderr.classList.remove("cl");
+  loaderr.classList.add("op");
+  
+  console.log(`Function started with duration: ${seconds} seconds`);
+  // Convert seconds to milliseconds
+  const duration = seconds * 1000;
+  setTimeout(function() {
+      loaderr.classList.add("cl");
+      loaderr.classList.remove("op");
+      console.log(`Function completed after ${seconds} seconds`);
+  }, duration);
+}
+
+
+
+var cctime =0;
+video.addEventListener('waiting', function() {
+  console.log('Video is buffering...');
+  cctime =0;
+  loaderr.classList.remove("cl");
+  loaderr.classList.add("op");
+  
+});
+
+let previousValue = document.querySelector('.current-time').innerText;
+function trackUpdates() {
+  window.myInterval =setInterval(function() {
+      const currentValue = document.querySelector('.current-time').innerText;
+      if (currentValue !== previousValue) {
+          cctime +=1;
+          console.log('Div value updated:', currentValue, " Time Count:",cctime);
+          previousValue = currentValue;
+          
+          video.addEventListener('volumechange', function() {
+            // This event is triggered when the volume changes
+            console.log('Volume changed to: ' + video.volume);
+          });
+          if(cctime===2){
+            cctime=0;
+            loaderr.classList.remove("op")
+            loaderr.classList.add("cl");
+          }
+          
+          
+          
+      }
+      else{
+        
+        if(checkplaypause==="playing" && cctime ===300){
+          console.log("animation will be added");
+          runForSeconds(3)
+          
+        }
+        
+      }
+  }, 1000); // Check every second
+}
+
+
+video.addEventListener("play", () => {
+  trackUpdates();
+  
+})
+
+video.addEventListener("pause", () => {
+  clearInterval(window.myInterval);
+  
+})
 
 
 

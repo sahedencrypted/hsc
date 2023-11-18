@@ -20,7 +20,6 @@ function PDFSelection() {
         localStorage.setItem('vdoID', vdoID);
         const vdoplayr = document.getElementById("videoPlayer");
         vdoplayr.src = `${vdoID}`;
-        ttf.classList.toggle("skeleton");
       });
     });
   }
