@@ -1,3 +1,6 @@
+if (!('ontouchstart' in window)) {
+
+console.log('Touch is not supported');
 const playPauseBtn = document.querySelector(".play-pause-btn")
 const fullScreenBtn = document.querySelector(".full-screen-btn")
 const miniPlayerBtn = document.querySelector(".mini-player-btn")
@@ -214,10 +217,12 @@ function togglePlay() {
 }
 
 video.addEventListener("play", () => {
+  checkplaypause = "playing";
   videoContainer.classList.remove("paused")
 })
 
 video.addEventListener("pause", () => {
+  checkplaypause ="paused";
   videoContainer.classList.add("paused")
 })
 
@@ -338,6 +343,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //fullscreenmode
+let vfullbtn = document.querySelector(".vfull-btn")
+let vminim =document.querySelector(".vmini-btn")
+function toggleopclf(vfisrtdiv,vsecenddiv,vContOfTwo){
+  
+  vContOfTwo.addEventListener("click", ()=>{
+    if(vfisrtdiv.classList.contains("op")){
+      vfisrtdiv.classList.remove("op");
+      vfisrtdiv.classList.add("cl");
+      vsecenddiv.classList.remove("cl");
+      vsecenddiv.classList.add("op");
+    }
+    else if(vfisrtdiv.classList.contains("cl")){
+      vfisrtdiv.classList.remove("cl");
+      vfisrtdiv.classList.add("op");
+      vsecenddiv.classList.remove("op");
+      vsecenddiv.classList.add("cl");
+    }
+  })
+}
+toggleopclf(vfullbtn,vminim,fullScreenBtn);
+
 fullScreenBtn.addEventListener("click", toggleFullScreenMode)
 function toggleFullScreenMode() {
   if (document.fullscreenElement == null) {
@@ -375,7 +401,7 @@ function toggleFullScreenMode() {
     }
   }
 }
-
+//fixing spped back cont over the video
 var videoheight="";
 var margintodo ="";
 var onloadlandeascpe=true;
@@ -409,36 +435,62 @@ function handleOrientationChange() {
 
 window.addEventListener("orientationchange", handleOrientationChange);
 
+const oopen =document.querySelector(".op");
+const cclose =document.querySelector(".cl");
 
+video.addEventListener('loadeddata', function () {
+  const loader =document.querySelector(".loaderrs");
+  
+  console.log("loaded");
+});
+video.addEventListener('waiting', function() {
+  console.log('Video is buffering...');
+});
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('first time video load');
 
+});
+var checkplaypause = "";
+let previousValue = document.querySelector('.current-time').innerText;
+function trackUpdates() {
+  setInterval(function() {
+      const currentValue = document.querySelector('.current-time').innerText;
+      if (currentValue !== previousValue) {
+          console.log('Div value updated:', currentValue);
+          previousValue = currentValue;
+          video.addEventListener("play", () => {
+          })
+          if(videoContainer.classList.contains("paused")){
+              console.log("animation is stopped due to video is paused")
+          }
+          
+          
+      }
+      else{
+        if(checkplaypause==="playing"){
+          console.log("animation will be added");
+        }
+      }
+  }, 1000); // Check every second
+}
+trackUpdates();
 
-//play pause animation
-const playsvg = `
-<div class="p-svg-cont">
-<svg class="play-but" viewBox="-3 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-419.000000, -571.000000)" fill="#ffffff"> <path d="M440.415,583.554 L421.418,571.311 C420.291,570.704 419,570.767 419,572.946 L419,597.054 C419,599.046 420.385,599.36 421.418,598.689 L440.415,586.446 C441.197,585.647 441.197,584.353 440.415,583.554" id="play" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
-</div>
-`;
-const pausesvg = `
-<div class="p-svg-cont">
-<svg class="pause-but" viewBox="-1 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>pause [#1006]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-227.000000, -3765.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M172,3605 C171.448,3605 171,3605.448 171,3606 L171,3612 C171,3612.552 171.448,3613 172,3613 C172.552,3613 173,3612.552 173,3612 L173,3606 C173,3605.448 172.552,3605 172,3605 M177,3606 L177,3612 C177,3612.552 176.552,3613 176,3613 C175.448,3613 175,3612.552 175,3612 L175,3606 C175,3605.448 175.448,3605 176,3605 C176.552,3605 177,3605.448 177,3606" id="pause-[#1006]"> </path> </g> </g> </g> </g></svg>
-</div>
-`;
-const svgCont = document.querySelector(".middle-pause");
-const ggi =document.querySelector(".video-container");
-svgCont.addEventListener("click", function(){
-  if(ggi.classList.contains("paused")){
-   console.log("playing");
-   svgCont.innerHTML=pausesvg;
-   setTimeout(function () {
-    svgCont.innerHTML="";
-    }, 630);
-   togglePlay();
-  }
-  else{
-    console.log("paused");
-    svgCont.innerHTML=playsvg;
-    
-    togglePlay();
-  }
-})
+// loading animation
+function runForSeconds(seconds) {
+  const loaderr = document.querySelector(".loaderrs");
+  loaderr.classList.remove("cl");
+  loaderr.classList.add("op");
+  
+  console.log(`Function started with duration: ${seconds} seconds`);
+  // Convert seconds to milliseconds
+  const duration = seconds * 1000;
+  setTimeout(function() {
+      loaderr.classList.add("cl");
+      loaderr.classList.remove("op");
+      console.log(`Function completed after ${seconds} seconds`);
+  }, duration);
+}
 
+runForSeconds(5);
+
+}
