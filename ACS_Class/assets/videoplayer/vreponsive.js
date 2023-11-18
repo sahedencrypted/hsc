@@ -223,7 +223,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
     
 
     
-    //speed playback animation section
+    // rigth side speed playback animation section
     document.addEventListener('DOMContentLoaded', function () {
       var speedSvg = document.querySelector('.right-sp');
       var animatedDivs = document.querySelectorAll('.speed-svg-icons');
@@ -359,7 +359,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
         onloadlandeascpe=true;
         let speedBCc = document.querySelector('.lf-speedback-cont');
         speedBCc.setAttribute("style",``);
-        if (screen.orientation) {
+        /* if (screen.orientation) {
           // Set the orientation back to portrait
           screen.orientation.unlock().then(function () {
             console.log("Orientation unlocked");
@@ -368,7 +368,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
           });
         } else {
           console.log("Screen.orientation API not supported");
-        }
+        } */
       }
     }
     //fixing spped back cont over the video
@@ -466,9 +466,29 @@ runForSeconds(5);
 
 // Play/Pause
 let timeoutId;
-let timeoutIdrigth;
 var COntpaaalying = false;
-playPauseBtn.addEventListener("click", togglePlay)
+var zzsettingzindex ="";
+let speedCont = document.querySelector(".lf-speedback-cont");
+let controlbar =document.querySelector(".video-controls-container");
+const playpasuefcont = document.querySelector(".play-pause-cont")
+const playbtnnn = document.querySelector(".play-svg-cont")
+const pausebtnnn = document.querySelector(".pause-svg-cont")
+
+playPauseBtn.addEventListener('click', ()=>{
+  if(playbtnnn.classList.contains("op")){
+    playbtnnn.classList.remove("op");
+    playbtnnn.classList.add("cl");
+    pausebtnnn.classList.remove("cl");
+    pausebtnnn.classList.add("op");
+  }
+  else if(playbtnnn.classList.contains("cl")){
+    playbtnnn.classList.remove("cl");
+    playbtnnn.classList.add("op");
+    pausebtnnn.classList.remove("op");
+    pausebtnnn.classList.add("cl");
+  }
+  togglePlay();
+});
 video.addEventListener("click", togglePlay)
 
 function togglePlay() {
@@ -483,6 +503,7 @@ video.addEventListener("play", () => {
   if(COntpaaalying === false){
   controlbar.style.opacity = "0";
   pausebtnnn.style.opacity = "0";
+  speedCont.style.zIndex ="81";
   }else{
     
   }
@@ -499,57 +520,39 @@ video.addEventListener("pause", () => {
     COntpaaalying = false;
   }else{
     controlbar.style.opacity = "1";
+    speedCont.style.zIndex ="";
     
   }
   
 })
-console.log(videoContainer)
 const vvfspeedSvg = document.querySelector('.left-sp');
 const vvfrightspeedSvg = document.querySelector('.right-sp');
-
-let speedCont = document.querySelector(".lf-speedback-cont");
-
 speedCont.addEventListener("click", () => {
     if (videoContainer.classList.contains("paused")){
    }else{
     controlbar.style.opacity = "1";
     pausebtnnn.style.opacity = "1";
+    speedCont.style.zIndex ="";
     COntpaaalying = true;
-    console.log(COntpaaalying);
     timeoutId = setTimeout(function () {
         controlbar.style.opacity = "0";
         pausebtnnn.style.opacity = "0";
+        speedCont.style.zIndex ="81";
         COntpaaalying = false;
-        console.log(COntpaaalying);
-    }, 2000);
+    }, 3300);
   }
 });
 
-/* vvfrightspeedSvg.addEventListener("click", () => {
-  if (videoContainer.classList.contains("paused")){
- }else{
-  controlbar.style.opacity = "1";
-  pausebtnnn.style.opacity = "1";
-  console.log("clicked");
-  timeoutIdrigth = setTimeout(function () {
-      controlbar.style.opacity = "0";
-      pausebtnnn.style.opacity = "0";
-  }, 2000);
-}
-}); */
 
-
-let controlbar =document.querySelector(".video-controls-container");
-const playpasuefcont = document.querySelector(".play-pause-cont")
-const playbtnnn = document.querySelector(".play-svg-cont")
-const pausebtnnn = document.querySelector(".pause-svg-cont")
 toggleopclf(playbtnnn,pausebtnnn,playpasuefcont);
-/* playpasuefcont.addEventListener("click", togglePlay); */
-
 playpasuefcont.addEventListener('click', (event) => {
   togglePlay();
   event.stopPropagation(); // This prevents the click event from reaching the parent
 });
+
+
+
+
 
 
 

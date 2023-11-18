@@ -309,6 +309,8 @@
   display: flex;
   margin-right: 10px;
   justify-content: flex-end;
+  position: relative;
+  z-index: 80;
 }
 .l-speed-svg-icons{
     width: 12px;
@@ -347,31 +349,36 @@
 .op{
   
 }
-.play-svg-cont{
-    background: rgba(0, 0, 0, 0.722);
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
+.play-pause-cont{
+  margin-bottom: 4px;
 }
-.pause-svg-cont{
-  background: rgba(0, 0, 0, 0.722);
-  width: 3rem;
-  height: 3rem;
+.play-svg-cont{
+  background: rgba(0, 0, 0, 0.521);
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   display: grid;
   place-items: center;
+  transition: opacity 150ms ease-in-out;
+}
+.pause-svg-cont{
+  background: rgba(0, 0, 0, 0.521);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: opacity 150ms ease-in-out;
 }
 .pause-but{
-    width: 2rem;
+    width: 2.3rem;
     padding: 8px;
 
 }
 .play-but{
-    width: 2rem;
-    padding: 8px;
-    margin-left: 3px;
+  width: 2.3rem;
+  padding: 8px;
+  margin-left: 2px;
 }
 
 
