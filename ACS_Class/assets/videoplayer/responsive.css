@@ -75,7 +75,7 @@
 .video-controls-container .controls {
   display: flex;
   gap: 0.5rem;
-  padding: 0.35rem 1rem 0.75rem;
+  padding: 0.35rem 0.7rem 0.75rem;
   align-items: center;
 }
 .timeline-container {
