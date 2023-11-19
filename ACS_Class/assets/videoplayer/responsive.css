@@ -428,5 +428,12 @@
 }
 
 
-
+.addtext{
+  font-size: 20px;
+    position: absolute;
+    color: red;
+    background: black;
+    padding: 4px 31px;
+    top: 800px;
+}
 

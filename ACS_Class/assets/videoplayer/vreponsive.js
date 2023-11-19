@@ -405,7 +405,31 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
     
     window.addEventListener("orientationchange", handleOrientationChange);
     
+ let asfas = document.querySelector(".addtext");
+    window.addEventListener('popstate', function(event) {
+      // The event object contains information about the state change
+      console.log('Back button pressed');
+      togglePlay()
+      asfas.innerHTML="back button deteccted"
+      
+      // You can add your custom logic here
+    });    
+
+
+// Add an event listener for the fullscreenchange event
+document.addEventListener('fullscreenchange', handleFullscreenChange);
+
+function handleFullscreenChange() {
+  if (document.video) {
+    console.log('Element entered fullscreen mode');
+    // Your custom logic for when the element enters fullscreen
+  } else {
+    console.log('Element exited fullscreen mode');
+    // Your custom logic for when the element exits fullscreen
+  }
+}
     
+
 // Play/Pause
 let timeoutId;
 var COntpaaalying = false;
