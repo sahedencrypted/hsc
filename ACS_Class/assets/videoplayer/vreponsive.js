@@ -81,10 +81,10 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
         if (!wasPaused) video.play()
       }
     
-      handleTimelineUpdate(e)
+      /* handleTimelineUpdate(e) */
     }
     
-    function handleTimelineUpdate(e) {
+    /* function handleTimelineUpdate(e) {
       const rect = timelineContainer.getBoundingClientRect()
       const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
       const previewImgNumber = Math.max(
@@ -100,7 +100,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
         thumbnailImg.src = previewImgSrc
         timelineContainer.style.setProperty("--progress-position", percent)
       }
-    }
+    } */
     
     // Playback Speed
     speedBtn.addEventListener("click", changePlaybackSpeed)
@@ -417,12 +417,14 @@ const playbtnnn = document.querySelector(".play-svg-cont")
 const pausebtnnn = document.querySelector(".pause-svg-cont")
 
 playPauseBtn.addEventListener('click', ()=>{
+  //removing play button adding pause btn
   if(playbtnnn.classList.contains("op")){
     playbtnnn.classList.remove("op");
     playbtnnn.classList.add("cl");
     pausebtnnn.classList.remove("cl");
     pausebtnnn.classList.add("op");
   }
+  //removing pause button adding play btn
   else if(playbtnnn.classList.contains("cl")){
     playbtnnn.classList.remove("cl");
     playbtnnn.classList.add("op");
@@ -505,6 +507,17 @@ getsrcchangeclick.addEventListener("click",()=>{
 function addThisTosrcCahngeEvnt(){
   loaderr.classList.remove("cl");
   loaderr.classList.add("op");
+  if(checkplaypause === "playing"){
+
+      playbtnnn.classList.remove("op");
+      playbtnnn.classList.add("cl");
+      pausebtnnn.classList.remove("cl");
+      pausebtnnn.classList.add("op");
+
+    
+    togglePlay();
+    console.log("paused")
+  }
 }
 video.addEventListener('loadeddata', function () {
   loaderr.classList.remove("op")
@@ -534,39 +547,43 @@ function runForSeconds(seconds) {
 
 
 
+
+
+
+
 var cctime =0;
+var slownetwork =0;
+var strttime=false;
 video.addEventListener('waiting', function() {
   console.log('Video is buffering...');
   cctime =0;
+  strttime=true;
   loaderr.classList.remove("cl");
   loaderr.classList.add("op");
   
 });
-
+var cctimeran=0;
 let previousValue = document.querySelector('.current-time').innerText;
 function trackUpdates() {
   window.myInterval =setInterval(function() {
       const currentValue = document.querySelector('.current-time').innerText;
       if (currentValue !== previousValue) {
-          cctime +=1;
+        if(strttime){ 
+            cctime +=1;
+          }
           console.log('Div value updated:', currentValue, " Time Count:",cctime);
           previousValue = currentValue;
-          
-          video.addEventListener('volumechange', function() {
-            // This event is triggered when the volume changes
-            console.log('Volume changed to: ' + video.volume);
-          });
-          if(cctime===2){
+          if(cctime===1){
             cctime=0;
             loaderr.classList.remove("op")
             loaderr.classList.add("cl");
+            console.log("removing loading bar")
+            strttime=false;
           }
           
-          
-          
+    
       }
       else{
-        
         if(checkplaypause==="playing" && cctime ===300){
           console.log("animation will be added");
           runForSeconds(3)
@@ -574,7 +591,7 @@ function trackUpdates() {
         }
         
       }
-  }, 1000); // Check every second
+  }, 500); // Check every second
 }
 
 
