@@ -322,7 +322,6 @@ function toggleFullScreenMode() {
   }
 }
 //fix full-mini button on backbutton
-
 document.addEventListener('fullscreenchange', ()=>{
   console.log("hello")
   if(document.fullscreenElement == null){
@@ -341,6 +340,7 @@ const playpasuefcont = document.querySelector(".play-pause-cont")
 const pauseBtnn = document.querySelector(".play-svg-cont")
 const PlayBtnn = document.querySelector(".pause-svg-cont")
 const controlsCont = document.querySelector(".video-controls-container");
+const habijabi = document.querySelector(".lf-speedback-cont");
 
 function PlyPasAnimation(animationCont,animatedChild,closediv){
   closediv.style.display="none";
@@ -353,35 +353,46 @@ function PlyPasAnimation(animationCont,animatedChild,closediv){
       animatedChild.classList.remove('animated');
   }, 800);
 }
-
+habijabi.addEventListener("click", togglePlay)
 playPauseBtn.addEventListener("click", togglePlay)
 
 function togglePlay() {
   video.paused ? video.play() : video.pause()
   
 }
-
+let myhoverTimeout;
 video.addEventListener("play", () => {
-  checkplaypause = "paused";
+  checkplaypause = "playing";
   PlyPasAnimation(playpasuefcont,PlayBtnn,pauseBtnn);
   controlsCont.style.opacity="0"
   videoContainer.classList.remove("paused")
 })
 
 video.addEventListener("pause", () => {
-  checkplaypause ="playing";
+  checkplaypause ="paused";
+  clearTimeout(myhoverTimeout);
   PlyPasAnimation(playpasuefcont,pauseBtnn,PlayBtnn);
   videoContainer.classList.add("paused")
   controlsCont.style.opacity="1"
+  videoContainer.style.cursor="";
 })
 //hover over video
 
-videoContainer.addEventListener("mouseenter", function () {
+videoContainer.addEventListener("mouseover", function () {
+  console.log("over")
+  console.log(checkplaypause)
   if(checkplaypause==="playing"){
   controlsCont.style.opacity="1"
+  videoContainer.style.cursor="";
   }
+  myhoverTimeout =setTimeout(function() {
+    controlsCont.style.opacity="0"
+    videoContainer.style.cursor="none";
+  }, 3000);
 });
-videoContainer.addEventListener("mouseleave", function () {
+videoContainer.addEventListener("mouseout", function () {
+  console.log("out")
+  clearTimeout(myhoverTimeout);
   if(checkplaypause==="playing"){
     controlsCont.style.opacity="0"
   }

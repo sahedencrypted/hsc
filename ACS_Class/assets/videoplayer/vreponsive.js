@@ -324,15 +324,15 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
       console.log(videoheight)
     }
     function TogglefixContscrnOnProtrait(){
-      if (window.innerWidth <= 600 && Dhuksifullscreen && tracklanscape===false){
+      /* if (window.innerWidth <= 600 && Dhuksifullscreen && tracklanscape===false){
         speedBC.setAttribute("style",`height:${videoheight +6}px;margin-top:${margintodo-2.5}px;`);
         fcount=true;
-        }
-      else{
+        } */
+      
           speedBC.setAttribute("style",``);
           Dhuksifullscreen=false;
           console.log("else fixed")
-        }
+        
     }
 
     
@@ -362,17 +362,15 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
     fullScreenBtn.addEventListener("click", toggleFullScreenMode)
     function toggleFullScreenMode() {
       if (document.fullscreenElement == null) {
-        checkvideoHeight();
         videoContainer.requestFullscreen();
         if (screen.orientation) {
           // Set the orientation to landscape
           screen.orientation.lock("landscape-primary").then(function () {
             console.log("Orientation locked to landscape");
+            fullsrceeen=true;
           }).catch(function (error) {
             console.error("Could not lock orientation500: " + error);
-            Dhuksifullscreen=true;
-            
-            TogglefixContscrnOnProtrait();
+            fullsrceeen=true;
             
           });
         } else {
@@ -382,8 +380,8 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
     
       } else {
         document.exitFullscreen();
-        Dhuksifullscreen=false;
-        TogglefixContscrnOnProtrait();
+        fullsrceeen=false;
+        console.log("exit")
         /* if (screen.orientation) {
           // Set the orientation back to portrait
           screen.orientation.unlock().then(function () {
@@ -397,31 +395,23 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
       } 
     }
     //fixing spped back cont over the video
-    let fcount= false;
-    function toggleFcount() {
-      fcount = !fcount;
-      console.log('fcount is now:', fcount);
-     }
+
     document.addEventListener('fullscreenchange', ()=>{
       let asfas = document.querySelector(".addtext"); 
       asfas.innerHTML="fixed the width backbutton captured";
       console.log("hello")
-      toggleFcount()
-      if(Dhuksifullscreen && fcount){
+      if(fullsrceeen){
         console.log(0)
-        Dhuksifullscreen=false;
-        fcount=false;
-        speedBC.setAttribute("style",``);
-          vfullbtn.classList.remove("cl");
-          vfullbtn.classList.add("op");
-          vminim.classList.remove("op");
-          vminim.classList.add("cl");
-        
+        fullsrceeen=false;
+        vfullbtn.classList.remove("cl");
+        vfullbtn.classList.add("op");
+        vminim.classList.remove("op");
+        vminim.classList.add("cl");
       }
       
       });
 
-    function handleOrientationChange() {
+/*     function handleOrientationChange() {
       if (window.orientation === 90 || window.orientation === -90) {
         console.log("Device is in landscape mode");
         Dhuksifullscreen=false;
@@ -449,7 +439,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
       }
     }
     
-    window.addEventListener("orientationchange", handleOrientationChange);
+    window.addEventListener("orientationchange", handleOrientationChange); */
     
 
 

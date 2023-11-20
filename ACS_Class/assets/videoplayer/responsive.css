@@ -156,7 +156,7 @@
       
       .volume-container:hover .volume-slider,
       .volume-slider:focus-within {
-        width: 60px;
+        width: 65px;
         transform: scaleX(1);
       }
       
