@@ -223,120 +223,9 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
     
 
     
-    // rigth side speed playback animation section
-    document.addEventListener('DOMContentLoaded', function () {
-      var speedSvg = document.querySelector('.right-sp');
-      var animatedDivs = document.querySelectorAll('.speed-svg-icons');
-      var lastClickTime = 0;
-    
-      speedSvg.addEventListener('click', function () {
-          var currentTime = new Date().getTime();
-          var timeSinceLastClick = currentTime - lastClickTime;
-    
-          // Check if it's a double click on mobile (within 500 milliseconds)
-          if (timeSinceLastClick <= 500) {
-              // Apply the initial animation class for the first animated div
-              animatedDivs[0].classList.add('animate-class-1');
-              // Set opacity to 0.8 during the animation
-              animatedDivs[0].classList.remove('animate-class-1');
-              animatedDivs[0].style.opacity = '0.8';
-              // After 0.5 seconds, apply the same animation to the second item
-              setTimeout(function () {
-                  animatedDivs[1].classList.add('animate-class-1');
-                  animatedDivs[1].style.opacity = '0.7';
-                  animatedDivs[1].classList.remove('animate-class-1');
-                  animatedDivs[0].style.opacity = '0';
-                  // After another 0.5 seconds, apply the same animation to the third item
-                  setTimeout(function () {
-                      animatedDivs[2].classList.add('animate-class-1');
-                      animatedDivs[2].style.opacity = '0.9';
-                      animatedDivs[2].classList.remove('animate-class-1');
-                      animatedDivs[1].style.opacity = '0';
-                      setTimeout(function () {
-                        animatedDivs[2].style.opacity = '0';
-                      }, 230);
-                  }, 200);
-              }, 300);
-    
-              // Provide instructions or perform additional actions if needed
-              skip(5)
-              
-          }
-          
-          lastClickTime = currentTime;
-      });
-    });
-    
-    //left side speed playback animation
-    document.addEventListener('DOMContentLoaded', function () {
-      var speedSvg = document.querySelector('.left-sp');
-      var animatedDivs = document.querySelectorAll('.l-speed-svg-icons');
-      var lastClickTime = 0;
-    
-      speedSvg.addEventListener('click', function () {
-          var currentTime = new Date().getTime();
-          var timeSinceLastClick = currentTime - lastClickTime;
-    
-          // Check if it's a double click on mobile (within 500 milliseconds)
-          if (timeSinceLastClick <= 500) {
-              // Apply the initial animation class for the first animated div
-              animatedDivs[2].classList.add('l-animate-class-1');
-              // Set opacity to 0.8 during the animation
-              animatedDivs[2].classList.remove('l-animate-class-1');
-              animatedDivs[2].style.opacity = '0.8';
-              // After 0.5 seconds, apply the same animation to the second item
-              setTimeout(function () {
-                  animatedDivs[1].classList.add('l-animate-class-1');
-                  animatedDivs[1].style.opacity = '0.7';
-                  animatedDivs[1].classList.remove('l-animate-class-1');
-                  animatedDivs[2].style.opacity = '0';
-                  // After another 0.5 seconds, apply the same animation to the third item
-                  setTimeout(function () {
-                      animatedDivs[0].classList.add('l-animate-class-1');
-                      animatedDivs[0].style.opacity = '0.9';
-                      animatedDivs[0].classList.remove('l-animate-class-1');
-                      animatedDivs[1].style.opacity = '0';
-                      setTimeout(function () {
-                        animatedDivs[0].style.opacity = '0';
-                      }, 230);
-                  }, 200);
-              }, 300);
-    
-              // Provide instructions or perform additional actions if needed
-              skip(-5)
-              
-          }
-          
-          lastClickTime = currentTime;
-      });
-    });
     
     
     //fullscreenmode
-    let speedBC = document.querySelector('.lf-speedback-cont');
-    var videoheight=0;
-    var margintodo =0;
-    var Dhuksifullscreen=false;
-    var tracklanscape=false;
-    function checkvideoHeight(){
-      videoheight = video.offsetHeight
-      margintodo = (window.innerHeight - videoheight)/2;
-      console.log(videoheight)
-    }
-    function TogglefixContscrnOnProtrait(){
-      /* if (window.innerWidth <= 600 && Dhuksifullscreen && tracklanscape===false){
-        speedBC.setAttribute("style",`height:${videoheight +6}px;margin-top:${margintodo-2.5}px;`);
-        fcount=true;
-        } */
-      
-          speedBC.setAttribute("style",``);
-          Dhuksifullscreen=false;
-          console.log("else fixed")
-        
-    }
-
-    
-
     let vfullbtn = document.querySelector(".vfull-btn")
     let vminim =document.querySelector(".vmini-btn")
     function toggleopclf(vfisrtdiv,vsecenddiv,vContOfTwo){
@@ -357,7 +246,6 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
       })
     }
     toggleopclf(vfullbtn,vminim,fullScreenBtn);
-    var fullsrceeen=false;
     
     fullScreenBtn.addEventListener("click", toggleFullScreenMode)
     function toggleFullScreenMode() {
@@ -367,10 +255,8 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
           // Set the orientation to landscape
           screen.orientation.lock("landscape-primary").then(function () {
             console.log("Orientation locked to landscape");
-            fullsrceeen=true;
           }).catch(function (error) {
             console.error("Could not lock orientation500: " + error);
-            fullsrceeen=true;
             
           });
         } else {
@@ -380,7 +266,6 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
     
       } else {
         document.exitFullscreen();
-        fullsrceeen=false;
         console.log("exit")
         /* if (screen.orientation) {
           // Set the orientation back to portrait
@@ -394,53 +279,21 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
         }*/
       } 
     }
-    //fixing spped back cont over the video
+    //fixing fullsceen on back botton cont over the video
 
     document.addEventListener('fullscreenchange', ()=>{
-      let asfas = document.querySelector(".addtext"); 
-      asfas.innerHTML="fixed the width backbutton captured";
-      console.log("hello")
-      if(fullsrceeen){
+      if(document.fullscreenElement == null){
         console.log(0)
-        fullsrceeen=false;
-        vfullbtn.classList.remove("cl");
-        vfullbtn.classList.add("op");
-        vminim.classList.remove("op");
-        vminim.classList.add("cl");
+          vfullbtn.classList.remove("cl");
+          vfullbtn.classList.add("op");
+          vminim.classList.remove("op");
+          vminim.classList.add("cl");
+        
       }
       
       });
 
-/*     function handleOrientationChange() {
-      if (window.orientation === 90 || window.orientation === -90) {
-        console.log("Device is in landscape mode");
-        Dhuksifullscreen=false;
-        TogglefixContscrnOnProtrait();
-        if(window.innerWidth > 600 && Dhuksifullscreen){ 
-        tracklanscape=true;
-        console.log('runnedasdasdasd')
-        }
-        TogglefixContscrnOnProtrait();
-        
-      } 
-      else {
-        console.log("Device is not in landscape mode");
-        console.log("backbutton chcptureed");
-        if(tracklanscape){
-          speedBC.setAttribute("style",``);
-          tracklanscape=false;
-          console.log(100)
-        }
-        else if(Dhuksifullscreen){
-          speedBC.setAttribute("style",`height:${videoheight +6}px;margin-top:${margintodo-2.5}px;`);
-        }
-        
-        
-      }
-    }
-    
-    window.addEventListener("orientationchange", handleOrientationChange); */
-    
+
 
 
  
@@ -536,8 +389,6 @@ playpasuefcont.addEventListener('click', (event) => {
 // loading animation
 const loaderr = document.querySelector(".loaderrs");
 const plyPauseCont = document.querySelector(".play-pause-cont");
-const oopen =document.querySelector(".op");
-const cclose =document.querySelector(".cl");
 const getsrcchangeclick = document.getElementById("pdfs");
 var svdoclicked = false;
 
@@ -599,54 +450,130 @@ video.addEventListener('playing', function() {
   console.log('Video is playing again after buffering.');
 });
 
-var cctime =0;
-var slownetwork =0;
-var strttime=false;
+
 video.addEventListener('waiting', function() {
   console.log('Video is buffering...');
-  cctime =0;
-  strttime=true;
   loadingAnimatinStart();
   
 });
-/* var cctimeran=0;
-let previousValue = document.querySelector('.current-time').innerText;
-function trackUpdates() {
-  window.myInterval =setInterval(function() {
-      const currentValue = document.querySelector('.current-time').innerText;
-      if (currentValue !== previousValue) {
-        if(strttime){ 
-            cctime +=1;
-          }
-          console.log('Div value updated:', currentValue, " Time Count:",cctime);
-          previousValue = currentValue;
-          if(cctime===2){
-            cctime=0;
-            loadingAnimatinStop();
-            console.log("removing loading bar")
-            strttime=false;
-          }
-    
-      }
-      else{
-        if(checkplaypause==="playing" && cctime ===300){
-          console.log("animation will be added");
-          
-        }
-        
-      }
-  }, 500); // Check every second
+
+
+
+
+
+//speded anaimation
+const leftCont = document.querySelector(".lefttextrt")
+const RightCont = document.querySelector(".textrt")
+function startspedd(){
+  RightCont.style.opacity="1"
+}
+function stopspedd(){
+  RightCont.style.opacity="0"
 }
 
-video.addEventListener("play", () => {
-  trackUpdates();
-  
-})
+function LFstartspedd(){
+  leftCont.style.opacity="1"
+}
+function LFstopspedd(){
+  leftCont.style.opacity="0"
+}
 
-video.addEventListener("pause", () => {
-  clearInterval(window.myInterval);
-  
-}) */
+ // rigth side speed playback animation section
+ document.addEventListener('DOMContentLoaded', function () {
+  var speedSvg = document.querySelector('.right-sp');
+  var animatedDivs = document.querySelectorAll('.speed-svg-icons');
+  var lastClickTime = 0;
+
+  speedSvg.addEventListener('click', function () {
+      
+      var currentTime = new Date().getTime();
+      var timeSinceLastClick = currentTime - lastClickTime;
+
+      // Check if it's a double click on mobile (within 500 milliseconds)
+      if (timeSinceLastClick <= 500) {
+          startspedd();
+          // Apply the initial animation class for the first animated div
+          animatedDivs[0].classList.add('animate-class-1');
+          // Set opacity to 0.8 during the animation
+          animatedDivs[0].classList.remove('animate-class-1');
+          animatedDivs[0].style.opacity = '0.8';
+          // After 0.5 seconds, apply the same animation to the second item
+          setTimeout(function () {
+              animatedDivs[1].classList.add('animate-class-1');
+              animatedDivs[1].style.opacity = '0.7';
+              animatedDivs[1].classList.remove('animate-class-1');
+              animatedDivs[0].style.opacity = '0';
+              // After another 0.5 seconds, apply the same animation to the third item
+              setTimeout(function () {
+                  animatedDivs[2].classList.add('animate-class-1');
+                  animatedDivs[2].style.opacity = '0.9';
+                  animatedDivs[2].classList.remove('animate-class-1');
+                  animatedDivs[1].style.opacity = '0';
+                  setTimeout(function () {
+                    animatedDivs[2].style.opacity = '0';
+                    stopspedd()
+                  }, 230);
+              }, 200);
+          }, 300);
+
+          // Provide instructions or perform additional actions if needed
+          skip(5)
+          
+      }
+      
+      lastClickTime = currentTime;
+  });
+});
+
+//left side speed playback animation
+document.addEventListener('DOMContentLoaded', function () {
+  var speedSvg = document.querySelector('.left-sp');
+  var animatedDivs = document.querySelectorAll('.l-speed-svg-icons');
+  var lastClickTime = 0;
+
+  speedSvg.addEventListener('click', function () {
+      var currentTime = new Date().getTime();
+      var timeSinceLastClick = currentTime - lastClickTime;
+
+      // Check if it's a double click on mobile (within 500 milliseconds)
+      if (timeSinceLastClick <= 500) {
+          LFstartspedd()
+          // Apply the initial animation class for the first animated div
+          animatedDivs[2].classList.add('l-animate-class-1');
+          // Set opacity to 0.8 during the animation
+          animatedDivs[2].classList.remove('l-animate-class-1');
+          animatedDivs[2].style.opacity = '0.8';
+          // After 0.5 seconds, apply the same animation to the second item
+          setTimeout(function () {
+              animatedDivs[1].classList.add('l-animate-class-1');
+              animatedDivs[1].style.opacity = '0.7';
+              animatedDivs[1].classList.remove('l-animate-class-1');
+              animatedDivs[2].style.opacity = '0';
+              // After another 0.5 seconds, apply the same animation to the third item
+              setTimeout(function () {
+                  animatedDivs[0].classList.add('l-animate-class-1');
+                  animatedDivs[0].style.opacity = '0.9';
+                  animatedDivs[0].classList.remove('l-animate-class-1');
+                  animatedDivs[1].style.opacity = '0';
+                  setTimeout(function () {
+                    animatedDivs[0].style.opacity = '0';
+                    LFstopspedd();
+                  }, 230);
+              }, 200);
+          }, 300);
+
+          // Provide instructions or perform additional actions if needed
+          skip(-5)
+          
+      }
+      
+      lastClickTime = currentTime;
+  });
+});
+
+
+
+
 
 
 

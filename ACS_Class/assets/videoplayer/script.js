@@ -1,4 +1,9 @@
 if (!('ontouchstart' in window)) {
+var link2 = document.createElement('link');
+link2.rel = 'stylesheet';
+link2.type = 'text/css';
+link2.href = 'assets/videoplayer/style.css';
+document.head.appendChild(link2);
 
 console.log('Touch is not supported');
 const playPauseBtn = document.querySelector(".play-pause-btn")
@@ -105,7 +110,6 @@ function changePlaybackSpeed() {
   speedBtn.textContent = `${newPlaybackRate}x`
 }
 
-
 //progess bar
 const progressBar = document.getElementById('progress-bar');
 video.addEventListener('progress', () => {
@@ -190,7 +194,6 @@ video.addEventListener("volumechange", () => {
 })
 
 // View Modes
-
 miniPlayerBtn.addEventListener("click", toggleMiniPlayerMode)
 function toggleMiniPlayerMode() {
   if (videoContainer.classList.contains("mini-player")) {
@@ -214,78 +217,11 @@ video.addEventListener("leavepictureinpicture", () => {
 })
 
 
-
-
 //settings
 const settingsBtn = document.querySelector(".psettings");
 settingsBtn.addEventListener("click",()=>{
   console.log("clicked");
 })
-
-function checMobileBehavior() {
-  if (window.innerWidth <= 600) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'assets/videoplayer/responsive.css';
-    document.head.appendChild(link);
-  }
-  else{
-    var link2 = document.createElement('link');
-    link2.rel = 'stylesheet';
-    link2.type = 'text/css';
-    link2.href = 'assets/videoplayer/style.css';
-    document.head.appendChild(link2);
-  }
-}
-checMobileBehavior();
-
-function RightsideSpeedBackAnimation(){
-  var animatedDivs = document.querySelectorAll('.speed-svg-icons');
-
-  animatedDivs[0].classList.add('animate-class-1');
-  animatedDivs[0].classList.remove('animate-class-1');
-  animatedDivs[0].style.opacity = '0.8';
-  setTimeout(function () {
-      animatedDivs[1].classList.add('animate-class-1');
-      animatedDivs[1].style.opacity = '0.7';
-      animatedDivs[1].classList.remove('animate-class-1');
-      animatedDivs[0].style.opacity = '0';
-      setTimeout(function () {
-          animatedDivs[2].classList.add('animate-class-1');
-          animatedDivs[2].style.opacity = '0.9';
-          animatedDivs[2].classList.remove('animate-class-1');
-          animatedDivs[1].style.opacity = '0';
-          setTimeout(function () {
-            animatedDivs[2].style.opacity = '0';
-          }, 230);
-      }, 200);
-  }, 300);
-}
-
-function LeftsideSpeedBackAnimation(){
-  var animatedDivs = document.querySelectorAll('.l-speed-svg-icons');
-
-  animatedDivs[2].classList.add('l-animate-class-1');
-  animatedDivs[2].classList.remove('l-animate-class-1');
-  animatedDivs[2].style.opacity = '0.8';
-  setTimeout(function () {
-      animatedDivs[1].classList.add('l-animate-class-1');
-      animatedDivs[1].style.opacity = '0.7';
-      animatedDivs[1].classList.remove('l-animate-class-1');
-      animatedDivs[2].style.opacity = '0';
-      // After another 0.5 seconds, apply the same animation to the third item
-      setTimeout(function () {
-          animatedDivs[0].classList.add('l-animate-class-1');
-          animatedDivs[0].style.opacity = '0.9';
-          animatedDivs[0].classList.remove('l-animate-class-1');
-          animatedDivs[1].style.opacity = '0';
-          setTimeout(function () {
-            animatedDivs[0].style.opacity = '0';
-          }, 230);
-      }, 200);
-  }, 300);
-}
 
 
 //fullscreenmode
@@ -349,8 +285,8 @@ function PlyPasAnimation(animationCont,animatedChild,closediv){
 
   setTimeout(function() {
     closediv.style.display="";
-      animationCont.style.opacity="0";
-      animatedChild.classList.remove('animated');
+    animationCont.style.opacity="0";
+    animatedChild.classList.remove('animated');
   }, 800);
 }
 habijabi.addEventListener("click", togglePlay)
@@ -399,21 +335,160 @@ videoContainer.addEventListener("mouseout", function () {
   
 });
 
-const oopen =document.querySelector(".op");
-const cclose =document.querySelector(".cl");
 
-video.addEventListener('loadeddata', function () {
-  const loader =document.querySelector(".loaderrs");
+//loading animation
+const loaderr = document.querySelector(".loaderrs");
+const plyPauseCont = document.querySelector(".play-pause-cont");
+const getsrcchangeclick = document.getElementById("pdfs");
+const controlbar =document.querySelector(".video-controls-container")
+
+function loadingAnimatinStart(){
+  if(checkplaypause === "paused"){
+  controlbar.style.opacity = "0";
+  plyPauseCont.classList.add("cl");
+  loaderr.classList.remove("cl");
+  loaderr.classList.add("op");
+  console.log("if")
   
-  console.log("loaded");
+  }else{
+  plyPauseCont.classList.add("cl");
+  loaderr.classList.remove("cl");
+  loaderr.classList.add("op");
+  console.log("else")
+  }
+}
+function loadingAnimatinStop(){
+  if(checkplaypause === "paused"){
+  controlbar.style.opacity = "1";
+  loaderr.classList.remove("op")
+  loaderr.classList.add("cl");
+  plyPauseCont.classList.remove("cl");
+  }else{
+  loaderr.classList.remove("op")
+  loaderr.classList.add("cl");
+  plyPauseCont.classList.remove("cl");
+  }
+}
+getsrcchangeclick.addEventListener("click",()=>{
+  addThisTosrcCahngeEvnt()
+})
+function addThisTosrcCahngeEvnt(){
+   loadingAnimatinStart();
+   togglePlay();
+
+}
+video.addEventListener('loadeddata', function () {
+  loadingAnimatinStop();
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  checkplaypause="paused"
+  loadingAnimatinStart();
+});
+
+video.addEventListener('playing', function() {
+  loadingAnimatinStop();
+  console.log('Video is playing again after buffering.');
+});
+
+
 video.addEventListener('waiting', function() {
   console.log('Video is buffering...');
+  loadingAnimatinStart();
+  
 });
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('first time video load');
 
-});
+
+
+
+document.addEventListener('keydown', function(e) {
+      // Check if the pressed key is the spacebar (keyCode 32)
+      if (e.keyCode === 32) {
+        // Prevent the default scroll behavior
+        e.preventDefault();
+      }
+    });
+
+
+//speded anaimation
+const leftCont = document.querySelector(".lefttextrt")
+const RightCont = document.querySelector(".textrt")
+function startspedd(){
+  RightCont.style.opacity="1"
+}
+function stopspedd(){
+  RightCont.style.opacity="0"
+}
+
+function LFstartspedd(){
+  leftCont.style.opacity="1"
+}
+function LFstopspedd(){
+  leftCont.style.opacity="0"
+}
+
+function RightsideSpeedBackAnimation(){
+  startspedd();
+  var animatedDivs = document.querySelectorAll('.speed-svg-icons');
+
+  animatedDivs[0].classList.add('animate-class-1');
+  animatedDivs[0].classList.remove('animate-class-1');
+  animatedDivs[0].style.opacity = '0.8';
+  setTimeout(function () {
+      animatedDivs[1].classList.add('animate-class-1');
+      animatedDivs[1].style.opacity = '0.7';
+      animatedDivs[1].classList.remove('animate-class-1');
+      animatedDivs[0].style.opacity = '0';
+      setTimeout(function () {
+          animatedDivs[2].classList.add('animate-class-1');
+          animatedDivs[2].style.opacity = '0.9';
+          animatedDivs[2].classList.remove('animate-class-1');
+          animatedDivs[1].style.opacity = '0';
+          setTimeout(function () {
+            animatedDivs[2].style.opacity = '0';
+            stopspedd();
+          }, 230);
+      }, 200);
+  }, 300);
+}
+
+function LeftsideSpeedBackAnimation(){
+  LFstartspedd();
+  var animatedDivs = document.querySelectorAll('.l-speed-svg-icons');
+
+  animatedDivs[2].classList.add('l-animate-class-1');
+  animatedDivs[2].classList.remove('l-animate-class-1');
+  animatedDivs[2].style.opacity = '0.8';
+  setTimeout(function () {
+      animatedDivs[1].classList.add('l-animate-class-1');
+      animatedDivs[1].style.opacity = '0.7';
+      animatedDivs[1].classList.remove('l-animate-class-1');
+      animatedDivs[2].style.opacity = '0';
+      // After another 0.5 seconds, apply the same animation to the third item
+      setTimeout(function () {
+          animatedDivs[0].classList.add('l-animate-class-1');
+          animatedDivs[0].style.opacity = '0.9';
+          animatedDivs[0].classList.remove('l-animate-class-1');
+          animatedDivs[1].style.opacity = '0';
+          setTimeout(function () {
+            animatedDivs[0].style.opacity = '0';
+            LFstopspedd();
+          }, 230);
+      }, 200);
+  }, 300);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -423,3 +498,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 }
+
+
