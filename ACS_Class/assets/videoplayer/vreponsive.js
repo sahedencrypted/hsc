@@ -464,7 +464,7 @@ let controlbar =document.querySelector(".video-controls-container");
 const playpasuefcont = document.querySelector(".play-pause-cont")
 const pauseBtnn = document.querySelector(".play-svg-cont")
 const PlayBtnn = document.querySelector(".pause-svg-cont")
-
+PlayBtnn.classList.add("cl")
 playPauseBtn.addEventListener('click', ()=>{
   //removing play button adding pause btn
   if(pauseBtnn.classList.contains("op")){
