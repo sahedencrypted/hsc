@@ -1,8 +1,6 @@
 
 .iframe-container {
   max-width: 640px;
-  min-height: 320px;
-  max-height: 320px;
   overflow: hidden;
   position: relative;
   user-select: none;

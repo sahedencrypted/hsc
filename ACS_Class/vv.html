@@ -3,40 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Track Div Updates</title>
+    <style>
+        #animatedDiv {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: transform 1s, opacity 1s;
+        }
+
+        .animated {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+        .cont{
+            opacity: 0;
+        }
+    </style>
+    <title>Animation Example</title>
 </head>
 <body>
-
-<div id="myDiv">0</div>
-
-<script>
-    let previousValue = document.getElementById('myDiv').innerText;
-
-    // Function to update the number in the div with a delay
-    function updateNumber() {
-        setTimeout(function() {
-            const currentNumber = parseInt(document.getElementById('myDiv').innerText, 10);
-            document.getElementById('myDiv').innerText = currentNumber + 1;
-            updateNumber(); // Call the function recursively
-        }, 5000);
-    }
-
-    // Function to track updates
-    function trackUpdates() {
-        setInterval(function() {
-            const currentValue = document.getElementById('myDiv').innerText;
-            if (currentValue !== previousValue) {
-                console.log('Div value updated:', currentValue);
-                previousValue = currentValue;
-                
-            }
-        }, 1000); // Check every second
-    }
-
-    // Start the functions
-    updateNumber();
-    trackUpdates();
-</script>
-
+    <button id="animateButton">Animate</button>
+    <div class="cont">
+        <div id="animatedDiv"></div>
+    </div>
+    
+    <script>
+        document.getElementById('animateButton').addEventListener('click', function() {
+            var animatedDiv = document.getElementById('animatedDiv');
+            const asasd = document.querySelector(".cont");
+            PlyPasAnimation(asasd,animatedDiv);
+        });
+        function PlyPasAnimation(animationCont,animatedChild){
+            animationCont.style.opacity="1";
+            animatedChild.classList.add('animated');
+            setTimeout(function() {
+                animationCont.style.opacity="0";
+                animatedChild.classList.remove('animated');
+            }, 800);
+        }
+    </script>
 </body>
 </html>

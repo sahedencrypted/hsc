@@ -462,23 +462,23 @@ var zzsettingzindex ="";
 let speedCont = document.querySelector(".lf-speedback-cont");
 let controlbar =document.querySelector(".video-controls-container");
 const playpasuefcont = document.querySelector(".play-pause-cont")
-const playbtnnn = document.querySelector(".play-svg-cont")
-const pausebtnnn = document.querySelector(".pause-svg-cont")
+const pauseBtnn = document.querySelector(".play-svg-cont")
+const PlayBtnn = document.querySelector(".pause-svg-cont")
 
 playPauseBtn.addEventListener('click', ()=>{
   //removing play button adding pause btn
-  if(playbtnnn.classList.contains("op")){
-    playbtnnn.classList.remove("op");
-    playbtnnn.classList.add("cl");
-    pausebtnnn.classList.remove("cl");
-    pausebtnnn.classList.add("op");
+  if(pauseBtnn.classList.contains("op")){
+    pauseBtnn.classList.remove("op");
+    pauseBtnn.classList.add("cl");
+    PlayBtnn.classList.remove("cl");
+    PlayBtnn.classList.add("op");
   }
   //removing pause button adding play btn
-  else if(playbtnnn.classList.contains("cl")){
-    playbtnnn.classList.remove("cl");
-    playbtnnn.classList.add("op");
-    pausebtnnn.classList.remove("op");
-    pausebtnnn.classList.add("cl");
+  else if(pauseBtnn.classList.contains("cl")){
+    pauseBtnn.classList.remove("cl");
+    pauseBtnn.classList.add("op");
+    PlayBtnn.classList.remove("op");
+    PlayBtnn.classList.add("cl");
   }
   togglePlay();
 });
@@ -495,7 +495,7 @@ video.addEventListener("play", () => {
   
   if(COntpaaalying === false){
   controlbar.style.opacity = "0";
-  pausebtnnn.style.opacity = "0";
+  PlayBtnn.style.opacity = "0";
   speedCont.style.zIndex ="81";
   }else{
     
@@ -523,19 +523,19 @@ speedCont.addEventListener("click", () => {
     if (videoContainer.classList.contains("paused")){
    }else{
     controlbar.style.opacity = "1";
-    pausebtnnn.style.opacity = "1";
+    PlayBtnn.style.opacity = "1";
     speedCont.style.zIndex ="";
     COntpaaalying = true;
     timeoutId = setTimeout(function () {
         controlbar.style.opacity = "0";
-        pausebtnnn.style.opacity = "0";
+        PlayBtnn.style.opacity = "0";
         speedCont.style.zIndex ="81";
         COntpaaalying = false;
     }, 3300);
   }
 });
 
-toggleopclf(playbtnnn,pausebtnnn,playpasuefcont);
+toggleopclf(pauseBtnn,PlayBtnn,playpasuefcont);
 playpasuefcont.addEventListener('click', (event) => {
   togglePlay();
   event.stopPropagation(); // This prevents the click event from reaching the parent
@@ -552,15 +552,29 @@ const getsrcchangeclick = document.getElementById("pdfs");
 var svdoclicked = false;
 
 function loadingAnimatinStart(){
+  if(checkplaypause === "paused"){
+  controlbar.style.opacity = "0";
   plyPauseCont.classList.add("cl");
   loaderr.classList.remove("cl");
   loaderr.classList.add("op");
   
+  }else{
+  plyPauseCont.classList.add("cl");
+  loaderr.classList.remove("cl");
+  loaderr.classList.add("op");
+  }
 }
 function loadingAnimatinStop(){
+  if(checkplaypause === "paused"){
+  controlbar.style.opacity = "1";
   loaderr.classList.remove("op")
   loaderr.classList.add("cl");
   plyPauseCont.classList.remove("cl");
+  }else{
+  loaderr.classList.remove("op")
+  loaderr.classList.add("cl");
+  plyPauseCont.classList.remove("cl");
+  }
 }
 getsrcchangeclick.addEventListener("click",()=>{
   svdoclicked =true;
@@ -570,10 +584,10 @@ function addThisTosrcCahngeEvnt(){
   loadingAnimatinStart();
   if(checkplaypause === "playing"){
 
-      playbtnnn.classList.remove("op");
-      playbtnnn.classList.add("cl");
-      pausebtnnn.classList.remove("cl");
-      pausebtnnn.classList.add("op");
+      pauseBtnn.classList.remove("op");
+      pauseBtnn.classList.add("cl");
+      PlayBtnn.classList.remove("cl");
+      PlayBtnn.classList.add("op");
 
     
     togglePlay();
@@ -586,25 +600,14 @@ video.addEventListener('loadeddata', function () {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+  checkplaypause="paused"
   loadingAnimatinStart();
 });
-function runForSeconds(seconds) {
-  const loaderr = document.querySelector(".loaderrs");
-  loaderr.classList.remove("cl");
-  loaderr.classList.add("op");
-  
-  console.log(`Function started with duration: ${seconds} seconds`);
-  // Convert seconds to milliseconds
-  const duration = seconds * 1000;
-  setTimeout(function() {
-      loaderr.classList.add("cl");
-      loaderr.classList.remove("op");
-      console.log(`Function completed after ${seconds} seconds`);
-  }, duration);
-}
 
-
-
+video.addEventListener('playing', function() {
+  loadingAnimatinStop();
+  console.log('Video is playing again after buffering.');
+});
 
 var cctime =0;
 var slownetwork =0;
@@ -613,11 +616,10 @@ video.addEventListener('waiting', function() {
   console.log('Video is buffering...');
   cctime =0;
   strttime=true;
-  loaderr.classList.remove("cl");
-  loaderr.classList.add("op");
+  loadingAnimatinStart();
   
 });
-var cctimeran=0;
+/* var cctimeran=0;
 let previousValue = document.querySelector('.current-time').innerText;
 function trackUpdates() {
   window.myInterval =setInterval(function() {
@@ -630,25 +632,21 @@ function trackUpdates() {
           previousValue = currentValue;
           if(cctime===2){
             cctime=0;
-            loaderr.classList.remove("op")
-            loaderr.classList.add("cl");
+            loadingAnimatinStop();
             console.log("removing loading bar")
             strttime=false;
           }
-          
     
       }
       else{
         if(checkplaypause==="playing" && cctime ===300){
           console.log("animation will be added");
-          runForSeconds(3)
           
         }
         
       }
   }, 500); // Check every second
 }
-
 
 video.addEventListener("play", () => {
   trackUpdates();
@@ -658,7 +656,7 @@ video.addEventListener("play", () => {
 video.addEventListener("pause", () => {
   clearInterval(window.myInterval);
   
-})
+}) */
 
 
 

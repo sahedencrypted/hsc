@@ -155,6 +155,12 @@ function formatDuration(time) {
 
 function skip(duration) {
   video.currentTime += duration
+  if (duration < 0) {
+    LeftsideSpeedBackAnimation();
+  }
+  else{
+    RightsideSpeedBackAnimation();
+  }
 }
 
 // Volume
@@ -207,24 +213,7 @@ video.addEventListener("leavepictureinpicture", () => {
   videoContainer.classList.remove("mini-player")
 })
 
-// Play/Pause
-playPauseBtn.addEventListener("click", togglePlay)
-video.addEventListener("click", togglePlay)
 
-function togglePlay() {
-  video.paused ? video.play() : video.pause()
-  
-}
-
-video.addEventListener("play", () => {
-  checkplaypause = "playing";
-  videoContainer.classList.remove("paused")
-})
-
-video.addEventListener("pause", () => {
-  checkplaypause ="paused";
-  videoContainer.classList.add("paused")
-})
 
 
 //settings
@@ -251,95 +240,52 @@ function checMobileBehavior() {
 }
 checMobileBehavior();
 
-
-
-//speed playback animation section
-document.addEventListener('DOMContentLoaded', function () {
-  var speedSvg = document.querySelector('.right-sp');
+function RightsideSpeedBackAnimation(){
   var animatedDivs = document.querySelectorAll('.speed-svg-icons');
-  var lastClickTime = 0;
 
-  speedSvg.addEventListener('click', function () {
-      var currentTime = new Date().getTime();
-      var timeSinceLastClick = currentTime - lastClickTime;
-
-      // Check if it's a double click on mobile (within 500 milliseconds)
-      if (timeSinceLastClick <= 500) {
-          // Apply the initial animation class for the first animated div
-          animatedDivs[0].classList.add('animate-class-1');
-          // Set opacity to 0.8 during the animation
-          animatedDivs[0].classList.remove('animate-class-1');
-          animatedDivs[0].style.opacity = '0.8';
-          // After 0.5 seconds, apply the same animation to the second item
+  animatedDivs[0].classList.add('animate-class-1');
+  animatedDivs[0].classList.remove('animate-class-1');
+  animatedDivs[0].style.opacity = '0.8';
+  setTimeout(function () {
+      animatedDivs[1].classList.add('animate-class-1');
+      animatedDivs[1].style.opacity = '0.7';
+      animatedDivs[1].classList.remove('animate-class-1');
+      animatedDivs[0].style.opacity = '0';
+      setTimeout(function () {
+          animatedDivs[2].classList.add('animate-class-1');
+          animatedDivs[2].style.opacity = '0.9';
+          animatedDivs[2].classList.remove('animate-class-1');
+          animatedDivs[1].style.opacity = '0';
           setTimeout(function () {
-              animatedDivs[1].classList.add('animate-class-1');
-              animatedDivs[1].style.opacity = '0.7';
-              animatedDivs[1].classList.remove('animate-class-1');
-              animatedDivs[0].style.opacity = '0';
-              // After another 0.5 seconds, apply the same animation to the third item
-              setTimeout(function () {
-                  animatedDivs[2].classList.add('animate-class-1');
-                  animatedDivs[2].style.opacity = '0.9';
-                  animatedDivs[2].classList.remove('animate-class-1');
-                  animatedDivs[1].style.opacity = '0';
-                  setTimeout(function () {
-                    animatedDivs[2].style.opacity = '0';
-                  }, 230);
-              }, 200);
-          }, 300);
+            animatedDivs[2].style.opacity = '0';
+          }, 230);
+      }, 200);
+  }, 300);
+}
 
-          // Provide instructions or perform additional actions if needed
-          skip(5)
-          
-      }
-      
-      lastClickTime = currentTime;
-  });
-});
-
-//left side speed playback animation
-document.addEventListener('DOMContentLoaded', function () {
-  var speedSvg = document.querySelector('.left-sp');
+function LeftsideSpeedBackAnimation(){
   var animatedDivs = document.querySelectorAll('.l-speed-svg-icons');
-  var lastClickTime = 0;
 
-  speedSvg.addEventListener('click', function () {
-      var currentTime = new Date().getTime();
-      var timeSinceLastClick = currentTime - lastClickTime;
-
-      // Check if it's a double click on mobile (within 500 milliseconds)
-      if (timeSinceLastClick <= 500) {
-          // Apply the initial animation class for the first animated div
-          animatedDivs[2].classList.add('l-animate-class-1');
-          // Set opacity to 0.8 during the animation
-          animatedDivs[2].classList.remove('l-animate-class-1');
-          animatedDivs[2].style.opacity = '0.8';
-          // After 0.5 seconds, apply the same animation to the second item
+  animatedDivs[2].classList.add('l-animate-class-1');
+  animatedDivs[2].classList.remove('l-animate-class-1');
+  animatedDivs[2].style.opacity = '0.8';
+  setTimeout(function () {
+      animatedDivs[1].classList.add('l-animate-class-1');
+      animatedDivs[1].style.opacity = '0.7';
+      animatedDivs[1].classList.remove('l-animate-class-1');
+      animatedDivs[2].style.opacity = '0';
+      // After another 0.5 seconds, apply the same animation to the third item
+      setTimeout(function () {
+          animatedDivs[0].classList.add('l-animate-class-1');
+          animatedDivs[0].style.opacity = '0.9';
+          animatedDivs[0].classList.remove('l-animate-class-1');
+          animatedDivs[1].style.opacity = '0';
           setTimeout(function () {
-              animatedDivs[1].classList.add('l-animate-class-1');
-              animatedDivs[1].style.opacity = '0.7';
-              animatedDivs[1].classList.remove('l-animate-class-1');
-              animatedDivs[2].style.opacity = '0';
-              // After another 0.5 seconds, apply the same animation to the third item
-              setTimeout(function () {
-                  animatedDivs[0].classList.add('l-animate-class-1');
-                  animatedDivs[0].style.opacity = '0.9';
-                  animatedDivs[0].classList.remove('l-animate-class-1');
-                  animatedDivs[1].style.opacity = '0';
-                  setTimeout(function () {
-                    animatedDivs[0].style.opacity = '0';
-                  }, 230);
-              }, 200);
-          }, 300);
-
-          // Provide instructions or perform additional actions if needed
-          skip(-5)
-          
-      }
-      
-      lastClickTime = currentTime;
-  });
-});
+            animatedDivs[0].style.opacity = '0';
+          }, 230);
+      }, 200);
+  }, 300);
+}
 
 
 //fullscreenmode
@@ -363,77 +309,84 @@ function toggleopclf(vfisrtdiv,vsecenddiv,vContOfTwo){
   })
 }
 toggleopclf(vfullbtn,vminim,fullScreenBtn);
-
 fullScreenBtn.addEventListener("click", toggleFullScreenMode)
 function toggleFullScreenMode() {
   if (document.fullscreenElement == null) {
     videoContainer.requestFullscreen();
-    onloadlandeascpe=false;
-    handleOrientationChange();
-    if (screen.orientation) {
-      // Set the orientation to landscape
-      screen.orientation.lock("landscape-primary").then(function () {
-        console.log("Orientation locked to landscape");
-        handleOrientationChange();
-      }).catch(function (error) {
-        console.error("Could not lock orientation500: " + error);
-        
-      });
-    } else {
-      console.log("Screen.orientation API not supported");
-    }
-    
+
 
   } else {
     document.exitFullscreen();
-    onloadlandeascpe=true;
-    let speedBCc = document.querySelector('.lf-speedback-cont');
-    speedBCc.setAttribute("style",``);
-    if (screen.orientation) {
-      // Set the orientation back to portrait
-      screen.orientation.unlock().then(function () {
-        console.log("Orientation unlocked");
-      }).catch(function (error) {
-        console.error("Could not unlock orientation: " + error);
-      });
-    } else {
-      console.log("Screen.orientation API not supported");
-    }
+
+  
   }
 }
-//fixing spped back cont over the video
-var videoheight="";
-var margintodo ="";
-var onloadlandeascpe=true;
- function setSpedbackFrameinMiddleinProtate(){
-  if (window.innerWidth <= 600) {
-    var targetDiv = document.querySelector('.video-container');
-    var divHeight = targetDiv.offsetHeight;
-    videoheight=divHeight;
-    margintodo = (window.innerHeight - videoheight)/2;
-    }
- }
-function handleOrientationChange() {
-  if (window.orientation === 90 || window.orientation === -90) {
-    console.log("Device is in landscape mode");
-    let speedBC = document.querySelector('.lf-speedback-cont');
-    speedBC.setAttribute("style",``);
-  } else {
-    console.log("Device is not in landscape mode");
-    console.log(videoheight);
-    if(onloadlandeascpe===false){
-      setSpedbackFrameinMiddleinProtate();
-      let speedBC = document.querySelector('.lf-speedback-cont');
-      speedBC.setAttribute("style",`height:${videoheight +6}px;margin-top:${margintodo-2.5}px;`);
-    }
-    else{
-      
-    }
+//fix full-mini button on backbutton
+
+document.addEventListener('fullscreenchange', ()=>{
+  console.log("hello")
+  if(document.fullscreenElement == null){
+    console.log(0)
+      vfullbtn.classList.remove("cl");
+      vfullbtn.classList.add("op");
+      vminim.classList.remove("op");
+      vminim.classList.add("cl");
     
   }
+  
+  });
+// Play/Pause
+var checkplaypause = "paused";
+const playpasuefcont = document.querySelector(".play-pause-cont")
+const pauseBtnn = document.querySelector(".play-svg-cont")
+const PlayBtnn = document.querySelector(".pause-svg-cont")
+const controlsCont = document.querySelector(".video-controls-container");
+
+function PlyPasAnimation(animationCont,animatedChild,closediv){
+  closediv.style.display="none";
+  animationCont.style.opacity="1";
+  animatedChild.classList.add('animated');
+
+  setTimeout(function() {
+    closediv.style.display="";
+      animationCont.style.opacity="0";
+      animatedChild.classList.remove('animated');
+  }, 800);
 }
 
-window.addEventListener("orientationchange", handleOrientationChange);
+playPauseBtn.addEventListener("click", togglePlay)
+
+function togglePlay() {
+  video.paused ? video.play() : video.pause()
+  
+}
+
+video.addEventListener("play", () => {
+  checkplaypause = "paused";
+  PlyPasAnimation(playpasuefcont,PlayBtnn,pauseBtnn);
+  controlsCont.style.opacity="0"
+  videoContainer.classList.remove("paused")
+})
+
+video.addEventListener("pause", () => {
+  checkplaypause ="playing";
+  PlyPasAnimation(playpasuefcont,pauseBtnn,PlayBtnn);
+  videoContainer.classList.add("paused")
+  controlsCont.style.opacity="1"
+})
+//hover over video
+
+videoContainer.addEventListener("mouseenter", function () {
+  if(checkplaypause==="playing"){
+  controlsCont.style.opacity="1"
+  }
+});
+videoContainer.addEventListener("mouseleave", function () {
+  if(checkplaypause==="playing"){
+    controlsCont.style.opacity="0"
+  }
+  
+});
 
 const oopen =document.querySelector(".op");
 const cclose =document.querySelector(".cl");
@@ -450,47 +403,12 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log('first time video load');
 
 });
-var checkplaypause = "";
-let previousValue = document.querySelector('.current-time').innerText;
-function trackUpdates() {
-  setInterval(function() {
-      const currentValue = document.querySelector('.current-time').innerText;
-      if (currentValue !== previousValue) {
-          console.log('Div value updated:', currentValue);
-          previousValue = currentValue;
-          video.addEventListener("play", () => {
-          })
-          if(videoContainer.classList.contains("paused")){
-              console.log("animation is stopped due to video is paused")
-          }
-          
-          
-      }
-      else{
-        if(checkplaypause==="playing"){
-          console.log("animation will be added");
-        }
-      }
-  }, 1000); // Check every second
-}
-trackUpdates();
 
-// loading animation
-function runForSeconds(seconds) {
-  const loaderr = document.querySelector(".loaderrs");
-  loaderr.classList.remove("cl");
-  loaderr.classList.add("op");
-  
-  console.log(`Function started with duration: ${seconds} seconds`);
-  // Convert seconds to milliseconds
-  const duration = seconds * 1000;
-  setTimeout(function() {
-      loaderr.classList.add("cl");
-      loaderr.classList.remove("op");
-      console.log(`Function completed after ${seconds} seconds`);
-  }, duration);
-}
 
-runForSeconds(5);
+
+
+
+
+
 
 }
