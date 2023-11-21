@@ -167,7 +167,7 @@
     align-items: center;
   }
   /* preloadbar */
-  #progress-bar-container {
+  /* #progress-bar-container {
     position: absolute;
     z-index: 79;
     bottom: 0;
@@ -179,16 +179,16 @@
   
   #progress-bar {
     height: 100%;
-    background-color: rgb(150, 150, 150); /* Set the preload color to green */
-    width: 0; /* Start with a width of 0 (no preload initially) */
+    background-color: rgb(150, 150, 150); 
+    width: 0; 
   }
   
   #progress-bar::after {
     content: '';
     display: block;
     height: 100%;
-    background-color: rgb(150, 150, 150); /* Set the progress bar color to black */
-  }
+    background-color: rgb(150, 150, 150);
+  } */
   
   
   

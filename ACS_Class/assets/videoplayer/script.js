@@ -48,9 +48,7 @@ document.addEventListener("keydown", e => {
     case "l":
       skip(10)
       break
-    case "c":
-      toggleCaptions()
-      break
+
   }
 })
 
@@ -320,11 +318,12 @@ videoContainer.addEventListener("mouseover", function () {
   if(checkplaypause==="playing"){
   controlsCont.style.opacity="1"
   videoContainer.style.cursor="";
-  }
   myhoverTimeout =setTimeout(function() {
     controlsCont.style.opacity="0"
     videoContainer.style.cursor="none";
   }, 3000);
+  }
+  
 });
 videoContainer.addEventListener("mouseout", function () {
   console.log("out")
@@ -398,7 +397,9 @@ video.addEventListener('waiting', function() {
   loadingAnimatinStart();
   
 });
-
+video.addEventListener('error', (event) => {
+  console.error('Video error00000:', event.message);
+});
 
 
 

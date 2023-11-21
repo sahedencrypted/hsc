@@ -360,8 +360,6 @@ video.addEventListener("pause", () => {
   }
   
 })
-const vvfspeedSvg = document.querySelector('.left-sp');
-const vvfrightspeedSvg = document.querySelector('.right-sp');
 speedCont.addEventListener("click", () => {
     if (videoContainer.classList.contains("paused")){
    }else{
@@ -390,7 +388,6 @@ playpasuefcont.addEventListener('click', (event) => {
 const loaderr = document.querySelector(".loaderrs");
 const plyPauseCont = document.querySelector(".play-pause-cont");
 const getsrcchangeclick = document.getElementById("pdfs");
-var svdoclicked = false;
 
 function loadingAnimatinStart(){
   if(checkplaypause === "paused"){
@@ -418,7 +415,6 @@ function loadingAnimatinStop(){
   }
 }
 getsrcchangeclick.addEventListener("click",()=>{
-  svdoclicked =true;
   addThisTosrcCahngeEvnt()
 })
 function addThisTosrcCahngeEvnt(){
@@ -456,6 +452,14 @@ video.addEventListener('waiting', function() {
   loadingAnimatinStart();
   
 });
+
+
+video.addEventListener('error', (event) => {
+  console.error('Video error00000:', event.message);
+});
+
+
+
 
 
 
