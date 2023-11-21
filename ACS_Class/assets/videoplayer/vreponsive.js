@@ -517,7 +517,7 @@ function LFstopspedd(){
           }, 300);
 
           // Provide instructions or perform additional actions if needed
-          skip(5)
+          skip(10)
           
       }
       
@@ -563,14 +563,13 @@ document.addEventListener('DOMContentLoaded', function () {
           }, 300);
 
           // Provide instructions or perform additional actions if needed
-          skip(-5)
+          skip(-10)
           
       }
       
       lastClickTime = currentTime;
   });
 });
-
 
 
 

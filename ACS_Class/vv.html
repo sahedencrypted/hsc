@@ -4,43 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        #animatedDiv {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            transition: transform 1s, opacity 1s;
-        }
-
-        .animated {
-            transform: scale(1.5);
-            opacity: 0;
-        }
-        .cont{
-            opacity: 0;
-        }
+        .addtext{
+  margin: 70px 100px;
+  background-color: black;
+  color: red;
+  width: 20%;
+  text-align: center;
+  padding: 20px 0;
+  
+}
+input{
+  border: none;
+  width: 200px;
+  height: 30px;
+  margin: 70px 100px;
+}
+.search-result{
+  margin: 70px 100px;
+  color: green;
+  width: 20%;
+  text-align: center;
+  padding: 20px 0;
+}
     </style>
     <title>Animation Example</title>
 </head>
 <body>
-    <button id="animateButton">Animate</button>
-    <div class="cont">
-        <div id="animatedDiv"></div>
-    </div>
+    <div class="inputCont">
+        <input class="input" type="text">
+        <div class="search-result"></div>
+    
+      </div>
+      <div class="addtext">HEllo</div>
     
     <script>
-        document.getElementById('animateButton').addEventListener('click', function() {
-            var animatedDiv = document.getElementById('animatedDiv');
-            const asasd = document.querySelector(".cont");
-            PlyPasAnimation(asasd,animatedDiv);
-        });
-        function PlyPasAnimation(animationCont,animatedChild){
-            animationCont.style.opacity="1";
-            animatedChild.classList.add('animated');
-            setTimeout(function() {
-                animationCont.style.opacity="0";
-                animatedChild.classList.remove('animated');
-            }, 800);
-        }
+        const conttt = document.querySelector(".addtext");
+const searchinput = document.querySelector(".input");
+const searchReslt = document.querySelector(".search-result");
+let passwords = ["Emily Thompson", "Benjamin Martinez", "Olivia Davis", "Elijah Anderson", "Ava Wilson", "Liam Harris", "Sophia Rodriguez", "Mason Taylor", "Mia Moore", "Logan Lee", "Harper Wright", "Aiden Brown", "Abigail Garcia", "Lucas Jackson", "Emma Taylor", "Noah White", "Isabella Turner", "Jackson Martinez", "Aria Smith", "Oliver Hall", "Sophia Evans", "Ethan Turner", "Amelia Johnson", "Carter Martin", "Ava Davis", "Liam Harris", "Zoey Miller", "Caleb Clark", "Grace Thomas", "Mason Wilson", "Scarlett Walker", "Elijah Robinson", "Chloe Scott", "Jackson Thomas", "Harper Rodriguez", "Grayson Hall", "Lily White", "Aiden Turner", "Addison Smith", "Samuel Adams", "Evelyn Lee", "Jacob Allen", "Isabella Hall", "Carter Brown", "Grace Robinson", "Logan Lewis", "Aria Moore", "Wyatt Taylor", "Scarlett Harris", "Owen Turner"]
+
+let matchfound=false;
+passwords.forEach((pass)=>{
+  conttt.innerHTML+=`
+  <div>${pass}</div>
+  `
+})
+searchinput.addEventListener("input",(event)=>{
+  const inputed = event.target.value
+  matchfound=false;
+  /* for(let i=0; i <= passwords.length; i++){
+    if(passwords[i].includes(inputed)){
+      console.log("Match Found:",passwords[i])
+      matchfound=true;
+    }else if (matchfound){
+      conttt.innerHTML+=`
+  <div>${passwords[i]}</div>
+  `
+    }
+  } */
+  searchReslt.innerHTML=""
+  passwords.forEach((pass)=>{
+    let found = [];
+    if(pass.includes(inputed)){
+      console.log(pass)
+      matchfound=true;
+      found.push(pass)
+      searchReslt.innerHTML+=`
+    <div>${found}</div>
+    `
+    }
+  
+  
+  })
+
+})
     </script>
 </body>
 </html>
