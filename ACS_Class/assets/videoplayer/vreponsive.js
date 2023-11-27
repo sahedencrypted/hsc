@@ -102,16 +102,6 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
       }
     } */
     
-    // Playback Speed
-    speedBtn.addEventListener("click", changePlaybackSpeed)
-    
-    function changePlaybackSpeed() {
-      let newPlaybackRate = video.playbackRate + 0.25
-      if (newPlaybackRate > 2) newPlaybackRate = 0.25
-      video.playbackRate = newPlaybackRate
-      speedBtn.textContent = `${newPlaybackRate}x`
-    }
-    
     
     //progess bar
     const progressBar = document.getElementById('progress-bar');
@@ -572,6 +562,46 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       
       lastClickTime = currentTime;
+  });
+});
+
+
+
+//spped PlayBack
+const spedCont = document.querySelector(".sped-cont")
+speedBtn.addEventListener("click", ()=>{
+  if(spedCont.classList.contains("cl")){
+    spedCont.classList.remove("cl")
+    spedCont.classList.add("op")
+  }
+  else{
+    spedCont.classList.remove("op")
+    spedCont.classList.add("cl")
+  }
+  
+})
+
+
+const alllistssped = document.querySelectorAll(".sped-val");
+const fontspedtext = document.querySelector(".sped-text")
+let newPlaybackRate;
+alllistssped.forEach(element => {
+  element.addEventListener("click", () => {
+    const innerTextWithoutX = element.innerText.slice(0, -1);
+
+    if (element.classList.contains("spedlistbaccolor")) {
+      element.classList.remove("spedlistbaccolor");
+      console.log(parseFloat(innerTextWithoutX));
+    } else {
+      alllistssped.forEach(otherElement => {
+        otherElement.classList.remove("spedlistbaccolor");
+      });
+      element.classList.add("spedlistbaccolor");
+      console.log(parseFloat(innerTextWithoutX));
+      newPlaybackRate = parseFloat(innerTextWithoutX)
+      video.playbackRate = newPlaybackRate
+      fontspedtext.textContent = `${newPlaybackRate}x`
+    }
   });
 });
 

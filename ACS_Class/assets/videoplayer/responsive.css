@@ -170,9 +170,7 @@
       
       
       
-      .video-controls-container .controls button.wide-btn {
-        width: 50px;
-      }
+      
       
       .timeline-container {
         height: 7px;
@@ -180,11 +178,21 @@
         cursor: pointer;
         display: flex;
         align-items: center;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 0.85rem;
       }
+      .current-time{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 0.85rem;
+      }.total-time{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 0.85rem;
+      }
+
       @media only screen and (min-width: 600px)
       {
       .timeline-container {
-        margin-inline: 1.4rem;
+        margin-inline: 1rem;
       
       }
       }
@@ -197,12 +205,14 @@
         width: 100%;
         height: 3px;
         background-color: rgba(100, 100, 100, .5);
+        display: none;
       }
       
       #progress-bar {
         height: 100%;
         background-color: rgb(150, 150, 150); /* Set the preload color to green */
         width: 0; /* Start with a width of 0 (no preload initially) */
+        display: none;
       }
       
       #progress-bar::after {
@@ -210,13 +220,14 @@
         display: block;
         height: 100%;
         background-color: rgb(150, 150, 150); /* Set the progress bar color to black */
+        display: none;
       }
       
       
       
       .timeline {
         
-        background-color: rgba(100, 100, 100, .5);
+        background-color: rgba(100, 100, 100, .77);
         height: 3px;
         width: 100%;
         position: relative;
@@ -280,6 +291,9 @@
         height: 100%;
         display: none;
       }
+      .hover-time{
+        display: none;
+        }
       
       .video-container.scrubbing .thumbnail-img {
         display: none;
@@ -310,7 +324,49 @@
         width: 25px!important;
         height: 25px!important;
       }
-  
+/* speed button and its container */
+.speed-btn{
+  position: relative;
+}
+.front-txtCont{
+  display: grid;
+  place-items: center;
+}
+.sped-bacsvg{
+  width: 1.5rem;
+  position: absolute;
+}
+.sped-slider{
+  width: 70px;
+  margin: 7px 8px;
+}
+.sped-cont{
+  position: absolute;
+  left: -26px;
+  bottom: 26px;
+  background: #232328;
+  width: 5.4rem;
+
+}
+.sped-val{
+  font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 3px 5px;
+  display: grid;
+  justify-content: center;
+
+}
+.sped-text{
+  font-size: 13px;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 2px 1px;
+}
+.sped-val:hover{
+ background: rgba(243, 243, 243, 0.158);
+}
+.spedlistbaccolor{
+  background: rgba(243, 243, 243, 0.158);
+}
 /* speed-playback-section */
 .lf-speedback-cont{
     width: 100%;

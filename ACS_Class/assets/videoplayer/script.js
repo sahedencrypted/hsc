@@ -52,64 +52,12 @@ document.addEventListener("keydown", e => {
   }
 })
 
-// Timeline
-timelineContainer.addEventListener("mousemove", handleTimelineUpdate)
-timelineContainer.addEventListener("mousedown", toggleScrubbing)
-document.addEventListener("mouseup", e => {
-  if (isScrubbing) toggleScrubbing(e)
-})
-document.addEventListener("mousemove", e => {
-  if (isScrubbing) handleTimelineUpdate(e)
-})
 
-let isScrubbing = false
-let wasPaused
-function toggleScrubbing(e) {
-  const rect = timelineContainer.getBoundingClientRect()
-  const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
-  isScrubbing = (e.buttons & 1) === 1
-  videoContainer.classList.toggle("scrubbing", isScrubbing)
-  if (isScrubbing) {
-    wasPaused = video.paused
-    video.pause()
-  } else {
-    video.currentTime = percent * video.duration
-    if (!wasPaused) video.play()
-  }
 
-  handleTimelineUpdate(e)
-}
 
-function handleTimelineUpdate(e) {
-  const rect = timelineContainer.getBoundingClientRect()
-  const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
-  const previewImgNumber = Math.max(
-    1,
-    Math.floor((percent * video.duration) / 10)
-  )
-  const previewImgSrc = `assets/previewImgs/preview${previewImgNumber}.jpg`
-  previewImg.src = previewImgSrc
-  timelineContainer.style.setProperty("--preview-position", percent)
-
-  if (isScrubbing) {
-    e.preventDefault()
-    thumbnailImg.src = previewImgSrc
-    timelineContainer.style.setProperty("--progress-position", percent)
-  }
-}
-
-// Playback Speed
-speedBtn.addEventListener("click", changePlaybackSpeed)
-
-function changePlaybackSpeed() {
-  let newPlaybackRate = video.playbackRate + 0.25
-  if (newPlaybackRate > 2) newPlaybackRate = 0.25
-  video.playbackRate = newPlaybackRate
-  speedBtn.textContent = `${newPlaybackRate}x`
-}
 
 //progess bar
-const progressBar = document.getElementById('progress-bar');
+/* const progressBar = document.getElementById('progress-bar');
 video.addEventListener('progress', () => {
   const bufferedEnd = video.buffered.end(0);
   const duration = video.duration;
@@ -120,12 +68,13 @@ video.addEventListener('progress', () => {
     // Update the progress bar width accordingly
     progressBar.style.width = `${bufferedPercent}%`;
   }
-});
+}); */
 
-video.addEventListener('canplaythrough', () => {
+
+/* video.addEventListener('canplaythrough', () => {
   // Hide the progress bar when the video can play without buffering
   progressBar.style.width = '0';
-});
+}); */
 
 
 // Duration
@@ -482,6 +431,137 @@ function LeftsideSpeedBackAnimation(){
 
 
 
+// Timeline
+const timehover = document.querySelector(".hover-time");
+timelineContainer.addEventListener("mousemove", handleTimelineUpdate)
+timelineContainer.addEventListener("mousedown", toggleScrubbing)
+document.addEventListener("mouseup", e => {
+  if (isScrubbing) toggleScrubbing(e)
+})
+document.addEventListener("mousemove", e => {
+  if (isScrubbing) handleTimelineUpdate(e)
+})
+
+let isScrubbing = false
+let wasPaused
+function toggleScrubbing(e) {
+  const rect = timelineContainer.getBoundingClientRect()
+  const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
+  isScrubbing = (e.buttons & 1) === 1
+  videoContainer.classList.toggle("scrubbing", isScrubbing)
+  if (isScrubbing) {
+    wasPaused = video.paused
+    video.pause()
+  } else {
+    video.currentTime = percent * video.duration
+    if (!wasPaused) video.play()
+  }
+
+  handleTimelineUpdate(e)
+}
+var durationInSeconds
+function handleTimelineUpdate(e) {
+  const rect = timelineContainer.getBoundingClientRect()
+  const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
+  const previewImgNumber = Math.max(
+    1,
+    Math.floor((percent * video.duration) / 10)
+  )
+  /* const previewImgSrc = `assets/previewImgs/preview${previewImgNumber}.jpg`
+  previewImg.src = previewImgSrc */
+  timelineContainer.style.setProperty("--preview-position", percent)
+  timehover.style.display="block"
+  timehover.style.left=`${(e.x - rect.x)-10}px`
+  durationInSeconds = Math.floor(percent * video.duration)
+  logFormattedTime(durationInSeconds);
+  
+  if (isScrubbing) {
+    e.preventDefault()
+    /* thumbnailImg.src = previewImgSrc */
+    timelineContainer.style.setProperty("--progress-position", percent)
+    
+  }
+}
+
+timelineContainer.addEventListener("mouseleave",()=>{
+  timehover.style.display="none"
+  timelineContainer.style.setProperty("--preview-position", 0)
+})
+
+
+
+function logFormattedTime(totalSeconds) {
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  // Use padStart to ensure that the time parts always have two digits
+  const minutesString = minutes.toString().padStart(2, '0');
+  const secondsString = seconds.toString().padStart(2, '0');
+
+  // Include the hours part only if there are non-zero hours
+  const hoursString = hours > 0 ? hours.toString().padStart(2, '0') + ':' : '';
+
+  //console.log(`${hoursString}${minutesString}:${secondsString}`);
+  timehover.innerHTML=`${hoursString}${minutesString}:${secondsString}`
+}
+
+
+// Playback Speed
+/* speedBtn.addEventListener("click", changePlaybackSpeed)
+
+function changePlaybackSpeed() {
+  let newPlaybackRate = video.playbackRate + 0.25
+  if (newPlaybackRate > 2) newPlaybackRate = 0.25
+  video.playbackRate = newPlaybackRate
+  speedBtn.textContent = `${newPlaybackRate}x`
+} */
+const spedCont = document.querySelector(".sped-cont")
+speedBtn.addEventListener("click", ()=>{
+  if(spedCont.classList.contains("cl")){
+    spedCont.classList.remove("cl")
+    spedCont.classList.add("op")
+  }
+  else{
+    spedCont.classList.remove("op")
+    spedCont.classList.add("cl")
+  }
+  
+})
+
+
+const alllistssped = document.querySelectorAll(".sped-val");
+const fontspedtext = document.querySelector(".sped-text")
+let newPlaybackRate;
+alllistssped.forEach(element => {
+  element.addEventListener("click", () => {
+    const innerTextWithoutX = element.innerText.slice(0, -1);
+
+    if (element.classList.contains("spedlistbaccolor")) {
+      element.classList.remove("spedlistbaccolor");
+      console.log(parseFloat(innerTextWithoutX));
+    } else {
+      alllistssped.forEach(otherElement => {
+        otherElement.classList.remove("spedlistbaccolor");
+      });
+      element.classList.add("spedlistbaccolor");
+      console.log(parseFloat(innerTextWithoutX));
+      newPlaybackRate = parseFloat(innerTextWithoutX)
+      video.playbackRate = newPlaybackRate
+      fontspedtext.textContent = `${newPlaybackRate}x`
+    }
+  });
+});
+
+
+
+function changePlaybackSpeed() {
+  console.log("Removed class. Inner text: " + element.innerText);
+  let newPlaybackRate = video.playbackRate + 0.25
+  if (newPlaybackRate > 2) newPlaybackRate = 0.25
+  video.playbackRate = newPlaybackRate
+  speedBtn.textContent = `${newPlaybackRate}x`
+} 
 
 
 
