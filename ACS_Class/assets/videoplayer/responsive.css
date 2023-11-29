@@ -523,4 +523,13 @@ display: flex;
     padding: 4px 31px;
     top: 800px;
 }
+.YT-iframe-container{
+  display: none;
+  width: auto;
+  max-width: 640px;
+  height: 352px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  margin-top: 16px;
+}
 

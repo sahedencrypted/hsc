@@ -18,11 +18,53 @@ function PDFSelection() {
         // Log the ID to the console
         const vdoID = pdfzElement.id;
         localStorage.setItem('vdoID', vdoID);
-        const vdoplayr = document.getElementById("videoPlayer");
-        vdoplayr.src = `${vdoID}`;
+        const vvuip = document.querySelector("#iframeContainer");
+        const ytiframe = document.querySelector(".YT-iframe-container")
+        const cytiframe = document.querySelector("#CvdoFrame")
+        if(vdoID.length < 50){
+          console.log(vdoID)
+          vvuip.style.display="none"
+          ytiframe.style.display="block"
+          cytiframe.src = `https://www.youtube.com/embed/${vdoID}`;
+        }
+        else{
+          ytiframe.style.display="none"
+          vvuip.style.display="block"
+          const vdoplayr = document.getElementById("videoPlayer");
+          vdoplayr.src = `${vdoID}`;
+        }
+        
+        
       });
     });
   }
+
+//onpageload src input
+const iframee = document.getElementById('videoPlayer');
+const vdoID = localStorage.getItem('vdoID') || '';
+const vvuip = document.querySelector("#iframeContainer");
+const ytiframe = document.querySelector(".YT-iframe-container")
+const cytiframe = document.querySelector("#CvdoFrame")
+if(vdoID.length < 50){
+  console.log(vdoID)
+  vvuip.style.display="none"
+  ytiframe.style.display="block"
+  cytiframe.src = `https://www.youtube.com/embed/${vdoID}`;
+}
+else{
+  ytiframe.style.display="none"
+  vvuip.style.display="block"
+  const vdoplayr = document.getElementById("videoPlayer");
+  vdoplayr.src = `${vdoID}`;
+}
+
+
+
+
+
+
+
+
 
 
 

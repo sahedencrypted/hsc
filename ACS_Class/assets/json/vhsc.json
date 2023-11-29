@@ -107,22 +107,18 @@
     "items": []
   },
   "cata1subjs1chapt1": {
-    "title": [
-      
-    ],
-    "vdoID": [
-      
-    ]
+    "title": [],
+    "vdoID": []
   },
   "cata1subjs1chapt2": {
     "title": [
       "ভেক্টর | পর্ব ১",
       "ভেক্টর | পর্ব ২",
       "ভেক্টর | পর্ব ৩",
-      "UnavailableCalculator Tricks Part 1 (Casio fx991EX) (Start from 45:00 minute)",
-      "UnavailableCalculator Tricks Part 2 (Casio fx991 ES Plus)",
+      "YT-Calculator Tricks Part 1 (Casio fx991EX) (Start from 45:00 minute)",
+      "YT-Calculator Tricks Part 2 (Casio fx991 ES Plus)",
       "ভেক্টর | পর্ব ৪",
-      "UnavailableCalculator Tricks Part 3 (Casio fx991 ES Plus)",
+      "YT-Calculator Tricks Part 3 (Casio fx991 ES Plus)",
       "ভেক্টর | পর্ব ৫",
       "ভেক্টর | পর্ব ৬",
       "ভেক্টর | পর্ব ৭",
@@ -137,17 +133,17 @@
       "ভেক্টর | পর্ব ১৬",
       "ভেক্টর | পর্ব ১৭",
       "ভেক্টর | QnA Class",
-      "Unavailableভেক্টর (Recap + MCQ Booster) পর্ব ১",
-      "Unavailableভেক্টর (Recap + MCQ Booster) পর্ব ২"
+      "YT-ভেক্টর (Recap + MCQ Booster) পর্ব ১",
+      "YT-ভেক্টর (Recap + MCQ Booster) পর্ব ২"
     ],
     "vdoID": [
       "https://storage.googleapis.com/teachstack/video_lectures/9efb177a-dd6e-4a58-9d0b-d8701153e84c.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/c88ad7c6-2180-445a-b3ee-41c99260aa0e.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/2f42bf96-0e4b-43d4-8c92-0e62079bae8e.mp4",
-      "https://i.ytimg.com/vi/7MiunbiePrc/hqdefault.mp4",
-      "https://i.ytimg.com/vi/mu5ryZ9QCbI/hqdefault.mp4",
+      "7MiunbiePrc",
+      "mu5ryZ9QCbI",
       "https://storage.googleapis.com/teachstack/video_lectures/69812236-4f56-4ceb-9e94-650b94f97683.mp4",
-      "https://i.ytimg.com/vi/q2TcNxdnRtQ/hqdefault.mp4",
+      "q2TcNxdnRtQ",
       "https://storage.googleapis.com/teachstack/video_lectures/ea42e7cf-945f-487f-9531-d83c73b82b14.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/05487b65-facc-4940-9c76-503a69344a4f.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/9beaec31-ee5f-4828-85f7-58457a5b0377.mp4",
@@ -162,8 +158,8 @@
       "https://storage.googleapis.com/teachstack/video_lectures/b797ebdc-6f0d-4581-b2c4-19d27665fd0a.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/4ef3f74c-3760-4a16-affb-f1f60b5419b1.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/0e4b4e60-30d6-456c-88d3-3628e102df93.mp4",
-      "https://i.ibb.co/rdhwXzG/Purple-Geometric-Finance-Trading-You-Tube-Thumbnail-1.png",
-      "https://i.ibb.co/Czk0dfv/Purple-Geometric-Finance-Trading-You-Tube-Thumbnail.png"
+      "FKrtEZXq8FQ",
+      "8iyVFQE6p3U"
     ]
   },
   "cata1subjs1chapt5": {
@@ -219,13 +215,13 @@
       "পর্যাবৃত্ত গতি | পর্ব ১",
       "পর্যাবৃত্ত গতি | পর্ব ২",
       "পর্যাবৃত্ত গতি | পর্ব ৩",
-      "Unavailable পর্যাবৃত্ত গতি | পর্ব ৪",
+      "YT- পর্যাবৃত্ত গতি | পর্ব ৪",
       "পর্যাবৃত্ত গতি | পর্ব ৫",
       "পর্যাবৃত্ত গতি | পর্ব ৬",
       "পর্যাবৃত্ত গতি | পর্ব ৭",
       "পর্যাবৃত্ত গতি | পর্ব ৮",
       "পর্যাবৃত্ত গতি | পর্ব ৯",
-      "Unavailable পর্যাবৃত্ত গতি | Q n A ক্লাস"
+      "YT- পর্যাবৃত্ত গতি | Q n A ক্লাস"
     ],
     "vdoID": [
       "https://storage.googleapis.com/teachstack/video_lectures/819844ee-f4fe-4b1f-bbc3-72aa8b0b3f7b.mp4",
@@ -267,7 +263,7 @@
       "নিউটনীয় বলবিদ্যা - ১",
       "নিউটনীয় বলবিদ্যা - ২",
       "নিউটনীয় বলবিদ্যা - ৩",
-      "Unavailable - ৪",
+      "YT- - ৪",
       "নিউটনীয় বলবিদ্যা - ৫",
       "নিউটনীয় বলবিদ্যা - ৬",
       "নিউটনীয় বলবিদ্যা - ৭",
@@ -323,7 +319,7 @@
       "গ্যাসের গতি তত্ত্ব 01",
       "গ্যাসের গতি তত্ত্ব 02",
       "গ্যাসের গতি তত্ত্ব 03",
-      "Unavailable Youtubelink 04",
+      "YT- Youtubelink 04",
       "গ্যাসের গতি তত্ত্ব 05",
       "গ্যাসের গতি তত্ত্ব 06",
       "গ্যাসের গতি তত্ত্ব 07",
@@ -340,6 +336,14 @@
       "https://storage.googleapis.com/teachstack/video_lectures/78ba71f6-f7d5-45fb-97c3-efed0423aadf.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/4059b9b8-edac-4349-b20e-8bca6e582661.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/fb44984f-0f63-4961-bf6f-b3661beffcb1.mp4"
+    ]
+  },
+  "cata2subjs1chapt5": {
+    "title": [
+      "lec_1"
+    ],
+    "vdoID": [
+      "https://storage.googleapis.com/teachstack/video_lectures/b81f96dc-a85e-413e-a444-5d51830d8b21.mp4"
     ]
   }
 }
