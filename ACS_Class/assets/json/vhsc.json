@@ -2,10 +2,9 @@
   "Category": {
     "name": "Category",
     "item1": [
-      "Physics",
-      "Higher Math",
-      "UDVASH Eng Master Class",
-      "UNMESH Medi Master Class"
+      "ACS_Physics",
+      "ACS_Higher Math",
+      "ACS_Chemistry"
     ]
   },
   "Subjects": {
@@ -19,13 +18,8 @@
       "Math 2nd"
     ],
     "item3": [
-      "Physics 1st",
-      "Physics 2nd",
-      "Math 1st",
-      "Math 2nd",
       "Chemistry 1st",
-      "Chemistry 2nd",
-      "English"
+      "Chemistry 2nd"
     ],
     "item4": [
       "Physics 1st",
@@ -81,7 +75,7 @@
       "০৯ - সমতলে বস্তুকনার গতি"
     ]
   },
-  "cata3subjs5": {
+  "cata3subjs1": {
     "items": [
       "০২ - গুণগত রসায়ন",
       "০৩ - মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক ব..",
@@ -89,22 +83,13 @@
       "০৫ - কর্মমুখী রসায়ন"
     ]
   },
-  "cata3subjs6": {
+  "cata3subjs2": {
     "items": [
       "০১ - পরিবেশ রসায়ন",
       "০২ - জৈব রসায়ন",
       "০৩ - পরিমাণগত রসায়ন",
       "০৪ - তড়িৎ রসায়ন"
     ]
-  },
-  "cata3subjs7": {
-    "items": [
-      "English P-1",
-      "English P-2"
-    ]
-  },
-  "cata2subjs4": {
-    "items": []
   },
   "cata1subjs1chapt1": {
     "title": [],
@@ -344,6 +329,252 @@
     ],
     "vdoID": [
       "https://storage.googleapis.com/teachstack/video_lectures/b81f96dc-a85e-413e-a444-5d51830d8b21.mp4"
+    ]
+  },
+  "cata3subjs1chapt1": {
+    "title": [
+      "প্রাথমিক ধারণা, ইলেকট্রন, প্রোটন, নিউট্রন এর আবিষ্কার",
+      "ডাল্টনের পারমানবিক তত্ত্ব, ইলেকট্রন, প্রোটন, নিউট্রন আবিষ্কার",
+      "bor_1",
+      "bor_2",
+      "bor_3",
+      "bor_4",
+      "bor_5",
+      "bor_6",
+      "Class 9 - sakib vaiya",
+      "গুণগত রসায়ন -১৬",
+      "গুণগত রসায়ন -১৮",
+      "গুণগত রসায়ন -২০",
+      "CQ solve sakib vaiya",
+      "Solubility-01",
+      "solubility-02",
+      "solubility-03",
+      "solubility-04",
+      "solubility-05",
+      "solubility-06",
+      "spectrum-01",
+      "spectrum-02",
+      "spectrum-03",
+      "solvent extraction,question bank",
+      "complex ion formation",
+      "solubility,chromatography"
+    ],
+    "vdoID": [
+      "DUSEcTWWDKs",
+      "https://storage.googleapis.com/teachstack/video_lectures/77bfc731-1bbf-49f2-a199-82b5a81fa894.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/02ac6469-40a6-49cc-af55-e553826a453c.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/523ed2f9-7741-47c0-83b5-66a3a6722e8b.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/f1b314c0-f864-4e31-b48b-bd0738ad28a6.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/20b51f59-3bf9-4bfa-a137-493cb377d649.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/9e5fa9aa-ef1a-4073-9573-8a1dbbe95f9f.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/1889fbdb-62c9-405e-82c6-6b85e77ed29c.mp4",
+      "3SR3Zh1s8Jk",
+      "https://storage.googleapis.com/teachstack/video_lectures/14924bb8-9b6b-4aaa-97e4-4b5475c57afc.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/69ba1dca-8531-4eb7-9246-cd0522a59b76.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/a49af20a-8fa7-4257-9dc2-c882a819e5b2.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/85222c0a-ad6b-4d1b-8406-169bf6780c4d.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/08e4f425-22ff-4ebb-a9a7-35cfe2687857.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/d983cab7-4bdd-4bf4-b152-8825003a55ba.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/b9e5bfe8-d175-4ad4-8b71-adfbcc96865a.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/ef4b5440-21ef-4c58-87ee-375e01775e3a.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/65e75437-9f10-4e81-9f24-8094cf54da31.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/308edad5-8957-4c31-95c9-bbf72aefc976.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/81f3fca2-ee0c-4bd4-a161-badc8c6b4d26.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/d72edd02-09ee-429f-914f-c7416606d8f5.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/82b85c98-4ec9-40c8-972c-762490c395e4.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/290ec529-edb7-4a06-86f3-d891024b25a2.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/a47a6a06-1ee5-44bf-8b18-73e5a439cccb.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/67319df1-81f3-47bd-8f59-8c3e0a35dd6a.mp4"
+    ]
+  },
+  "cata3subjs1chapt2": {
+    "title": [
+      "পর্যায় সারণীর ব্যাসিক",
+      "পর্যায়সারণির পরিচিতি ও s- ব্লক মৌলের বৈশিষ্টা ( আংশিক )",
+      "s- ব্লক মৌলের বৈশিষ্ট্য (ফুল)",
+      "s block last part",
+      "P-BLOCK element ( group -13 & 14 )",
+      "P-BLOCK element ( group -14 & 15 )",
+      "P-BLOCK element ( group 15 )",
+      "P-BLOCK element ( group -16 & 17 )",
+      "P-BLOCK element, inert gas,Eng QB solve",
+      "Inert gas and periodic properties",
+      "পর্যায়বিত্তিক ধর্ম",
+      "পর্যায়বৃত্তিক ধর্ম ও সৃজনশীল প্রশ্ন সমাধান",
+      "রাসায়নিক বন্ধন ১",
+      "রাসায়নিক বন্ধন -০২",
+      "রাসায়নিক বন্ধন -০৩",
+      "Hybridization-01",
+      "hybridization 02",
+      "hybridization 03",
+      "hybridization 04",
+      "hybridization-05",
+      "hybridization 06",
+      "hybridization of complex compound",
+      "hybridization 08",
+      "hybridization 09"
+    ],
+    "vdoID": [
+      "https://storage.googleapis.com/teachstack/video_lectures/b2676890-4599-481d-913b-d759709abedf.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/b30e0ba4-f387-45ce-a981-765f7b6aff6d.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/b6cdff7d-eb53-4a85-a4d7-122da60d6e74.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/98009cf2-e66f-4d45-b3f0-e7e83fc20fcd.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/6961cb69-050a-4aa6-a3f4-01521aabc5d0.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/4425fee8-97e9-4559-9551-867f039670a1.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/d18b6c34-2473-4bbd-9b18-5e9d24f40b66.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/f2a01c92-fe1f-48a1-bc8a-91f35ed38c5f.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/ead5962f-b907-4eaa-9936-e3ef43593d90.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/36251306-127f-44d4-b668-6cd6c2698e80.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/105c5bf9-2054-4136-ac3c-722736922e4d.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/dc38be4e-b74b-419b-8786-4d19d0c48993.mp4",
+      "qFryZwRnp98",
+      "https://storage.googleapis.com/teachstack/video_lectures/f1461d32-08d0-4a99-9ba6-7faf01ad4ea5.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/a6c5c9c6-7aa9-4c5d-8499-d24bcb80f741.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/bd44a45d-4b15-4b75-980c-e803cf275e73.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/e0b1301e-3330-4b57-ae44-2a3ce282ca68.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/7c8ab55f-1865-412b-9454-fc5e7e1c2ed2.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/dece4574-4d6b-4d60-a031-9bec36fbf9cd.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/9a8bccca-4919-4845-a7b2-de00aaa13ce5.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/42f7dee5-3474-4db7-9770-d21723bf7d52.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/fc9a6a6e-ba83-4b24-9a41-6f74d9dbb542.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/01ec542f-e696-4c6c-a255-4fd0a9a9a7a1.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/470aa208-471f-469d-b815-9c70e6c13df0.mp4"
+    ]
+  },
+  "cata3subjs2chapt2": {
+    "title": [
+      "nomenclature-01",
+      "nomenclature-02",
+      "nomenclature-03",
+      "nomenclature-04",
+      "organic-05",
+      "isomerism-01",
+      "isomerism-02",
+      "isomerism-03",
+      "organic -09",
+      "isomerism-04",
+      "organic -11",
+      "organic -12",
+      "organic -13",
+      "organic -14",
+      "organic -15",
+      "organic -16",
+      "alkane-04",
+      "organic -18",
+      "organic -19",
+      "alkene-02",
+      "mega exam-1 solve class",
+      "alkene-03",
+      "organic-23",
+      "organic-24",
+      "organic-25",
+      "organic -26",
+      "organic -27",
+      "organic -28",
+      "organic -29",
+      "organic -30",
+      "organic -31",
+      "organic -32",
+      "organic -33",
+      "organic -34",
+      "organic -35",
+      "organic -36",
+      "organic -37",
+      "organic -38",
+      "organic - 39",
+      "organic-40",
+      "organic -41",
+      "organic -42",
+      "organic -43",
+      "organic-44",
+      "organic -45",
+      "phenol",
+      "aromatic",
+      "Lecture 48 | aniline,phenol",
+      "acids",
+      "MEDICAL STANDARD CLASS | Lecture 1",
+      "MEDICAL STANDARD CLASS | Lecture 2"
+    ],
+    "vdoID": [
+      "https://storage.googleapis.com/teachstack/video_lectures/350ec50d-2187-4ddf-ada9-428b707db1f4.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/8093db43-704a-4e42-b6f2-dcbfdc492926.mp4",
+      "DPlyhNalahM",
+      "https://storage.googleapis.com/teachstack/video_lectures/e8ebdc6d-8083-42fd-b58e-e41990694854.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/41832ec3-7550-4683-90be-5a984897a4e3.mp4",
+      "1fHHP4M37c0",
+      "https://storage.googleapis.com/teachstack/video_lectures/494e0b09-09b9-48a6-b91f-d397dafce525.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/30d8772d-c0e9-425b-bb97-1d639c96a77d.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/6bf20a90-54bc-4e59-a268-2af61ea20547.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/e9eb6647-69f1-404a-a6a4-00f3558ad7e6.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/514f65f2-40d9-41f2-8066-297d14741da6.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/73264ac6-42db-4abe-9e43-2e8d2e90cb35.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/6b151a2c-9649-40d8-acbf-e915c6497613.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/9f234ba8-9e31-42d6-a7c7-0cdea52ead22.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/5a8d7c8f-adb4-4a72-8c27-a6b5631a224b.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/75ef1e17-1c4a-485b-abba-c8a45addece9.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/e725eb33-12c3-461f-a340-e48e24134426.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/509fb46e-eb2d-4ab3-87e1-e976b50aedf2.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/3656f88d-3325-4ec7-8bf7-f8564ee5bc91.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/d6a481a5-b487-4758-9cf1-b9be4afb7e88.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/43aab937-22c6-4666-b9c8-e0bbd938a1cf.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/2b01b36e-a777-4e8c-8377-b57b81fe229f.mp4",
+      "lEIE46-3Ge0",
+      "https://storage.googleapis.com/teachstack/video_lectures/b2fedc98-99bc-4a34-aaf5-23635b6e945e.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/bc9550b7-c780-42d2-9a5d-7126e3b379e6.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/0cc36719-f064-43c8-916a-20224c87078c.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/1f733c70-f3a5-4fa5-84fc-22d235605f71.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/8cb17caf-7d24-4aa7-b2b2-85e87737e875.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/dc857e83-181d-485d-a7ad-b8afae355bd8.mp4",
+      "Lj_HNSNAh44",
+      "https://storage.googleapis.com/teachstack/video_lectures/78cc650a-58ce-4313-bb55-657985db6225.mp4",
+      "nUvIoq7HYlc",
+      "https://storage.googleapis.com/teachstack/video_lectures/1d1cb3e3-b993-4019-aa2e-6fe2accd22e1.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/62b89824-9fe7-4e7f-8ccc-ddeca6a235c7.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/6efe9127-956b-4576-af40-75b48c006fb3.mp4",
+      "m1PF18NRWzM",
+      "yBNhK4SB3FY",
+      "KTNjFWNhmRc",
+      "dsQhEytECvs",
+      "W1PUWVofCGg",
+      "fX88skrkJpA",
+      "scMuTUUAvuo",
+      "G_Ey-QQuuTk",
+      "9hFTVt0U4zw",
+      "K6xKnvXvaZg",
+      "https://storage.googleapis.com/teachstack/video_lectures/7d1d974d-8cbb-4253-b1ac-28fd983c505d.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/56a7df2b-0a88-45a8-baf7-cbca316af9e8.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/182252bf-86c1-4da5-b5f7-be2f93e545e8.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/6b4d874d-b238-4dc5-be84-41815bc1b179.mp4",
+      "ivA72i7LYr8",
+      "32q9d9xsTuw"
+    ]
+  },
+  "cata1subjs2chapt3": {
+    "title": [
+      "চল তড়িৎ | পর্ব ১",
+      "চল তড়িৎ | পর্ব ২",
+      "চল তড়িৎ | Class 3",
+      "চল তড়িৎ | Class 4",
+      "চল তড়িৎ | Class 5",
+      "চল তড়িৎ | Class 6",
+      "চল তড়িৎ | Class 7",
+      "চল তড়িৎ | Class 8",
+      "চল তড়িৎ | Class 9",
+      "চল তড়িৎ | Class 10",
+      "চল তড়িৎ Q n A Class"
+    ],
+    "vdoID": [
+      "https://storage.googleapis.com/teachstack/video_lectures/162fd3bb-4412-4026-9e55-667a6ac7ceff.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/263149aa-30be-4926-ace2-0d04b1db717c.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/b8bd6c8a-d0ca-437c-b412-cf3611c701ca.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/a5dbbf79-2fe4-4268-aef3-f57cb0040893.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/ccf0b349-79ae-4cdb-ab7b-f121d17e7218.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/4e7febfb-424d-4764-9ba0-4228ba768f64.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/63da803b-dbbc-427f-bf31-2c5f6c64a50d.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/cd7c9ff5-00ea-4c96-982b-c2cdc057f62b.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/8cf4682d-5037-4239-ab86-0e9ace0816a5.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/6da9f797-b1cf-4135-9e78-54ad0c76f537.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/3cdb960d-c672-47f3-8550-e4633180e6a5.mp4"
     ]
   }
 }

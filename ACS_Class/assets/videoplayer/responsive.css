@@ -525,11 +525,10 @@ display: flex;
 }
 .YT-iframe-container{
   display: none;
-  width: auto;
-  max-width: 640px;
-  height: 352px;
+  width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   user-select: none;
   margin-top: 16px;
+  grid-column: 1/3;
 }
 
