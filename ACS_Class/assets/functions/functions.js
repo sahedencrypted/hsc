@@ -19,16 +19,24 @@ function PDFSelection() {
         const vdoID = pdfzElement.id;
         localStorage.setItem('vdoID', vdoID);
         const vvuip = document.querySelector("#iframeContainer");
-        const ytiframe = document.querySelector(".YT-iframe-container")
-        const cytiframe = document.querySelector("#CvdoFrame")
+        const iframecont = document.querySelector(".YT-iframe-container")
+        const ciframecont = document.querySelector("#CvdoFrame")
         if(vdoID.length < 50){
-          console.log(vdoID)
+          iframecont.innerHTML=``
+          iframecont.innerHTML=`
+          <iframe id="CvdoFrame" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+          `
           vvuip.style.display="none"
-          ytiframe.style.display="block"
-          cytiframe.src = `https://www.youtube.com/embed/${vdoID}`;
+          iframecont.style.display="block"
+          const ciframecont = document.querySelector("#CvdoFrame")
+          ciframecont.src = `https://www.youtube.com/embed/${vdoID}`;
         }
         else{
-          ytiframe.style.display="none"
+          iframecont.innerHTML=``
+          iframecont.innerHTML=`
+          <iframe id="CvdoFrame" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+          `
+          iframecont.style.display="none"
           vvuip.style.display="block"
           const vdoplayr = document.getElementById("videoPlayer");
           vdoplayr.src = `${vdoID}`;
@@ -43,16 +51,16 @@ function PDFSelection() {
 const iframee = document.getElementById('videoPlayer');
 const vdoID = localStorage.getItem('vdoID') || '';
 const vvuip = document.querySelector("#iframeContainer");
-const ytiframe = document.querySelector(".YT-iframe-container")
-const cytiframe = document.querySelector("#CvdoFrame")
+const iframecont = document.querySelector(".YT-iframe-container")
+const ciframecont = document.querySelector("#CvdoFrame")
 if(vdoID.length < 50){
   console.log(vdoID)
   vvuip.style.display="none"
-  ytiframe.style.display="block"
-  cytiframe.src = `https://www.youtube.com/embed/${vdoID}`;
+  iframecont.style.display="block"
+  ciframecont.src = `https://www.youtube.com/embed/${vdoID}`;
 }
 else{
-  ytiframe.style.display="none"
+  iframecont.style.display="none"
   vvuip.style.display="block"
   const vdoplayr = document.getElementById("videoPlayer");
   vdoplayr.src = `${vdoID}`;

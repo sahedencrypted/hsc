@@ -407,6 +407,7 @@ function loadingAnimatinStop(){
 getsrcchangeclick.addEventListener("click",()=>{
   addThisTosrcCahngeEvnt()
 })
+
 function addThisTosrcCahngeEvnt(){
   loadingAnimatinStart();
   if(checkplaypause === "playing"){

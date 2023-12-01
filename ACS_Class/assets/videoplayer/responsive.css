@@ -526,6 +526,7 @@ display: flex;
 .YT-iframe-container{
   display: none;
   width: 100%;
+  height: 228px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   user-select: none;
   margin-top: 16px;
