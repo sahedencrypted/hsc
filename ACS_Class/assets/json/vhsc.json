@@ -275,7 +275,7 @@
       "https://storage.googleapis.com/teachstack/video_lectures/0b1e797c-9ab3-4afe-8c35-bd7ed609f9c2.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/8875ca2e-08e3-44c2-af4b-d4bc3b26a822.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/7df58307-28ef-4c9c-a9e0-5c553a5eeee0.mp4",
-      "https://i.ytimg.com/vi/U6_oaa6smpQ/hqdefault.mp4",
+      "U6_oaa6smpQ",
       "https://storage.googleapis.com/teachstack/video_lectures/dc21fc21-c482-448a-bba4-fbbc2aea006e.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/792534da-a97e-472d-90a5-812cc7aa1096.mp4",
       "https://storage.googleapis.com/teachstack/video_lectures/5e006736-1f48-4ee8-97e8-bd0546a5d518.mp4",
@@ -325,10 +325,16 @@
   },
   "cata2subjs1chapt5": {
     "title": [
-      "lec_1"
+      "lec_1",
+      "lec_2",
+      "lec_3",
+      "lec_4"
     ],
     "vdoID": [
-      "https://storage.googleapis.com/teachstack/video_lectures/b81f96dc-a85e-413e-a444-5d51830d8b21.mp4"
+      "https://storage.googleapis.com/teachstack/video_lectures/b81f96dc-a85e-413e-a444-5d51830d8b21.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/9c1baeef-4fd4-48ec-b72b-a97b975f6b32.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/17093649-b233-467b-b3ab-f37cb0a646f5.mp4",
+      "https://storage.googleapis.com/teachstack/video_lectures/a3b020b5-6062-4785-b92e-18451966d0f6.mp4"
     ]
   },
   "cata3subjs1chapt1": {
