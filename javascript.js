@@ -412,7 +412,7 @@ iframe.src = `https://drive.google.com/file/d/${pdfID}/preview`;
 const btnpdf = document.querySelector(".llpdfzone");
 const btnclass = document.querySelector(".llclass");
 btnclass.addEventListener("click", function() {
-  window.location.href = "Class_page/classespg.html";
+  window.location.href = "ACS_Class/ACSclassespg.html";
 });
 
 // height transition on chapters box
