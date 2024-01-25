@@ -64,12 +64,8 @@ else{
   vvuip.style.display="block"
   const vdoplayr = document.getElementById("videoPlayer");
   vdoplayr.src = `${vdoID}`;
+
 }
-
-
-
-
-
 
 
 
