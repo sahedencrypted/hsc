@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="input" type="text" style="width: 500px; height: 20px;">
+</body>
+<script>
+
+function generateCustomId(inputNumber) {
+    const base62Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let base62Id = '';
+
+    // Convert the input number to a base-62 representation
+    while (inputNumber > 0) {
+        const remainder = inputNumber % 62;
+        base62Id = base62Chars.charAt(remainder) + base62Id;
+        inputNumber = Math.floor(inputNumber / 62);
+    }
+
+    // Pad the ID with leading zeros if necessary
+    while (base62Id.length < 5) {
+        base62Id = '0' + base62Id;
+    }
+
+    // Take the last 5 characters of the base-62 ID
+    const customId = base62Id.slice(-5);
+
+    return customId;
+}
+
+// Example usage
+const inputNumber = 10;
+const customId = generateCustomId(inputNumber);
+console.log(customId); // Output a unique 5-character ID
+
+
+
+</script>
+</html>

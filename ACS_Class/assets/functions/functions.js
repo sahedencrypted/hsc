@@ -48,13 +48,14 @@ function PDFSelection() {
   }
 
 //onpageload src input
+const defaultVideoSrc = 'https://1a-1791.com/video/s8/2/O/x/r/a/Oxrav.caa.mp4?u=3&b=0'
 const iframee = document.getElementById('videoPlayer');
-const vdoID = localStorage.getItem('vdoID') || '';
+const vdoID = localStorage.getItem('vdoID') || defaultVideoSrc ;
 const vvuip = document.querySelector("#iframeContainer");
 const iframecont = document.querySelector(".YT-iframe-container")
 const ciframecont = document.querySelector("#CvdoFrame")
-if(vdoID.length < 50){
-  console.log(vdoID)
+if(vdoID.length < 30){
+  console.log("asasd",vdoID)
   vvuip.style.display="none"
   iframecont.style.display="block"
   ciframecont.src = `https://www.youtube.com/embed/${vdoID}`;
